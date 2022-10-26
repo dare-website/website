@@ -62,6 +62,10 @@
                     <li class="nav-item">
                         <a class="nav-link nav-link-ltr" href="#">Sobre Nós</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="/produtos">Produtos</a>
+                    </li>
+                    <!--
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-link-ltr dropdown-toggle" href="/produtos" role="button"
                             data-bs-toggle="dropdown" aria-expanded="true">
@@ -74,7 +78,7 @@
                             <li><a class="dropdown-item" href="#">SEMI-ACABADOS</a></li>
                             <li><a class="dropdown-item" href="#">CITRICOS EXOTICOS</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link nav-link-ltr" href="#">Contactos</a>
                     </li>
