@@ -48,7 +48,7 @@
     </script>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a style="margin-left:7rem;" class="navbar-brand" href="#"><img style="width:6rem;"
+            <a style="margin-left:7rem;" class="navbar-brand" href="/"><img style="width:6rem;"
                     src="img/dare-horizontal-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr " href="#">Home</a>
+                        <a class="nav-link nav-link-ltr " href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-ltr" href="#">Sobre Nós</a>
@@ -185,11 +185,12 @@
                     <hr class="w-100 clearfix d-md-none" />
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-black footer-newsletter">
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-black ">
                         <h4>Our Newsletter</h4>
                         <p>Melhorar NEWSLETTER NÃO ACABADO, MAS FICA A IDEIA</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        <form class="newsletter">
+                            <input type="text" placeholder="Email Address">
+                            <button class="newsletter_submit_btn" type="submit"><i class="fi-cnsuxl-telegram"></i></button>
                         </form>
 
                     </div>

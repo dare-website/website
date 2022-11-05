@@ -71,38 +71,27 @@ nav{
   .nav-link-ltr:hover::before {
     width: 100%;
   }
-  .footer-newsletter form {
-    margin-top: 30px;
+
+  
+  footer .newsletter input[type="text"] {
+    width: 100%;
     background: #fff;
-    padding: 6px 10px;
-    position: relative;
-    border-radius: 4px;
-  }
-  
- .footer-newsletter form input[type=email] {
-    border: 0;
-    padding: 4px;
-    width: calc(100% - 110px);
-  }
-  
-  .footer-newsletter form input[type=submit] {
+    color: #333;
+    border: 1px solid #222;
+    padding: 14px 20px;
+    border-radius: 50px;
+    margin-top: 12px;
+}
+
+.newsletter .newsletter_submit_btn {
+    background: #fff;
     position: absolute;
-    top: 0;
-    right: -2px;
-    bottom: 0;
+    right: 30px;
     border: 0;
-    background: none;
-    font-size: 16px;
-    padding: 0 20px;
-    background: #5c9f24;
-    color: #fff;
-    transition: 0.3s;
-    border-radius: 0 4px 4px 0;
-  }
-  
- .footer-newsletter form input[type=submit]:hover {
-    background: #6ab82a;
-  }
+    top: 26px;
+    font-size: 17px;
+    color: #333;
+}
 
   
 
