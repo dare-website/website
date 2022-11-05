@@ -186,8 +186,8 @@
 
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-black footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Melhorar NEWSLETTER NÃO ACABADO, MAS FICA A IDEIA</p>
+                        <h6 style="font-family: 'Adam-Medium';font-weight:bold;">NEWSLETTER</h6>
+                        <p class="text-black" style="font-family: 'Adam-Medium';">Novidades, descontos e sugestões. Subscreva a nossa newsletter para não perder nada.</p>
                         <form action="" method="post">
                             <input type="email" name="email">
                             <input type="submit" value="Subscrever">

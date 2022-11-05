@@ -253,6 +253,12 @@
         .portfolio-menu{
 	text-align:center;
 }
+.btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active, .btn:hover {
+    color: white;
+    background: linear-gradient(90deg, rgba(249,198,86,1) 0%, rgba(252,162,103,1) 14%, rgba(202,40,65,1) 35%, rgba(215,53,136,1) 55%, rgba(77,40,93,1) 80%, rgba(14,162,154,1) 100%);
+    border-color: white;
+}
+
 .portfolio-menu ul li{
 	display:inline-block;
 	margin:0;
@@ -286,7 +292,7 @@
          	});
          	return  false;
          });
-         $(document).ready(function() {
+        /* $(document).ready(function() {
          var popup_btn = $('.popup-btn');
          popup_btn.magnificPopup({
          type : 'image',
@@ -294,6 +300,6 @@
          	enabled : true
          }
          });
-         });
+         });*/
 </script>
 @endsection

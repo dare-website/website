@@ -109,7 +109,7 @@ EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
 			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z" />
                 </symbol>
             </svg>
-            <script>
+           <!-- <script>
             popup = {
                 init: function() {
                     $('figure').click(function() {
@@ -151,7 +151,7 @@ EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
             }
 
             popup.init()
-            </script>
+            </script>-->
           
         </div>
     </section>
