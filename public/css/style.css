@@ -80,8 +80,9 @@ nav{
   }
   
  .footer-newsletter form input[type=email] {
-    border: 0;
-    padding: 4px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: gray;
     width: calc(100% - 110px);
   }
   
@@ -93,15 +94,15 @@ nav{
     border: 0;
     background: none;
     font-size: 16px;
-    padding: 0 20px;
-    background: #5c9f24;
+    padding: 0 15px;
+    background: #cfcfcf;
     color: #fff;
     transition: 0.3s;
     border-radius: 0 4px 4px 0;
   }
   
  .footer-newsletter form input[type=submit]:hover {
-    background: #6ab82a;
+    background: linear-gradient(90deg, rgba(249,198,86,1) 0%, rgba(252,162,103,1) 14%, rgba(202,40,65,1) 35%, rgba(215,53,136,1) 55%, rgba(77,40,93,1) 80%, rgba(14,162,154,1) 100%);
   }
 
   

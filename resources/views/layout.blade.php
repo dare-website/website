@@ -189,7 +189,8 @@
                         <h4>Our Newsletter</h4>
                         <p>Melhorar NEWSLETTER NÃO ACABADO, MAS FICA A IDEIA</p>
                         <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                            <input type="email" name="email">
+                            <input type="submit" value="Subscrever">
                         </form>
 
                     </div>
