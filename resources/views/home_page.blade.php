@@ -1,8 +1,33 @@
 @extends('layout')
 
 @section('content')
-<section class="video-container">
-    <video src="video/Web.mp4" autoplay loop playsinline muted></video>
+<style>
+.landing-hero {
+    background-size: 100% 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.gradiente {
+    height: 20vh;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+</style>
+<section class="">
+    <div class="landing-hero" style="background-image: url(img/headline-01.png);">
+    </div>
+ 
+        <div class="mx-auto">
+            <nav class="navbar gradiente" style="background-image: url(img/grandient-home.png);">
+                <div class="navbar-nav mx-auto">
+                    <h2 style="font-family: 'Adam-Medium'; color:white;">DO YOU DARE TO BE AMAZED?</h2>
+                </div>
+            </nav>
+        </div>
+    <!--<nav class="navbar gradiente navbar-light bg-light" >
+  <p class="navbar-brand mx-auto" style="font-family: 'Adam-Medium';" href="#">DO YOU DARE TO BE AMAZED?</p>
+</nav>-->
 </section>
 
 
@@ -35,16 +60,19 @@
     </section>
 
     <section style="margin-top: 5rem;">
-       
+
         <div class="row justify-content-center  d-flex align-items-center">
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <h5 style="font-family: 'Adam-Light';">Somos especialistas em surpreender.</h5>
-                <h5 style="font-family: 'Adam-Medium';text-align:justify;">A nossa equipa é composta por cientistas, gastrónomos e criativos que se juntam para proporcionar uma
-EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
+                <h5 style="font-family: 'Adam-Medium';text-align:justify;">A nossa equipa é composta por cientistas,
+                    gastrónomos e criativos que se juntam para proporcionar uma
+                    EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
-                
-                <h5 style="font-family: 'Adam-Medium';text-align:justify;">Trazendo ao mercado a melhor selecção de produtos diferenciadores, arrojados e vanguardistas, com o intuito de surpreender quem não está à espera de ser surpreendido.</h5>
+
+                <h5 style="font-family: 'Adam-Medium';text-align:justify;">Trazendo ao mercado a melhor selecção de
+                    produtos diferenciadores, arrojados e vanguardistas, com o intuito de surpreender quem não está à
+                    espera de ser surpreendido.</h5>
                 <h5 style="font-family: 'Adam-Light';">Temos o complemento perfeito para a sua criatividade.</h5>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 justify-content-center  d-flex align-items-center"
@@ -61,7 +89,9 @@ EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
     </section>
     <section>
         <div>
-            <h3 style="font-family: 'Adam-Medium';font-weight:bold; text-align:center;margin-bottom:3rem;margin-top:5rem;">IDEIAS</h3>
+            <h3
+                style="font-family: 'Adam-Medium';font-weight:bold; text-align:center;margin-bottom:3rem;margin-top:5rem;">
+                IDEIAS</h3>
         </div>
         <div class="row">
             <div class="gallery">
@@ -97,7 +127,7 @@ EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
                         alt="" />
                     <figcaption>Highlands <small>United States</small></figcaption>
                 </figure>
-                
+
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
@@ -109,7 +139,7 @@ EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
 			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z" />
                 </symbol>
             </svg>
-           <!-- <script>
+            <!-- <script>
             popup = {
                 init: function() {
                     $('figure').click(function() {
@@ -152,12 +182,10 @@ EXPERIENCIA INOVADORA que irá mexer com os SEUS SENTIDOS.</h5>
 
             popup.init()
             </script>-->
-          
+
         </div>
     </section>
 
 </div>
 
 @endsection
-
-

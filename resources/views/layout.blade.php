@@ -46,9 +46,9 @@
         });
     </script>
     </script>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg shadow-sm">
         <div class="container-fluid">
-            <a style="margin-left:7rem;" class="navbar-brand" href="/"><img style="width:6rem;"
+            <a style="margin-left:7rem;" class="navbar-brand" href="/"><img style="width:4rem;"
                     src="img/dare-horizontal-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,9 +56,7 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr " href="/">Home</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link nav-link-ltr" href="#">Sobre Nós</a>
                     </li>
