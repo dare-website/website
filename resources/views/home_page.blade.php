@@ -64,24 +64,24 @@
     <section style="margin-top: 5rem;">
 
         <div class="row justify-content-center  d-flex align-items-center">
-            <div class="col-md-6 col-lg-5 col-xl-5 justify-content-center  d-flex align-items-center"
+            <div class="col-md-8 col-lg-6 col-xl-6 justify-content-center mx-auto d-flex align-items-center"
                 style="width:22rem !important;height:18rem !important;">
                 <div>
-                    <div>
-                        <img src="img/icon3.svg" style="width:3rem;position:absolute" alt="">
-                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.6rem;">WE DREAM </h1>
+                    <div style="margin-bottom:2rem;">
+                        <img src="img/icon3.svg" style="width:4rem;position:absolute;margin-left:18rem;" alt="">
+                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE DREAM </h1>
                     </div>
-                    <div>
-                        <img src="img/icon1.svg" style="width:3rem;position:absolute" alt="">
-                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.6rem;">WE AMAZE</h1>
+                    <div style="margin-bottom:2rem;">
+                        <img src="img/icon1.svg" style="width:4rem;position:absolute;margin-left:18rem;" alt="">
+                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE AMAZE</h1>
                     </div>
-                    <div>
-                        <img src="img/icon2.svg" style="width:3rem;position:absolute" alt="">
-                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.6rem;">WE REPEAT</h1>
+                    <div style="margin-bottom:2rem;">
+                        <img src="img/icon2.svg" style="width:4rem;position:absolute;margin-left:18rem;" alt="">
+                        <h1 style="color:black;font-family: 'Adam-Medium';font-size: 3.5rem;">WE REPEAT</h1>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-5 col-xl-5 mx-auto">
+            <div class="col-md-6 col-lg-5 col-xl-6 mx-auto">
                 <h5 style="font-family: 'Lato-LightItalic';text-align:justify;">A nossa equipa é composta por
                     cientistas,
                     gastrónomos e criativos que se juntam para proporcionar uma
