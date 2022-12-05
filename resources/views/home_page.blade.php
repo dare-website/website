@@ -10,7 +10,7 @@
 }
 
 .gradiente {
-    height: 20vh;
+    height: auto;
     background-size: 100% 100vh;
     background-repeat: no-repeat;
 }
@@ -68,27 +68,30 @@
                 style="width:22rem !important;height:18rem !important;">
                 <div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon3.svg" style="width:4rem;position:absolute;margin-left:18rem;" alt="">
+                        <img src="img/icon3.svg" style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE DREAM </h1>
                     </div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon1.svg" style="width:4rem;position:absolute;margin-left:18rem;" alt="">
+                        <img src="img/icon1.svg" style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE AMAZE</h1>
                     </div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon2.svg" style="width:4rem;position:absolute;margin-left:18rem;" alt="">
+                        <img src="img/icon2.svg" style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size: 3.5rem;">WE REPEAT</h1>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-6 mx-auto">
-                <h5 style="font-family: 'Lato-LightItalic';text-align:justify;">A nossa equipa é composta por
+                <h5 style="font-family: 'Lato-LightItalic';">A nossa equipa é composta por
                     cientistas,
                     gastrónomos e criativos que se juntam para proporcionar uma
                     experiêcia inovadora que irá mexer com os seus sentidos.</h5>
-                <h5 style="font-family: 'Lato-LightItalic';text-align:justify;">Temos como objetivo agilizar e potenciar
+                    <br>
+                    <br>
+                <h5 style="font-family: 'Lato-LightItalic';">Temos como objetivo agilizar e potenciar
                     o trabalho dos nossos parceiros "criativos da cozinha" para que possam, desta forma, dar asas à
                     imaginação com os nossos completmentos "ready to serve".</h5>
+                    <br>
             </div>
 
 
@@ -99,7 +102,7 @@
     <section>
         <div>
             <h3
-                style="font-family: 'Lato-Regular';font-weight:bold; text-align:center;margin-bottom:3rem;color:#4d285d ">
+                style="font-family: 'Raleway-Regular';font-weight:bold; text-align:center;margin-bottom:3rem; margin-top:3rem;color:#4d285d ">
                 O SEU
                 A NOSSA GAMA DE PRODUTOS É DIRECIONADA PARA</h3>
         </div>
@@ -108,22 +111,18 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <img src="img/hotel.jpg" style="width:15rem;height:15rem;margin-bottom:1rem"
                     class="rounded-circle shadow" alt="">
-                <h4 style="color:#4d285d ">HOTEL</h4>
-
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">HOTELARIA</h3>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem" class="rounded-circle shadow"
                     alt="">
-                <h4 style="color:#4d285d ">EVENTOS E CATERING</h4>
-
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">EVENTOS E CATERING</h3>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <img src="img/restaurante.jpg" style="width:15rem;height:15rem;margin-bottom:1rem"
                     class="rounded-circle shadow" alt="">
-                <h4 style="color:#4d285d ">RESTAURAÇÃO</h4>
-
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">RESTAURAÇÃO</h3>
             </div>
-
         </div>
     </section>
     <!--<section>
