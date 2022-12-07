@@ -111,20 +111,20 @@
         </div>
 
         <div class="row" style="text-align: center;">
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
-                <img src="img/hotel.jpg" style="width:15rem;height:15rem;margin-bottom:1rem"
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
+                <img src="img/hotel.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
                 <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">HOTELARIA</h3>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
-                <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem" class="rounded-circle shadow"
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
+                <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;vertical-align: middle;" class="rounded-circle shadow"
                     alt="">
-                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">EVENTOS E CATERING</h3>
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">EVENTOS E CATERING</h3>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
-                <img src="img/restaurante.jpg" style="width:15rem;height:15rem;margin-bottom:1rem"
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
+                <img src="img/restaurante.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
-                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">RESTAURAÇÃO</h3>
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">RESTAURAÇÃO</h3>
             </div>
         </div>
     </section>
