@@ -61,7 +61,7 @@
                         <a class="nav-link nav-link-ltr" href="#">Sobre Nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="/produtos">Produtos</a>
+                        <a class="nav-link nav-link-ltr" href="/produtos1">Produtos</a>
                     </li>
                     <!--
                     <li class="nav-item dropdown">
@@ -78,7 +78,7 @@
                         </ul>
                     </li>-->
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="/contactos">Contactos</a>
+                        <a class="nav-link nav-link-ltr" href="/contactos1">Contactos</a>
                     </li>
                     <!---->
                 </ul>
@@ -125,7 +125,7 @@
             </div>
         </footer>-->
     <footer class="text-center text-lg-start text-white footer-16371"
-        style="background-color: #fffff; margin-top:5rem;">
+        style="background-color: #52225F; margin-top:5rem;">
         <!-- Grid container -->
         <div class="container pb-0">
             <!-- Section: Links -->
@@ -202,7 +202,7 @@
 
         <!-- Copyright -->
         <div class="text-center text-white p-3 "
-            style="margin-top:0.9rem; background: linear-gradient(90deg, rgba(249,198,86,1) 0%, rgba(252,162,103,1) 14%, rgba(202,40,65,1) 35%, rgba(215,53,136,1) 55%, rgba(77,40,93,1) 80%, rgba(14,162,154,1) 100%);">
+            style="margin-top:0.9rem; background-color: #52225F">
             © 2020 Copyright
             <a class="text-white" href="#">inoveit.pt</a>
         </div>
