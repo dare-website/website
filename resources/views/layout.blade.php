@@ -94,7 +94,7 @@
     </main>
 
     <footer class="text-center text-lg-start text-white footer-16371"
-        style="background-color: #52225F; margin-top:5rem;">
+        style="background-color: #52225F;">
         <!-- Grid container -->
         <div class="container pb-0">
             <!-- Section: Links -->
