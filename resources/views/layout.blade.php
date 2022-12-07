@@ -56,7 +56,7 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul style="margin-right:0rem !important;" class="navbar-nav mx-auto">
-                    
+
                     <li class="nav-item">
                         <a class="nav-link nav-link-ltr" href="#">Sobre Nós</a>
                     </li>
@@ -92,38 +92,7 @@
     <main>
         @yield('content')
     </main>
-    <!--<footer class="footer-16371">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-9 text-center">
-                        <div class="footer-site-logo mb-4">
-                            <a href="#"><img style="width:12rem" src="img/footer-dare.png" alt=""></a>
-                        </div>
-                        <ul class="list-unstyled nav-links mb-5">
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Sobre Nós</a></li>
-                            <li><a href="#">Produtos</a></li>
-                            <li><a href="#">Contactos</a></li>
-                        </ul>
 
-                        <div class="social mb-4">
-                            <h3>Stay in touch</h3>
-                            <ul class="list-unstyled">
-                                <li class="in"><a href="#"><i class="fi-xnsuxl-instagram"></i></a></li>
-                                <li class="fb"><a href="#"><i class="fi-xnsuxl-facebook"></i></a></li>
-                                <li class="tw"><a href="#"><i class="fi-xnsuxl-twitter-solid"></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="copyright">
-                            <p class="mb-0"><small>&copy; Inoveit. All Rights Reserved.</small></p>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </footer>-->
     <footer class="text-center text-lg-start text-white footer-16371"
         style="background-color: #52225F; margin-top:5rem;">
         <!-- Grid container -->
@@ -134,62 +103,77 @@
                 <div class="row">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
-                        <div class="mb-2">
-                            <a href="#"><img style="width:12rem" src="img/footer-dare.png" alt=""></a>
+
+                        <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                            DO YOU DARE <br>WITH US?
+                        </h3>
+
+                        <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
+                            REDES SOCIAIS
+                        </h4>
+                        <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="#"><i
+                                class="fi-xnsuxl-facebook"></i></a>
+                        <a style="font-size:1.35rem;color: #fff !important" href="#"><i
+                                class="fi-xnsuxl-instagram"></i></a>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                            CONTACTOS
+                        </h3>
+                        <h6 style="margin-bottom:1rem;">
+                            <a style="text-decoration:none;font-family:'Raleway-Regular' " href="mailto:info@dare.pt"
+                                class="text-white">info@dare.pt</a>
+                        </h6>
+
+                        <h6 style="margin-bottom:1rem;">
+                            <a style="text-decoration:none;font-family:'Raleway-Regular' " href="tel:+351913497009"
+                                class="text-white">+351 913
+                                497
+                                009</a>
+                        </h6>
+
+                        <h6 style="font-family:'Raleway-Regular' ">
+                            Rua Placedino dos Reis,Nº8 1ºC <br>
+                            2710-336 Linhó <br>
+                            Portugal
+
+                        </h6>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+<style>input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}
+</style>
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-5 col-xl-5 mt-3 text-black footer-newsletter">
+                        <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                            NEWSLETTER
+                        </h3>
+                        <p class="text-white" style="font-family: 'Adam-Medium';">Não perca nada. <br> Subscreva para
+                            receber o nosso catálogo, promoções exclusivas e acesso antecipado a vendas flash!</p>
+                        <div style="">
+                            <form action="/" method="post">
+                                <input type="email" placeholder="Email*" name="email">
+                                <input type="submit" value="Subscrever">
+                            </form>
                         </div>
-                        <p style="font-family: 'Adam-Medium';" class="text-black">
-                            Somos especialistas em surpreender.
-                        </p>
-                        <p style="font-family: 'Adam-Medium';color:black;"><i class="fi-xnluxl-envelope"></i><a
-                                style="text-decoration:none; color:black !important" href="mailto:filipa.cruz@dare.pt">
-                                FILIPA.CRUZ@DARE.PT
-                            </a></p>
-                        <p style="font-family: 'Adam-Medium';color:black;"><i class="fi-xnlrxl-phone"></i> <a
-                                style="text-decoration:none; color:black !important" href="tel:+351913497009">+351 913
-                                497 009</a></p>
-
-                        <a style="color: #df588a !important" href="#"><i class="fi-xnsuxl-instagram"></i></a>
-                        <a style="color: #3742d0 !important" href="#"><i class="fi-xnsuxl-facebook"></i></a>
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold text-black"
-                            style="font-family: 'Adam-Medium';font-weight:bold;">PRODUTOS</h6>
-                        <p style="font-family: 'Adam-Medium';">
-                            <a style="text-decoration:none" class="text-black">ESFERIFICACAO</a>
-                        </p>
-                        <p style="font-family: 'Adam-Medium';">
-                            <a style="text-decoration:none" class="text-black"> LOLLIPOPS</a>
-                        </p>
-                        <p style="font-family: 'Adam-Medium';">
-                            <a style="text-decoration:none" class="text-black">CANAPES</a>
-                        </p>
-                        <p style="font-family: 'Adam-Medium';">
-                            <a style="text-decoration:none" class="text-black">SEMI-ACABADOS</a>
-                        </p>
-                        <p style="font-family: 'Adam-Medium';">
-                            <a style="text-decoration:none" class="text-black">CITRICOS EXOTICOS</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-black footer-newsletter">
-                        <h6 style="font-family: 'Adam-Medium';font-weight:bold;">NEWSLETTER</h6>
-                        <p class="text-black" style="font-family: 'Adam-Medium';">Novidades, descontos e sugestões. Subscreva a nossa newsletter para não perder nada.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email">
-                            <input type="submit" value="Subscrever">
-                        </form>
 
                     </div>
                     <!-- Grid column -->
@@ -201,10 +185,9 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center text-white p-3 "
-            style="margin-top:0.9rem; background-color: #52225F">
-            © 2020 Copyright
-            <a class="text-white" href="#">inoveit.pt</a>
+        <div class="text-center text-white "
+            style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: #52225F">
+            <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
         </div>
         <!-- Copyright -->
     </footer>

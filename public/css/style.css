@@ -77,7 +77,7 @@ nav{
   }
   .footer-newsletter form {
     margin-top: 30px;
-    background: #fff;
+   
     padding: 6px 10px;
     position: relative;
     border-radius: 4px;
@@ -85,30 +85,32 @@ nav{
   
  .footer-newsletter form input[type=email] {
     outline: 0;
-    border-width: 0 0 2px;
-    border-color: gray;
+    color:white;
+    font-size:1.2rem;
+    background-color: transparent;
+    border-width: 0 0 3px;
+    border-color: white;
     width: calc(100% - 110px);
   }
   
   .footer-newsletter form input[type=submit] {
+    margin-bottom: 0.38rem;
     position: absolute;
-    top: 0;
-    right: -2px;
+    top: 12px;
+    right: 20px;
+    outline: 0;
     bottom: 0;
-    border: 0;
-    background: none;
+    /* border: 0; */
+    background: #52225f;
     font-size: 16px;
     padding: 0 15px;
-    background: #cfcfcf;
     color: #fff;
     transition: 0.3s;
-    border-radius: 0 4px 4px 0;
+    /* border-radius: 0 4px 4px 0; */
+    border-width: 0 0 3px;
+    border-color: white;
   }
   
- .footer-newsletter form input[type=submit]:hover {
-    background: linear-gradient(90deg, rgba(249,198,86,1) 0%, rgba(252,162,103,1) 14%, rgba(202,40,65,1) 35%, rgba(215,53,136,1) 55%, rgba(77,40,93,1) 80%, rgba(14,162,154,1) 100%);
-  }
-
   
 
 body{
