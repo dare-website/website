@@ -93,8 +93,7 @@
         @yield('content')
     </main>
 
-    <footer class="text-center text-lg-start text-white footer-16371"
-        style="background-color: #52225F;">
+    <footer class="text-center text-lg-start text-white footer-16371" style="background-color: #52225F;">
         <!-- Grid container -->
         <div class="container pb-0">
             <!-- Section: Links -->
@@ -151,16 +150,18 @@
 
                     <!-- Grid column -->
                     <hr class="w-100 clearfix d-md-none" />
-<style>input[type="text"]
-{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-}
-</style>
+                    <style>
+                    input[type="text"] {
+                        background: rgba(0, 0, 0, 0);
+                        border: none;
+                        outline: none;
+                    }
+
+                    ::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: white;
+                    }
+                    </style>
                     <!-- Grid column -->
                     <div class="col-md-5 col-lg-5 col-xl-5 mt-3 text-black footer-newsletter">
                         <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
@@ -169,7 +170,8 @@
                         <p class="text-white" style="font-family: 'Adam-Medium';">Não perca nada. <br> Subscreva para
                             receber o nosso catálogo, promoções exclusivas e acesso antecipado a vendas flash!</p>
                         <div style="">
-                            <form action="/" method="post">
+                            <form action="/news" method="post">
+                                @csrf
                                 <input type="email" placeholder="Email*" name="email">
                                 <input type="submit" value="Subscrever">
                             </form>
