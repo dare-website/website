@@ -14,15 +14,30 @@
     background-size: 100% 100vh;
     background-repeat: no-repeat;
 }
+@media(max-width: 449px) {
+    #textgra {
+        font-size: 1.5rem !important;
+    }
+
+    /*.al {margin-left:7rem;margin-right:7rem;}*/
+}
+@media(min-width:450px) and (max-width: 730px) {
+    #textgra {
+        font-size: 2rem !important;
+    }
+
+    /*.al {margin-left:7rem;margin-right:7rem;}*/
+}
 </style>
 <section class="">
     <div class="landing-hero" style="background-image: url(img/headline-01.png);">
     </div>
 
     <div class="mx-auto">
-        <nav class="navbar gradiente" style="background-image: url(img/grandient-home.png);">
+        <nav class="navbar gradiente" style="background-image: url(img/gradiente-home.png);">
             <div class="navbar-nav mx-auto">
-                <h1 style="font-family: 'Adam-Medium'; color:white;font-size:3rem;margin-top:0.5rem;">DO YOU DARE TO BE
+                <h1 id="textgra" style="font-family: 'Adam-Medium'; color:white;font-size:3rem;margin-top:0.5rem;">DO
+                    YOU DARE TO BE
                     AMAZED?</h1>
             </div>
         </nav>
@@ -63,8 +78,8 @@
 
     <section style="margin-top: 5rem;">
 
-        <div class="row justify-content-center  d-flex align-items-center">
-            <div class="col-md-8 col-lg-6 col-xl-6 justify-content-center mx-auto d-flex align-items-center"
+        <div class="al row justify-content-center  d-flex align-items-center">
+            <div class="col-md-8 col-lg-6 col-xl-6 justify-content-center ml-auto d-flex align-items-center"
                 style="width:22rem !important;height:18rem !important;">
                 <div>
                     <div style="margin-bottom:2rem;">
@@ -84,9 +99,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-5 col-xl-6 mx-auto">
+            <div class="col-md-4 col-lg-4 col-xl-4 ml-auto">
                 <h5 style="font-family: 'Lato-LightItalic';">A nossa equipa é composta por
-                    cientistas,
                     gastrónomos e criativos que se juntam para proporcionar uma
                     experiêcia inovadora que irá mexer com os seus sentidos.</h5>
                 <br>
@@ -106,23 +120,24 @@
         <div>
             <h3
                 style="font-family: 'Raleway-Regular';font-weight:bold; text-align:center;margin-bottom:3rem; margin-top:3rem;color:#4d285d ">
-                O SEU
-                A NOSSA GAMA DE PRODUTOS É DIRECIONADA PARA</h3>
+                A NOSSA GAMA DE PRODUTOS <br> É DIRECIONADA PARA</h3>
         </div>
 
-        <div class="row" style="text-align: center;">
+        <div class="row" style="text-align: left;">
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
                 <img src="img/hotel.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
                 <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">HOTELARIA</h3>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
-                <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;vertical-align: middle;" class="rounded-circle shadow"
-                    alt="">
-                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">EVENTOS E CATERING</h3>
+                <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;vertical-align: middle;"
+                    class="rounded-circle shadow" alt="">
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">EVENTOS E CATERING
+                </h3>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
-                <img src="img/restaurante.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
+                <img src="img/restaurante.jpg"
+                    style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
                 <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">RESTAURAÇÃO</h3>
             </div>
@@ -131,7 +146,7 @@
 
 </div>
 <div class="container-fluid" style="margin-top:5rem;background-color:#e5e5e5;padding:2rem;">
-    <div class="container" >
+    <div class="container">
         <section>
             <div class="row mx-auto my-auto justify-content-center">
                 <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -158,7 +173,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel7.png" style="padding:0.6rem;"class="img-fluid">
+                                        <img src="/img/parceiros/hotel7.png" style="padding:0.6rem;" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +218,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel5.png" class="img-fluid">
+                                        <img src="/img/parceiros/hotel55.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -212,11 +227,9 @@
                     </div>
                     <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
                     <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
             </div>
@@ -244,7 +257,7 @@
 
             .carousel-inner {
                 margin-left: 4rem !important;
-                
+
             }
 
             .card {

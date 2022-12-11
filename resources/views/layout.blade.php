@@ -112,7 +112,7 @@
                         </h4>
                         <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="#"><i
                                 class="fi-xnsuxl-facebook"></i></a>
-                        <a style="font-size:1.35rem;color: #fff !important" href="#"><i
+                        <a style="font-size:1.35rem;color: #fff !important" href="https://www.instagram.com/dare_portugal/"><i
                                 class="fi-xnsuxl-instagram"></i></a>
                     </div>
                     <!-- Grid column -->
@@ -125,18 +125,18 @@
                             CONTACTOS
                         </h3>
                         <h6 style="margin-bottom:1rem;">
-                            <a style="text-decoration:none;font-family:'Raleway-Regular' " href="mailto:info@dare.pt"
+                            <a style="text-decoration:none;font-family:'Lato-Light' " href="mailto:info@dare.pt"
                                 class="text-white">info@dare.pt</a>
                         </h6>
 
                         <h6 style="margin-bottom:1rem;">
-                            <a style="text-decoration:none;font-family:'Raleway-Regular' " href="tel:+351913497009"
+                            <a style="text-decoration:none;font-family:'Lato-Light' " href="tel:+351913497009"
                                 class="text-white">+351 913
                                 497
                                 009</a>
                         </h6>
 
-                        <h6 style="font-family:'Raleway-Regular' ">
+                        <h6 style="font-family:'Lato-Light' ">
                             Rua Placedino dos Reis,Nº8 1ºC <br>
                             2710-336 Linhó <br>
                             Portugal
@@ -167,7 +167,7 @@
                         <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
                             NEWSLETTER
                         </h3>
-                        <p class="text-white" style="font-family: 'Adam-Medium';">Não perca nada. <br> Subscreva para
+                        <p class="text-white" style="font-family: 'Lato-Light';">Não perca nada. <br> Subscreva para
                             receber o nosso catálogo, promoções exclusivas e acesso antecipado a vendas flash!</p>
                         <div style="">
                             <form action="/news" method="post">
