@@ -20,7 +20,8 @@ Route::get('/', function () {
 
 Route::get('/produtos', function () {
     $produto_esferificacao= Produto::where('id_tipo',1)->get();
-    return view('produtos')->with(['esferificacoes'=> $produto_esferificacao]);
+    $produto_lollipolis= Produto::where('id_tipo',2)->get();
+    return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis]);
 });
 Route::get('/produto', function () {
     
