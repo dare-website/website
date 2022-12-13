@@ -34,8 +34,8 @@
          <div class="portfolio-menu mt-2 mb-4">
             <ul style="border-bottom:2px solid rgba(77,40,93,0.4)">
                <li class="btn1  active" data-filter="*">TODOS</li>
-               <li class="btn1 " data-filter=".gts">ESFERIFICACAO</li>
-               <li class="btn1 " data-filter=".lap">LOLLIPOPS</li>
+               <li class="btn1" data-filter=".gts">ESFERIFICACAO</li>
+               <li class="btn1" data-filter=".lap">LOLLIPOPS</li>
                <li class="btn1  text" data-filter=".gts">CANAPES</li>
                <li class="btn1  text" data-filter="*">SEMI-ACABADOS</li>
             </ul>
@@ -253,6 +253,8 @@
 .btn1{
    margin-left:5rem !important;
    color: rgba(77,40,93,0.4);
+   position: relative;
+   top:2px;
 }
 .btn1-check:active+.btn1, .btn1-check:checked+.btn1, .btn1.active, .btn1.show, .btn1:active, .btn1:hover {
     color: rgba(77,40,93,1);
