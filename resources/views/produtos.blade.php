@@ -50,7 +50,7 @@
                 class="fancylight popup-btn1" data-fancybox-group="light">
                 <img class="img-fluid shadow" src="{{$esf->avatar}}"
                     alt="">
-                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;">{{$esf->nome}}</h4>
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
             </a>
         </div>
         @endforeach
