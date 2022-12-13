@@ -416,6 +416,10 @@
 }
 </style>
 <script>
+    var selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotope({
+        filter: selector
+    });
 $('.portfolio-menu ul li').click(function() {
     $('.portfolio-menu ul li').removeClass('active');
     $(this).addClass('active');
