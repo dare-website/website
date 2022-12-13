@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="portfolio-menu mt-2 mb-4">
-        <ul style="border-bottom:2px solid rgba(77,40,93,0.4);padding-right: 4rem;">
+        <ul class="linha" style="border-bottom:2px solid rgba(77,40,93,0.4);padding-right: 4rem;">
             <li class="btn1 active" data-filter=".esf">ESFERIFICACAO</li>
             <li class="btn1 " data-filter=".lolli">LOLLIPOPS</li>
             <li class="btn1  text" data-filter=".cana">CANAPES</li>
@@ -46,20 +46,18 @@
     <div class="portfolio-item row">
         @foreach ($esferificacoes as $esf )
         <div class="item esf col-lg-3 col-md-4 col-6 col-12-sm" style="text-align:center;">
-            <a href="#" style="text-decoration:none !important;"
-                class="fancylight popup-btn1" data-fancybox-group="light">
-                <img class="img-fluid shadow" src="storage/{{$esf->avatar}}"
-                    alt="">
+            <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
+                data-fancybox-group="light">
+                <img class="img-fluid shadow" src="storage/{{$esf->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
             </a>
         </div>
         @endforeach
         @foreach ($lollipolis as $lolli )
         <div class="item lolli col-lg-3 col-md-4 col-6 col-12-sm" style="text-align:center;">
-            <a href="#" style="text-decoration:none !important;"
-                class="fancylight popup-btn1" data-fancybox-group="light">
-                <img class="img-fluid shadow" src="storage/{{$lolli->avatar}}"
-                    alt="">
+            <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
+                data-fancybox-group="light">
+                <img class="img-fluid shadow" src="storage/{{$lolli->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$lolli->nome}}</h4>
             </a>
         </div>
@@ -128,6 +126,7 @@ if ($(".portfolio-menu ul li").hasClass("active")) {
     $('.portfolio-item').isotope({
         filter: selector
     });
+    
 }
 $('.portfolio-menu ul li').click(function() {
     $('.portfolio-menu ul li').removeClass('active');
@@ -137,6 +136,37 @@ $('.portfolio-menu ul li').click(function() {
     $('.portfolio-item').isotope({
         filter: selector
     });
+
+   /* if (selector == ".esf") {
+        console.log(selector);
+        $(".parallax").css('background-color', '#0ea29a');
+        $(".footer-16371").css('background-color', 'rgb(14, 162, 154)');
+        $(".font1").css('background-color', 'rgb(14, 162, 154)');
+        $(".btn1").css('color', 'rgb(14, 162, 154, 0.4)');
+        $(".btn1:active").css('border-bottom','rgb(14, 162, 154, 1)');
+        $(".footer-newsletter form input[type=submit]").css('background-color', '#0ea29a');
+        $(".linha").css('border-bottom', '2px solid rgba(14, 162, 154, 0.4)');
+
+    }
+    if (selector == ".lolli") {
+        console.log(selector);
+        $(".parallax").css('background-color', '#ca2841');
+        $(".footer-16371").css('background-color', '#ca2841');
+        $(".linha").css('border-bottom', '2px solid #ca2841');
+    }
+    if (selector == ".cana") {
+        console.log(selector);
+        $(".parallax").css('background-color', '#fca267');
+        $(".footer-16371").css('background-color', '#fca267');
+        $(".linha").css('border-bottom', '2px solid #ca2841');
+    }
+    if (selector == ".semi") {
+        console.log(selector);
+        $(".parallax").css('background-color', '#d73588');
+        $(".footer-16371").css('background-color', '#d73588');
+        $(".linha").css('border-bottom', '2px solid #ca2841');
+
+    }*/
     return false;
 });
 </script>

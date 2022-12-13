@@ -186,7 +186,7 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center text-white "
+        <div class="font1 text-center text-white "
             style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: #52225F">
             <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
         </div>
