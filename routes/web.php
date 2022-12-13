@@ -12,15 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Models\Produto;
 
 Route::get('/', function () {
     return view('home_page');
 });
 
 Route::get('/produtos', function () {
-    return view('produtos');
+    $produto_esferificacao= Produto::where('id_tipo',1)->get();
+    return view('produtos')->with(['esferificacoes'=> $produto_esferificacao]);
 });
 Route::get('/produto', function () {
+    
     return view('produto');
 });
 Route::get('/contactos', function () {
