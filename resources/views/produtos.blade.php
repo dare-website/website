@@ -122,6 +122,10 @@
 </style>
 <script>
 
+if ($(".portfolio-menu ul li").hasClass("active")) {
+    var selector = $(this).attr('data-filter');
+    console.log(selector);
+}
 $('.portfolio-menu ul li').click(function() {
     $('.portfolio-menu ul li').removeClass('active');
     $(this).addClass('active');
