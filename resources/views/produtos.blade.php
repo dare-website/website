@@ -416,7 +416,6 @@
 }
 </style>
 <script>
-$('.portfolio-menu ul li').click(function() {
     $('.portfolio-menu ul li').removeClass('active');
     $(this).addClass('active');
 
@@ -425,6 +424,5 @@ $('.portfolio-menu ul li').click(function() {
         filter: selector
     });
     return false;
-});
 </script>
 @endsection
