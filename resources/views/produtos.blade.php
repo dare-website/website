@@ -48,7 +48,7 @@
         <div class="item esf col-lg-3 col-md-4 col-6 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;"
                 class="fancylight popup-btn1" data-fancybox-group="light">
-                <img class="img-fluid shadow" src="{{$esf->avatar}}"
+                <img class="img-fluid shadow" src="storage/{{$esf->avatar}}"
                     alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
             </a>
@@ -58,7 +58,7 @@
         <div class="item lolli col-lg-3 col-md-4 col-6 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;"
                 class="fancylight popup-btn1" data-fancybox-group="light">
-                <img class="img-fluid shadow" src="{{$lolli->avatar}}"
+                <img class="img-fluid shadow" src="storage/{{$lolli->avatar}}"
                     alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$lolli->nome}}</h4>
             </a>
