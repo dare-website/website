@@ -33,8 +33,8 @@
 </style>
 
 <body class="antialiased">
+  
     <script>
-    < script >
         $(document).ready(function() {
 
             $('ul.navbar-nav > li')
@@ -44,7 +44,6 @@
                     $(this).addClass('active');
                 });
         });
-    </script>
     </script>
     <nav class="navbar navbar-expand-lg shadow-sm">
         <div class="container-fluid">
