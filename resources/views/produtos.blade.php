@@ -45,7 +45,7 @@
     </div>
     <div class="portfolio-i row">
         @foreach ($esferificacoes as $esf )
-        <div class="item esf col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
+        <div class="ite esf col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
                 data-fancybox-group="light">
                 <img class="img-fluid shadow" src="storage/{{$esf->avatar}}" alt="">
@@ -54,7 +54,7 @@
         </div>
         @endforeach
         @foreach ($lollipolis as $lolli )
-        <div class="item lolli col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
+        <div class="ite lolli col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
                 data-fancybox-group="light">
                 <img class="img-fluid shadow" src="storage/{{$lolli->avatar}}" alt="">
@@ -63,7 +63,7 @@
         </div>
         @endforeach
         @foreach ($canapes as $cana )
-        <div class="item cana col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
+        <div class="ite cana col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
                 data-fancybox-group="light">
                 <img class="img-fluid shadow" src="storage/{{$cana->avatar}}" alt="">
@@ -72,7 +72,7 @@
         </div>
         @endforeach
         @foreach ($semi as $sem )
-        <div class="item semi col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
+        <div class="ite semi col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
                 data-fancybox-group="light">
                 <img class="img-fluid shadow" src="storage/{{$sem->avatar}}" alt="">
