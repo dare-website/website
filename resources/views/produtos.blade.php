@@ -43,7 +43,7 @@
             <li class="btn1  text" data-filter=".semi">SEMI-ACABADOS</li>
         </ul>
     </div>
-    <div class=" row">
+    <div class="portfolio-i row">
         @foreach ($esferificacoes as $esf )
         <div class="item esf col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
@@ -151,7 +151,7 @@ $('.portfolio-menu ul li').click(function() {
     $(this).addClass('active');
 
     var selector = $(this).attr('data-filter');
-    $('.portfolio-item').isotope({
+    $('.portfolio-i').isotope({
         filter: selector
     });
 
