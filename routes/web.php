@@ -21,7 +21,9 @@ Route::get('/', function () {
 Route::get('/produtos', function () {
     $produto_esferificacao= Produto::where('id_tipo',1)->get();
     $produto_lollipolis= Produto::where('id_tipo',2)->get();
-    return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis]);
+    $produto_canapes= Produto::where('id_tipo',3)->get();
+    $produto_semi= Produto::where('id_tipo',4)->get();
+    return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi]);
 });
 Route::get('/produto', function () {
     

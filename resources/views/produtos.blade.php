@@ -62,6 +62,24 @@
             </a>
         </div>
         @endforeach
+        @foreach ($canapes as $cana )
+        <div class="item cana col-lg-3 col-md-4 col-6 col-12-sm" style="text-align:center;">
+            <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
+                data-fancybox-group="light">
+                <img class="img-fluid shadow" src="storage/{{$cana->avatar}}" alt="">
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$cana->nome}}</h4>
+            </a>
+        </div>
+        @endforeach
+        @foreach ($semi as $sem )
+        <div class="item semi col-lg-3 col-md-4 col-6 col-12-sm" style="text-align:center;">
+            <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
+                data-fancybox-group="light">
+                <img class="img-fluid shadow" src="storage/{{$sem->avatar}}" alt="">
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
+            </a>
+        </div>
+        @endforeach
     </div>
 </div>
 
