@@ -45,7 +45,7 @@
     </div>
     <div class="portfolio-i row">
         @foreach ($esferificacoes as $esf )
-        <div class="ite esf col-md-2" style="text-align:center;">
+        <div class="ite esf col-md-3" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="storage/{{$esf->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
