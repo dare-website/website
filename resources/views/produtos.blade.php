@@ -22,7 +22,7 @@
 
 .img-fluid {
     border-radius: 15px;
-}
+} 
 </style>
 
 <div class="parallax justify-content-center  d-flex align-items-center">
