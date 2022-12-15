@@ -43,7 +43,7 @@
             <li class="btn1  text" data-filter=".semi">SEMI-ACABADOS</li>
         </ul>
     </div>
-    <div class="portfolio-item row">
+    <div class=" row">
         @foreach ($esferificacoes as $esf )
         <div class="item esf col-lg-3 col-md-4 col-12-sm" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;" class="fancylight popup-btn1"
