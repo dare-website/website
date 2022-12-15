@@ -141,7 +141,7 @@
 if ($(".portfolio-menu ul li").hasClass("active")) {
     var selector = $(".active").attr('data-filter');
     console.log(selector);
-    $('.portfolio-item').isotope({
+    $('.portfolio-i').isotope({
         filter: selector
     });
     
