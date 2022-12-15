@@ -52,6 +52,8 @@
             </a>
         </div>
         @endforeach
+    </div>
+    <div class="portfolio-i row">
         @foreach ($lollipolis as $lolli )
         <div class="ite lolli col-md-3" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;">
@@ -60,6 +62,8 @@
             </a>
         </div>
         @endforeach
+    </div>
+    <div class="portfolio-i row">
         @foreach ($canapes as $cana )
         <div class="ite cana col-md-3" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;">
@@ -68,6 +72,8 @@
             </a>
         </div>
         @endforeach
+    </div>
+    <div class="portfolio-i row">
         @foreach ($semi as $sem )
         <div class="ite semi col-md-3" style="text-align:center;">
             <a href="#" style="text-decoration:none !important;">
@@ -77,6 +83,7 @@
         </div>
         @endforeach
     </div>
+</div>
 </div>
 
 
