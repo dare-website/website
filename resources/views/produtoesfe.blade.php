@@ -99,9 +99,10 @@
             <div class="portfolio-i row">
                 @foreach ($produto0 as $prod0 )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
-                    <a  style="text-decoration:none !important;">
+                    <a style="text-decoration:none !important;">
                         <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
-                        <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod0->nome}}</h4>
+                        <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod0->nome}}
+                        </h4>
                     </a>
                 </div>
                 @endforeach
@@ -109,89 +110,190 @@
             <div class="portfolio-i row">
                 @foreach ($produto1 as $prod1 )
                 <div class="ite prod1 col-md-2" style="text-align:center;">
-                    <a  style="text-decoration:none !important;">
+                    <a style="text-decoration:none !important;">
                         <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
-                        <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}</h4>
+                        <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}
+                        </h4>
                     </a>
                 </div>
                 @endforeach
             </div>
-           
+
         </div>
     </div>
     <style>
-.portfolio-menu {
-    text-align: center;
-}
+    .portfolio-menu {
+        text-align: center;
+    }
 
-.btn1 {
-    margin-left: 5rem !important;
-    color: rgba(14, 162, 154, 0.4);
-    position: relative;
-    top: 2px;
-}
+    .btn1 {
+        margin-left: 5rem !important;
+        color: rgba(14, 162, 154, 0.4);
+        position: relative;
+        top: 2px;
+    }
 
-.btn1-check:active+.btn1,
-.btn1-check:checked+.btn1,
-.btn1.active,
-.btn1.show,
-.btn1:active,
-.btn1:hover {
-    color: rgba(14, 162, 154, 1);
-    border-radius: 0px !important;
-    --bs-btn1-border-color: none;
-    border-bottom: 2px solid rgba(14, 162, 154, 1) !important;
-}
+    .btn1-check:active+.btn1,
+    .btn1-check:checked+.btn1,
+    .btn1.active,
+    .btn1.show,
+    .btn1:active,
+    .btn1:hover {
+        color: rgba(14, 162, 154, 1);
+        border-radius: 0px !important;
+        --bs-btn1-border-color: none;
+        border-bottom: 2px solid rgba(14, 162, 154, 1) !important;
+    }
 
-:focus-visible {
-    outline: -webkit-focus-ring-color auto 0px !important;
-}
+    :focus-visible {
+        outline: -webkit-focus-ring-color auto 0px !important;
+    }
 
 
-.portfolio-menu ul li {
-    display: inline-block;
-    margin: 0;
-    list-style: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    -webkit-transition: all 05s ease;
-    -moz-transition: all 05s ease;
-    -ms-transition: all 05s ease;
-    -o-transition: all 05s ease;
-    transition: all .5s ease;
-}
+    .portfolio-menu ul li {
+        display: inline-block;
+        margin: 0;
+        list-style: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        -webkit-transition: all 05s ease;
+        -moz-transition: all 05s ease;
+        -ms-transition: all 05s ease;
+        -o-transition: all 05s ease;
+        transition: all .5s ease;
+    }
 
-.portfolio-item {
-    /*width:100%;*/
-}
+    .portfolio-item {
+        /*width:100%;*/
+    }
 
-.portfolio-item .item {
-    /*width:303px;*/
-    float: left;
-    margin-bottom: 10px;
-}
-</style>
-<script>
-if ($(".portfolio-menu ul li").hasClass("active")) {
-    var selector = $(".active").attr('data-filter');
-    console.log(selector);
-    $('.portfolio-i').isotope({
-        filter: selector
+    .portfolio-item .item {
+        /*width:303px;*/
+        float: left;
+        margin-bottom: 10px;
+    }
+    </style>
+    <script>
+    if ($(".portfolio-menu ul li").hasClass("active")) {
+        var selector = $(".active").attr('data-filter');
+        console.log(selector);
+        $('.portfolio-i').isotope({
+            filter: selector
+        });
+
+    }
+    $('.portfolio-menu ul li').click(function() {
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        var selector = $(this).attr('data-filter');
+        $('.portfolio-i').isotope({
+            filter: selector
+        });
+        return false;
     });
-
-}
-$('.portfolio-menu ul li').click(function() {
-    $('.portfolio-menu ul li').removeClass('active');
-    $(this).addClass('active');
-
-    var selector = $(this).attr('data-filter');
-    $('.portfolio-i').isotope({
-        filter: selector
-    });
-    return false;
-});
-</script>
+    </script>
 
 </section>
+<footer class="text-center text-lg-start text-white footer-16371" style="background-color: rgba(14, 162, 154, 1);">
+    <!-- Grid container -->
+    <div class="container pb-0">
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
 
+                    <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                        DO YOU DARE <br>WITH US?
+                    </h3>
+
+                    <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
+                        REDES SOCIAIS
+                    </h4>
+                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="#"><i
+                            class="fi-xnsuxl-facebook"></i></a>
+                    <a style="font-size:1.35rem;color: #fff !important"
+                        href="https://www.instagram.com/dare_portugal/"><i class="fi-xnsuxl-instagram"></i></a>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                        CONTACTOS
+                    </h3>
+                    <h6 style="margin-bottom:1rem;">
+                        <a style="text-decoration:none;font-family:'Lato-Light' " href="mailto:info@dare.pt"
+                            class="text-white">info@dare.pt</a>
+                    </h6>
+
+                    <h6 style="margin-bottom:1rem;">
+                        <a style="text-decoration:none;font-family:'Lato-Light' " href="tel:+351913497009"
+                            class="text-white">+351 913
+                            497
+                            009</a>
+                    </h6>
+
+                    <h6 style="font-family:'Lato-Light' ">
+                        Rua Placedino dos Reis,Nº8 1ºC <br>
+                        2710-336 Linhó <br>
+                        Portugal
+
+                    </h6>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+                <style>
+                input[type="text"] {
+                    background: rgba(0, 0, 0, 0);
+                    border: none;
+                    outline: none;
+                }
+
+                ::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: white;
+                }
+                </style>
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-5 col-xl-5 mt-3 text-black footer-newsletter">
+                    <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                        NEWSLETTER
+                    </h3>
+                    <p class="text-white" style="font-family: 'Lato-Light';">Não perca nada. <br> Subscreva para
+                        receber o nosso catálogo, promoções exclusivas e acesso antecipado a vendas flash!</p>
+                    <div style="">
+                        <form action="/news" method="post">
+                            @csrf
+                            <input type="email" placeholder="Email*" name="email">
+                            <input style="background:rgba(14, 162, 154, 1);" type="submit" value="Subscrever">
+                        </form>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="font1 text-center text-white "
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(14, 162, 154, 1)">
+        <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 @endsection
