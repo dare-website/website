@@ -66,24 +66,12 @@
                                 <div class="col-md-10">
                                     <p> FORMATO DE VENDAS <br>
                                         FRASCOS <br>
-                                        6un|20un|20un*|20un
+                                        {{$tipoproduto->formato}}
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
-                                </div>
-                                <div class="col-md-10">
-                                    <p> FORMATO DE VENDAS <br>
-                                        FRASCOS <br>
-                                        6un|20un|20un*|20un
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -100,7 +88,7 @@
                 @foreach ($produto0 as $prod0 )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
+                        <img class="img-fluid shadow" style="border-radius:15px;" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
                         <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod0->nome}}
                         </h4>
                     </a>
@@ -111,9 +99,9 @@
                 @foreach ($produto1 as $prod1 )
                 <div class="ite prod1 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
-                        <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}
-                        </h4>
+                        <img class="img-fluid shadow" style="border-radius:15px;" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
+                        <h6 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}
+                        </h6>
                     </a>
                 </div>
                 @endforeach
@@ -195,7 +183,7 @@
     </script>
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color: rgba(14, 162, 154, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" style="background-color:rgba(14, 162, 154, 1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
