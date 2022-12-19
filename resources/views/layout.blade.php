@@ -14,7 +14,7 @@
 
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
 <style>

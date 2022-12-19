@@ -46,7 +46,7 @@
     <div class="portfolio-i row">
         @foreach ($esferificacoes as $esf )
         <div class="ite esf col-md-3" style="text-align:center;">
-            <a href="#" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $esf->id_tipo) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="storage/{{$esf->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
             </a>
@@ -56,7 +56,7 @@
     <div class="portfolio-i row">
         @foreach ($lollipolis as $lolli )
         <div class="ite lolli col-md-3" style="text-align:center;">
-            <a href="#" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $lolli->id_tipo) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="storage/{{$lolli->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$lolli->nome}}</h4>
             </a>
@@ -66,7 +66,7 @@
     <div class="portfolio-i row">
         @foreach ($canapes as $cana )
         <div class="ite cana col-md-3" style="text-align:center;">
-            <a href="#" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $cana->id_tipo) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="storage/{{$cana->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$cana->nome}}</h4>
             </a>
@@ -76,7 +76,7 @@
     <div class="portfolio-i row">
         @foreach ($semi as $sem )
         <div class="ite semi col-md-3" style="text-align:center;">
-            <a href="#" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $sem->id_tipo) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="storage/{{$sem->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
             </a>

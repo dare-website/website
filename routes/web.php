@@ -27,8 +27,20 @@ Route::get('/produtos', function () {
 });
 Route::get('/produto', function () {
     
-    return view('produto');
+    return view('produtosemi');
 });
+Route::get('/produto', function () {   
+    return view('produtoesfe');
+});
+Route::get('/produto', function () {
+    
+    return view('produtololli');
+});
+Route::get('/produto', function () {
+    
+    return view('produtocana');
+});
+Route::get('/produto/{id}', [App\Http\Controllers\NewsletterController::class, 'produto'])->name('produto');
 Route::get('/contactos', function () {
     return view('contactos');
 });
