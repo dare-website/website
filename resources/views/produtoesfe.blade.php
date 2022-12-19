@@ -50,23 +50,23 @@
 
             <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(14, 162, 154);">
                 <div style="text-align:left;">
-                    <h1 style="font-family:'Adam-Medium';">{{$tipoproduto->nome}}</h1>
+                    <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
                 </div>
-                <div style="font-family:'Lato-Regular';">
+                <div style="font-family:'Lato-LightItalic';">
                     <p>
                         {!! $tipoproduto->texto !!}
                     </p>
 
-                    <div class="row" style="font-family:'Lato-Regular';margin-top:3rem;">
+                    <div class="row" style="margin-top:3rem;">
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
                                     <i class="fi-cwluhl-clock-wide"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <p> FORMATO DE VENDAS <br>
-                                        FRASCOS <br>
-                                        {{$tipoproduto->formato}}
+                                    <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
+                                        <span style="font-family:'Lato-Light';">FRASCOS <br>
+                                        {{$tipoproduto->formato}}</span>
                                     </p>
                                 </div>
                             </div>
@@ -77,30 +77,30 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;margin-top:3rem;">
+        <div class="row" style="text-align: center;margin-top:5rem;">
             <div class="portfolio-menu mt-2 mb-4">
                 <ul class="linha" style="border-bottom:2px solid rgba(14, 162, 154,0.4);padding-right: 4rem;">
-                    <li class="btn1 active" data-filter=".prod0">COM ALCOOL</li>
-                    <li class="btn1 " data-filter=".prod1">SEM ALCOOL</li>
+                    <li class="btn1 active" data-filter=".prod1">COM ALCOOL</li>
+                    <li class="btn1 " data-filter=".prod0">SEM ALCOOL</li>
                 </ul>
             </div>
-            <div class="portfolio-i row">
+            <div class="portfolio-i row" style="margin-left:5.5rem !important">
                 @foreach ($produto0 as $prod0 )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
-                        <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod0->nome}}
-                        </h4>
+                        <h6 style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod0->nome}}
+                        </h6>
                     </a>
                 </div>
                 @endforeach
             </div>
-            <div class="portfolio-i row">
+            <div class="portfolio-i row" style="margin-left:5.5rem !important">
                 @foreach ($produto1 as $prod1 )
                 <div class="ite prod1 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
-                        <h6 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}
+                        <h6 style=" font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}
                         </h6>
                     </a>
                 </div>

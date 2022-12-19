@@ -38,6 +38,14 @@
   font-family: 'Raleway-Regular';
   src: url('/font/Raleway/Raleway-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */     
 }
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('/font/Raleway/Raleway-Light.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */     
+}
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('/font/Raleway/Raleway-Medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */     
+}
 nav{
   background-color: #ffff;
 }
