@@ -98,7 +98,7 @@
             </div>
             <div class="portfolio-i row">
                 @foreach ($produto0 as $prod0 )
-                <div class="ite prod0 col-md-3" style="text-align:center;">
+                <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a  style="text-decoration:none !important;">
                         <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
                         <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod0->nome}}</h4>
@@ -108,7 +108,7 @@
             </div>
             <div class="portfolio-i row">
                 @foreach ($produto1 as $prod1 )
-                <div class="ite prod1 col-md-3" style="text-align:center;">
+                <div class="ite prod1 col-md-2" style="text-align:center;">
                     <a  style="text-decoration:none !important;">
                         <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
                         <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}</h4>
