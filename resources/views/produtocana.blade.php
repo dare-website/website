@@ -39,9 +39,9 @@
                         </div>-->
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
-                        <label for="image1"
+                        <!--<label for="image1"
                             style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');"></label>
-                        <!--<label for="image2"></label>
+                        <label for="image2"></label>
                         <label for="image3"></label>
                         <label for="image4"></label>-->
                     </div>
