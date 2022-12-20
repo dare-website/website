@@ -115,7 +115,7 @@
             <div class="portfolio-i row d-flex justify-content-center">
                 @foreach ($produtosR as $prodR)
                 <div class="ite prod0 col-md-3" style="text-align:center;">
-                    <a href="{{ route('produto', $prodR->id_tipo) }}" style="text-decoration:none !important;">
+                    <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ route('produto', $prodR->id); }else{  route('produto', $prodR->id_tipo) ; }?>" style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                         <h6
