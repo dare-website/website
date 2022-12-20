@@ -111,7 +111,7 @@
             <div class="row" style="text-align: center;margin-top:5rem;">
                 <div class="portfolio-menu mt-2 mb-4 ">
                     <ul class="linha d-flex justify-content-center"
-                        style="border-bottom:2px solid rgba(255, 133, 11,0.4);padding-right: 4rem;">
+                        style="border-bottom:2px solid rgba(204, 40, 65,0.4);padding-right: 4rem;">
                         <li class="btn1 active" data-filter=".prod1">PRODUTOS RELACIONADOS</li>
                     </ul>
                 </div>
