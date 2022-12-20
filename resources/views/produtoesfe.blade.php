@@ -61,17 +61,17 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
+                                    <img src="{{ asset('img/icon/icon-caixaesf.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
                                         <span style="font-family:'Lato-Light';">FRASCOS <br>
-                                        {{$tipoproduto->formato}}</span>
+                                            {{$tipoproduto->formato}}</span>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -80,27 +80,33 @@
         <div class="row" style="text-align: center;margin-top:5rem;">
             <div class="portfolio-menu mt-2 mb-4">
                 <ul class="linha" style="border-bottom:2px solid rgba(14, 162, 154,0.4);padding-right: 4rem;">
-                    <li class="btn1 active" data-filter=".prod1">COM ALCOOL</li>
-                    <li class="btn1 " data-filter=".prod0">SEM ALCOOL</li>
+                    <li class="btn1 filter-btn active" data-target="#prod1" data-filter=".prod1">COM ALCOOL</li>
+                    <li class="btn1 filter-btn " data-target="#prod0" data-filter=".prod0">SEM ALCOOL</li>
                 </ul>
             </div>
-            <div class="portfolio-i row" style="margin-left:5.5rem !important">
+            <div class="portfolio-i row d-flex ">
                 @foreach ($produto0 as $prod0 )
-                <div class="ite prod0 col-md-2" style="text-align:center;">
+                <div id="prod0" class="ite block-card prod0 col-md-3" style="text-align:center;">
                     <a style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
-                        <h6 style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod0->nome}}
+                        <img class="img-fluid shadow" style="border-radius:15px;"
+                            src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
+                        <h6
+                            style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">
+                            {{$prod0->nome}}
                         </h6>
                     </a>
                 </div>
                 @endforeach
             </div>
-            <div class="portfolio-i row" style="margin-left:5.5rem !important">
+            <div class="portfolio-i row d-flex">
                 @foreach ($produto1 as $prod1 )
-                <div class="ite prod1 col-md-2" style="text-align:center;">
+                <div id="prod1" class="ite block-card active prod1 col-md-3" style="text-align:center;">
                     <a style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
-                        <h6 style=" font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod1->nome}}
+                        <img class="img-fluid shadow" style="border-radius:15px;"
+                            src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
+                        <h6
+                            style=" font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">
+                            {{$prod1->nome}}
                         </h6>
                     </a>
                 </div>
@@ -108,6 +114,8 @@
             </div>
 
         </div>
+
+
     </div>
     <style>
     .portfolio-menu {
@@ -138,6 +146,7 @@
     }
 
 
+    .produtoli,
     .portfolio-menu ul li {
         display: inline-block;
         margin: 0;
@@ -160,28 +169,54 @@
         float: left;
         margin-bottom: 10px;
     }
-    </style>
-    <script>
-    if ($(".portfolio-menu ul li").hasClass("active")) {
-        var selector = $(".active").attr('data-filter');
-        console.log(selector);
-        $('.portfolio-i').isotope({
-            filter: selector
-        });
 
+    .block-card {
+        display: none;
     }
-    $('.portfolio-menu ul li').click(function() {
-        $('.portfolio-menu ul li').removeClass('active');
-        $(this).addClass('active');
 
-        var selector = $(this).attr('data-filter');
-        $('.portfolio-i').isotope({
-            filter: selector
-        });
-        return false;
+    .block-card.active {
+        display: block;
+    }
+    </style>
+
+    <script>
+   
+    let $blocks = $('.block-card');
+
+    $('.filter-btn').on('click', e => {
+        let $btn = $(e.target).addClass('active');
+        $btn.siblings().removeClass('active');
+
+        let selector = $btn.data('target');
+        console.log(selector);
+        $blocks.removeClass('active').filter(selector).addClass('active');
     });
     </script>
 
+    <div class="container">
+        <div class="row" style="text-align: center;margin-top:5rem;">
+            <div class="mt-2 mb-4 ">
+                <ul class="linha d-flex justify-content-center"
+                    style="border-bottom:2px solid rgba(14, 162, 154, 0.4);padding-right: 4rem;">
+                    <li class="btn1 produtoli active">PRODUTOS RELACIONADOS</li>
+                </ul>
+            </div>
+            <div class=" row d-flex justify-content-center">
+                @foreach ($produtosR as $prodR )
+                <div class="ite col-md-3" style="text-align:center;">
+                    <a href="{{ route('produto', $prodR->id_tipo) }}" style="text-decoration:none !important;">
+                        <img class="img-fluid shadow" style="border-radius:15px;"
+                            src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
+                        <h6
+                            style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154, 1);margin-top:1rem;margin-bottom:3rem;">
+                            {{$prodR->nome}}
+                        </h6>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
 </section>
 <footer class="text-center text-lg-start text-white footer-16371" style="background-color:rgba(14, 162, 154, 1);">
     <!-- Grid container -->

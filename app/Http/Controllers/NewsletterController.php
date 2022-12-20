@@ -29,14 +29,16 @@ class NewsletterController extends Controller
         
         if ($id==1) {
             $tipoproduto = TipoProduto::find($id);
+            $produtosR= Produto::whereNot('id_tipo',$id)->inRandomOrder()->limit(3)->get();
             $produto0 = Produto::where('alcool',0)->get();
             $produto1 = Produto::where('alcool',1)->get();
-            return view('produtoesfe', ['produto0' => $produto0,'produto1' => $produto1, 'tipoproduto'=>$tipoproduto]);
+            return view('produtoesfe', ['produto0' => $produto0,'produto1' => $produto1, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR]);
         }
         if ($id==2) {
+            $produtosR= Produto::whereNot('id_tipo',$id)->inRandomOrder()->limit(3)->get();
             $tipoproduto = TipoProduto::find($id);
             $produto = Produto::where('id_tipo',$id)->get();
-            return view('produtololli', ['produto' => $produto, 'tipoproduto'=>$tipoproduto]);
+            return view('produtololli', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR]);
         }
         if ($id==3) {
             $tipoproduto = TipoProduto::find($id);

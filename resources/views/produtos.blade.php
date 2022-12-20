@@ -1,9 +1,7 @@
 @extends('layout')
 
 @section('content')
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-
 
 <style>
 .parallax {
@@ -37,17 +35,17 @@
     </div>
     <div class="portfolio-menu mt-2 mb-4">
         <ul class="linha" style="border-bottom:2px solid rgba(77,40,93,0.4);padding-right: 4rem;">
-            <li class="btn1 active" data-filter=".esf">ESFERIFICACAO</li>
-            <li class="btn1 " data-filter=".lolli">LOLLIPOPS</li>
-            <li class="btn1  text" data-filter=".cana">CANAPES</li>
-            <li class="btn1  text" data-filter=".semi">SEMI-ACABADOS</li>
+            <li class="btn1 filter-btn active" data-target="#esf" data-filter=".esf">ESFERIFICACAO</li>
+            <li class="btn1 filter-btn" data-target="#lolli" data-filter=".lolli">LOLLIPOPS</li>
+            <li class="btn1 filter-btn" data-target="#cana" data-filter=".cana">CANAPES</li>
+            <li class="btn1 filter-btn" data-target="#semi" data-filter=".semi">SEMI-ACABADOS</li>
         </ul>
     </div>
     <div class="portfolio-i row">
         @foreach ($esferificacoes as $esf )
-        <div class="ite esf col-md-3" style="text-align:center;">
+        <div id="esf" class="ite esf block-card active col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $esf->id_tipo) }}" style="text-decoration:none !important;">
-                <img class="img-fluid shadow" src="storage/{{$esf->avatar}}" alt="">
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$esf->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
             </a>
         </div>
@@ -55,9 +53,9 @@
     </div>
     <div class="portfolio-i row">
         @foreach ($lollipolis as $lolli )
-        <div class="ite lolli col-md-3" style="text-align:center;">
+        <div  id="lolli" class="ite lolli block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $lolli->id_tipo) }}" style="text-decoration:none !important;">
-                <img class="img-fluid shadow" src="storage/{{$lolli->avatar}}" alt="">
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$lolli->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$lolli->nome}}</h4>
             </a>
         </div>
@@ -65,9 +63,9 @@
     </div>
     <div class="portfolio-i row">
         @foreach ($canapes as $cana )
-        <div class="ite cana col-md-3" style="text-align:center;">
+        <div id="cana" class="ite cana block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $cana->id_tipo) }}" style="text-decoration:none !important;">
-                <img class="img-fluid shadow" src="storage/{{$cana->avatar}}" alt="">
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$cana->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$cana->nome}}</h4>
             </a>
         </div>
@@ -75,9 +73,9 @@
     </div>
     <div class="portfolio-i row">
         @foreach ($semi as $sem )
-        <div class="ite semi col-md-3" style="text-align:center;">
+        <div  id="semi" class="ite semi block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $sem->id_tipo) }}" style="text-decoration:none !important;">
-                <img class="img-fluid shadow" src="storage/{{$sem->avatar}}" alt="">
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$sem->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
             </a>
         </div>
@@ -138,56 +136,157 @@
     float: left;
     margin-bottom: 10px;
 }
+
+.block-card {
+    display: none;
+}
+
+.block-card.active {
+    display: block;
+}
 </style>
 <script>
-if ($(".portfolio-menu ul li").hasClass("active")) {
-    var selector = $(".active").attr('data-filter');
+let $blocks = $('.block-card');
+
+$('.filter-btn').on('click', e => {
+    let $btn = $(e.target).addClass('active');
+    $btn.siblings().removeClass('active');
+
+    let selector = $btn.data('target');
     console.log(selector);
-    $('.portfolio-i').isotope({
-        filter: selector
-    });
-
-}
-$('.portfolio-menu ul li').click(function() {
-    $('.portfolio-menu ul li').removeClass('active');
-    $(this).addClass('active');
-
-    var selector = $(this).attr('data-filter');
-    $('.portfolio-i').isotope({
-        filter: selector
-    });
-
-    /* if (selector == ".esf") {
-         console.log(selector);
-         $(".parallax").css('background-color', '#0ea29a');
-         $(".footer-16371").css('background-color', 'rgb(14, 162, 154)');
-         $(".font1").css('background-color', 'rgb(14, 162, 154)');
-         $(".btn1").css('color', 'rgb(14, 162, 154, 0.4)');
-         $(".btn1:active").css('border-bottom','rgb(14, 162, 154, 1)');
-         $(".footer-newsletter form input[type=submit]").css('background-color', '#0ea29a');
-         $(".linha").css('border-bottom', '2px solid rgba(14, 162, 154, 0.4)');
-
-     }
-     if (selector == ".lolli") {
-         console.log(selector);
-         $(".parallax").css('background-color', '#ca2841');
-         $(".footer-16371").css('background-color', '#ca2841');
-         $(".linha").css('border-bottom', '2px solid #ca2841');
-     }
-     if (selector == ".cana") {
-         console.log(selector);
-         $(".parallax").css('background-color', '#fca267');
-         $(".footer-16371").css('background-color', '#fca267');
-         $(".linha").css('border-bottom', '2px solid #ca2841');
-     }
-     if (selector == ".semi") {
-         console.log(selector);
-         $(".parallax").css('background-color', '#d73588');
-         $(".footer-16371").css('background-color', '#d73588');
-         $(".linha").css('border-bottom', '2px solid #ca2841');
-
-     }*/
-    return false;
+    $blocks.removeClass('active').filter(selector).addClass('active');
 });
+
+/* if (selector == ".esf") {
+     console.log(selector);
+     $(".parallax").css('background-color', '#0ea29a');
+     $(".footer-16371").css('background-color', 'rgb(14, 162, 154)');
+     $(".font1").css('background-color', 'rgb(14, 162, 154)');
+     $(".btn1").css('color', 'rgb(14, 162, 154, 0.4)');
+     $(".btn1:active").css('border-bottom','rgb(14, 162, 154, 1)');
+     $(".footer-newsletter form input[type=submit]").css('background-color', '#0ea29a');
+     $(".linha").css('border-bottom', '2px solid rgba(14, 162, 154, 0.4)');
+
+ }
+ if (selector == ".lolli") {
+     console.log(selector);
+     $(".parallax").css('background-color', '#ca2841');
+     $(".footer-16371").css('background-color', '#ca2841');
+     $(".linha").css('border-bottom', '2px solid #ca2841');
+ }
+ if (selector == ".cana") {
+     console.log(selector);
+     $(".parallax").css('background-color', '#fca267');
+     $(".footer-16371").css('background-color', '#fca267');
+     $(".linha").css('border-bottom', '2px solid #ca2841');
+ }
+ if (selector == ".semi") {
+     console.log(selector);
+     $(".parallax").css('background-color', '#d73588');
+     $(".footer-16371").css('background-color', '#d73588');
+     $(".linha").css('border-bottom', '2px solid #ca2841');
+
+ }*/
 </script>
+<footer class="text-center text-lg-start text-white footer-16371" style="background-color:rgba(77, 40, 93, 1);">
+    <!-- Grid container -->
+    <div class="container pb-0">
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+
+                    <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                        DO YOU DARE <br>WITH US?
+                    </h3>
+
+                    <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
+                        REDES SOCIAIS
+                    </h4>
+                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="#"><i
+                            class="fi-xnsuxl-facebook"></i></a>
+                    <a style="font-size:1.35rem;color: #fff !important"
+                        href="https://www.instagram.com/dare_portugal/"><i class="fi-xnsuxl-instagram"></i></a>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                        CONTACTOS
+                    </h3>
+                    <h6 style="margin-bottom:1rem;">
+                        <a style="text-decoration:none;font-family:'Lato-Light' " href="mailto:info@dare.pt"
+                            class="text-white">info@dare.pt</a>
+                    </h6>
+
+                    <h6 style="margin-bottom:1rem;">
+                        <a style="text-decoration:none;font-family:'Lato-Light' " href="tel:+351913497009"
+                            class="text-white">+351 913
+                            497
+                            009</a>
+                    </h6>
+
+                    <h6 style="font-family:'Lato-Light' ">
+                        Rua Placedino dos Reis,Nº8 1ºC <br>
+                        2710-336 Linhó <br>
+                        Portugal
+
+                    </h6>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+                <style>
+                input[type="text"] {
+                    background: rgba(0, 0, 0, 0);
+                    border: none;
+                    outline: none;
+                }
+
+                ::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: white;
+                }
+                </style>
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-5 col-xl-5 mt-3 text-black footer-newsletter">
+                    <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
+                        NEWSLETTER
+                    </h3>
+                    <p class="text-white" style="font-family: 'Lato-Light';">Não perca nada. <br> Subscreva para
+                        receber o nosso catálogo, promoções exclusivas e acesso antecipado a vendas flash!</p>
+                    <div style="">
+                        <form action="/news" method="post">
+                            @csrf
+                            <input type="email" placeholder="Email*" name="email">
+                            <input style="rgba(77, 40, 93, 1);" type="submit" value="Subscrever">
+                        </form>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="font1 text-center text-white "
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(77, 40, 93, 1)">
+        <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 @endsection

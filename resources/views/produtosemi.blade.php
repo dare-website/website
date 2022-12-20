@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(14, 162, 154);">
+            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: #d9358a;">
                 <div style="text-align:left;">
                     <h1 style="font-family:'Adam-Medium';">{{$tipoproduto->nome}}</h1>
                 </div>
@@ -61,7 +61,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
+                                <img src="{{ asset('img/icon/icon-chefsemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p style="padding-right:5rem;"> PREPARAÇÃO <br>
@@ -74,7 +74,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
+                                <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p> FORMATO DE VENDAS <br>
@@ -96,7 +96,7 @@
                 <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
                         <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
-                        <h4 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
+                        <h4 style=" color: #d9358a;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
                         </h4>
                     </a>
                 </div>
@@ -104,7 +104,7 @@
             </div>
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color: rgba(14, 162, 154, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" style="background-color:  #d9358a;">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
@@ -184,7 +184,7 @@
                         <form action="/news" method="post">
                             @csrf
                             <input type="email" placeholder="Email*" name="email">
-                            <input style="background:rgba(14, 162, 154, 1);" type="submit" value="Subscrever">
+                            <input style="background: #d9358a;" type="submit" value="Subscrever">
                         </form>
                     </div>
 
@@ -199,7 +199,7 @@
 
     <!-- Copyright -->
     <div class="font1 text-center text-white "
-        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(14, 162, 154, 1)">
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color:  #d9358a">
         <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->

@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(14, 162, 154);">
+            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(255, 133, 11);">
                 <div style="text-align:left;">
                     <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
                 </div>
@@ -61,7 +61,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
+                                <img src="{{ asset('img/icon/icon-cheflolli.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p style="padding-right:5rem;"> <span
@@ -75,7 +75,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
+                                    <img src="{{ asset('img/icon/icon-caixalolli.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
@@ -91,21 +91,81 @@
 
         <div class="row" style="text-align: center;margin-top:5rem;">
 
-            <div class="portfolio-i row" style="margin-left:5.5rem !important">
+            <div class="portfolio-i row d-flex justify-content-center" >
                 @foreach ($produto as $prod )
-                <div class="ite prod0 col-md-2" style="text-align:center;">
+                <div class="ite prod0 col-md-2" style="text-align:center;margin-left:2rem;">
                     <a style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
-                        <h6 style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
+                        <h6
+                            style="font-family: 'Raleway-Medium';color:rgba(255, 133, 11,1);margin-top:1rem;margin-bottom:3rem;">
+                            {{$prod->nome}}
                         </h6>
                     </a>
                 </div>
                 @endforeach
             </div>
+        </div>
+        <div class="row" style="text-align: center;margin-top:5rem;">
+            <div class="portfolio-menu mt-2 mb-4 ">
+                <ul class="linha d-flex justify-content-center" style="border-bottom:2px solid rgba(255, 133, 11,0.4);padding-right: 4rem;">
+                    <li class="btn1 active" data-filter=".prod1">PRODUTOS RELACIONADOS</li>
+                </ul>
+            </div>
+            <div class="portfolio-i row d-flex justify-content-center">
+                @foreach ($produtosR as $prodR)
+                <div class="ite prod0 col-md-3" style="text-align:center;">
+                    <a href="{{ route('produto', $prodR->id_tipo) }}" style="text-decoration:none !important;">
+                        <img class="img-fluid shadow" style="border-radius:15px;"
+                            src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
+                        <h6
+                            style="font-family: 'Raleway-Medium';color:rgba(255, 133, 11,1);margin-top:1rem;margin-bottom:3rem;">
+                            {{$prodR->nome}}
+                        </h6>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <style>
+        .portfolio-menu ul li {
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            -webkit-transition: all 05s ease;
+            -moz-transition: all 05s ease;
+            -ms-transition: all 05s ease;
+            -o-transition: all 05s ease;
+            transition: all .5s ease;
+        }
+
+        .btn1 {
+            margin-left: 5rem !important;
+            color: rgba(255, 133, 11, 0.4);
+            position: relative;
+            top: 2px;
+        }
+
+        .btn1-check:active+.btn1,
+        .btn1-check:checked+.btn1,
+        .btn1.active,
+        .btn1.show,
+        .btn1:active,
+        .btn1:hover {
+            color: rgba(255, 133, 11, 1);
+            border-radius: 0px !important;
+            --bs-btn1-border-color: none;
+            border-bottom: 2px solid rgba(255, 133, 11, 1) !important;
+        }
+        </style>
+
+
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color: rgba(14, 162, 154, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" style="background-color: rgba(255, 133, 11, 1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
@@ -185,7 +245,7 @@
                         <form action="/news" method="post">
                             @csrf
                             <input type="email" placeholder="Email*" name="email">
-                            <input style="background:rgba(14, 162, 154, 1);" type="submit" value="Subscrever">
+                            <input style="background:rgba(255, 133, 11, 1);" type="submit" value="Subscrever">
                         </form>
                     </div>
 
@@ -200,7 +260,7 @@
 
     <!-- Copyright -->
     <div class="font1 text-center text-white "
-        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(14, 162, 154, 1)">
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(255, 133, 11, 1)">
         <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->

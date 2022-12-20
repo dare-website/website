@@ -48,11 +48,11 @@
                 </div>
             </div>
 
-            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(14, 162, 154);">
+            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: #cc2841;">
                 <div style="text-align:left;">
-                    <h1 style="font-family:'Adam-Medium';">{{$tipoproduto->nome}}</h1>
+                    <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
                 </div>
-                <div style="font-family:'Lato-Regular';">
+                <div style="font-family:'Lato-LightItalic';">
                     <p>
                         {!! $tipoproduto->texto !!}
                     </p>
@@ -61,12 +61,13 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
+                                    <img src="{{ asset('img/icon/icon-chefcana.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <p style="padding-right:5rem;"> PREPARAÇÃO <br>
-                                    
-                                    {{$tipoproduto->preparacao}}
+                                    <p style="padding-right:5rem;"> <span
+                                            style="font-family:'Raleway-Regular';">PREPARAÇÃO</span><br>
+
+                                        <span style="font-family:'Lato-Light';"> {{$tipoproduto->preparacao}}</span>
                                     </p>
                                 </div>
                             </div>
@@ -74,12 +75,13 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fi-cwluhl-clock-wide"></i>
+                                    <img src="{{ asset('img/icon/icon-caixacanapng.png') }}" style="height:1.5rem;"
+                                        alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <p> FORMATO DE VENDAS <br>
-                                        FRASCOS <br>
-                                        {{$tipoproduto->formato}}
+                                    <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
+                                        <span style="font-family:'Lato-Light';">FRASCOS <br>
+                                            {{$tipoproduto->formato}}</span>
                                     </p>
                                 </div>
                             </div>
@@ -90,21 +92,22 @@
         </div>
 
         <div class="row" style="text-align: center;margin-top:3rem;">
-            
+
             <div class="portfolio-i row">
                 @foreach ($produto as $prod )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;" src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
-                        <h6 style=" color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
+                        <img class="img-fluid shadow" style="border-radius:15px;"
+                            src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
+                        <h6 style=" color:#cc2841;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
                         </h6>
                     </a>
                 </div>
                 @endforeach
             </div>
-        
+
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color: rgba(14, 162, 154, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" style="background-color:#cc2841;">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
@@ -184,7 +187,7 @@
                         <form action="/news" method="post">
                             @csrf
                             <input type="email" placeholder="Email*" name="email">
-                            <input style="background:rgba(14, 162, 154, 1);" type="submit" value="Subscrever">
+                            <input style="background:#cc2841;" type="submit" value="Subscrever">
                         </form>
                     </div>
 
@@ -199,7 +202,7 @@
 
     <!-- Copyright -->
     <div class="font1 text-center text-white "
-        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(14, 162, 154, 1)">
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: #cc2841">
         <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->
