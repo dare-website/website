@@ -109,20 +109,20 @@
 
         <div class="container">
             <div class="row" style="text-align: center;margin-top:5rem;">
-                <div class="mt-2 mb-4 ">
+                <div class="portfolio-menu mt-2 mb-4 ">
                     <ul class="linha d-flex justify-content-center"
-                        style="border-bottom:2px solid rgba(14, 162, 154, 0.4);padding-right: 4rem;">
-                        <li class="btn1 produtoli active">PRODUTOS RELACIONADOS</li>
+                        style="border-bottom:2px solid rgba(255, 133, 11,0.4);padding-right: 4rem;">
+                        <li class="btn1 active" data-filter=".prod1">PRODUTOS RELACIONADOS</li>
                     </ul>
                 </div>
-                <div class=" row d-flex justify-content-center">
-                    @foreach ($produtosR as $prodR )
-                    <div class="ite col-md-3" style="text-align:center;">
+                <div class="portfolio-i row d-flex justify-content-center">
+                    @foreach ($produtosR as $prodR)
+                    <div class="ite prod0 col-md-3" style="text-align:center;">
                         <a href="{{ route('produto', $prodR->id_tipo) }}" style="text-decoration:none !important;">
                             <img class="img-fluid shadow" style="border-radius:15px;"
                                 src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                             <h6
-                                style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154, 1);margin-top:1rem;margin-bottom:3rem;">
+                                style="font-family: 'Raleway-Medium';color:rgba(255, 133, 11,1);margin-top:1rem;margin-bottom:3rem;">
                                 {{$prodR->nome}}
                             </h6>
                         </a>
