@@ -122,7 +122,7 @@
                             <img class="img-fluid shadow" style="border-radius:15px;"
                                 src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                             <h6
-                                style="font-family: 'Raleway-Medium';color:rgba(255, 133, 11,1);margin-top:1rem;margin-bottom:3rem;">
+                                style="font-family: 'Raleway-Medium';color:rgba(204, 40, 65,1);margin-top:1rem;margin-bottom:3rem;">
                                 {{$prodR->nome}}
                             </h6>
                         </a>
@@ -147,7 +147,7 @@
 
         .btn1 {
             margin-left: 5rem !important;
-            color: rgba(255, 133, 11, 0.4);
+            color: rgba(204, 40, 65, 0.4);
             position: relative;
             top: 2px;
         }
@@ -158,10 +158,10 @@
         .btn1.show,
         .btn1:active,
         .btn1:hover {
-            color: rgba(255, 133, 11, 1);
+            color: rgba(204, 40, 65, 1);
             border-radius: 0px !important;
             --bs-btn1-border-color: none;
-            border-bottom: 2px solid rgba(255, 133, 11, 1) !important;
+            border-bottom: 2px solid rgba(204, 40, 65, 1) !important;
         }
         </style>
 
