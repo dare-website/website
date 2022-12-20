@@ -7,8 +7,8 @@
 <link href="{{ asset('css/style-produto.css') }}" rel="stylesheet">
 <section>
 
-    <div class="container" style="margin-top:5rem; margin-bottom:5rem;">
-        <div class="row" style="margin-top:2rem;">
+    <div class="container" style="margin-top:5.5rem; margin-bottom:5rem;">
+        <div class="row">
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
