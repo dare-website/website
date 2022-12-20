@@ -8,11 +8,11 @@
 <section>
 
     <div class="container" style="margin-top:5rem; margin-bottom:5rem;">
-        <div class="row" style="margin-top:3rem;">
+        <div class="row" style="margin-top:2rem;">
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(14, 162, 154,0.5)">HOME / PRODUTOS / {{$tipoproduto->nome}}</h6>
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(14, 162, 154,0.5);margin-left:2rem;">HOME / PRODUTOS / {{$tipoproduto->nome}}</h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
                         <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
@@ -22,7 +22,7 @@
         </div>
 
 
-        <div class="row" style="margin-left:2rem;margin-top:3rem;">
+        <div class="row" style="margin-left:2rem;margin-top:1.5rem;">
 
             <div class="col-md-5">
                 <div class="image-gallery">
