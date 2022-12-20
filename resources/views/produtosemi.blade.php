@@ -128,6 +128,39 @@
                 </div>
             </div>
         </div>
+        <style>
+        .portfolio-menu ul li {
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            -webkit-transition: all 05s ease;
+            -moz-transition: all 05s ease;
+            -ms-transition: all 05s ease;
+            -o-transition: all 05s ease;
+            transition: all .5s ease;
+        }
+
+        .btn1 {
+            margin-left: 5rem !important;
+            color: rgba(255, 133, 11, 0.4);
+            position: relative;
+            top: 2px;
+        }
+
+        .btn1-check:active+.btn1,
+        .btn1-check:checked+.btn1,
+        .btn1.active,
+        .btn1.show,
+        .btn1:active,
+        .btn1:hover {
+            color: rgba(255, 133, 11, 1);
+            border-radius: 0px !important;
+            --bs-btn1-border-color: none;
+            border-bottom: 2px solid rgba(255, 133, 11, 1) !important;
+        }
+        </style>
 
 </section>
 <footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:  #d9358a;">
