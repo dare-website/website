@@ -50,9 +50,9 @@
 
             <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: #d9358a;">
                 <div style="text-align:left;">
-                    <h1 style="font-family:'Adam-Medium';">{{$tipoproduto->nome}}</h1>
+                    <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
                 </div>
-                <div style="font-family:'Lato-Regular';">
+                <div style="font-family:'Lato-LightItalic';">
                     <p>
                         {!! $tipoproduto->texto !!}
                     </p>
@@ -64,9 +64,10 @@
                                     <img src="{{ asset('img/icon/icon-chefsemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <p style="padding-right:5rem;"> PREPARAÇÃO <br>
+                                    <p style="padding-right:5rem;"> <span
+                                            style="font-family:'Raleway-Regular';">PREPARAÇÃO</span><br>
 
-                                        {{$tipoproduto->preparacao}}
+                                        <span style="font-family:'Lato-Light';"> {!! $tipoproduto->preparacao !!}</span>
                                     </p>
                                 </div>
                             </div>
@@ -77,9 +78,9 @@
                                     <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <p> FORMATO DE VENDAS <br>
-                                        FRASCOS <br>
-                                        {{$tipoproduto->formato}}
+                                    <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
+                                        <span style="font-family:'Lato-Light';">CAIXA <br>
+                                            {!! $tipoproduto->formato !!}</span>
                                     </p>
                                 </div>
                             </div>
@@ -91,13 +92,14 @@
 
         <div class="row" style="text-align: center;margin-top:3rem;">
 
-            <div class="portfolio-i row">
+            <div class="portfolio-i row" style="margin-left:1rem;margin-right:1rem;">
                 @foreach ($produto as $prod )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
-                        <h4 style=" color: #d9358a;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
-                        </h4>
+                        <img class="img-fluid shadow" style="border-radius:15px;"
+                            src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
+                        <h6 style=" color:#d9358a;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
+                        </h6>
                     </a>
                 </div>
                 @endforeach
@@ -108,7 +110,7 @@
             <div class="row" style="text-align: center;margin-top:5rem;">
                 <div class="portfolio-menu mt-2 mb-4 ">
                     <ul class="linha d-flex justify-content-center"
-                        style="border-bottom:2px solid rgba(255, 133, 11,0.4);padding-right: 4rem;">
+                        style="border-bottom:2px solid rgba(217, 53, 138,0.4);padding-right: 4rem;">
                         <li class="btn1 active" data-filter=".prod1">PRODUTOS RELACIONADOS</li>
                     </ul>
                 </div>
@@ -119,7 +121,7 @@
                             <img class="img-fluid shadow" style="border-radius:15px;"
                                 src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                             <h6
-                                style="font-family: 'Raleway-Medium';color:rgba(255, 133, 11,1);margin-top:1rem;margin-bottom:3rem;">
+                                style="font-family: 'Raleway-Medium';color:rgba(217, 53, 138,1);margin-top:1rem;margin-bottom:3rem;">
                                 {{$prodR->nome}}
                             </h6>
                         </a>
@@ -144,7 +146,7 @@
 
         .btn1 {
             margin-left: 5rem !important;
-            color: rgba(255, 133, 11, 0.4);
+            color: rgba(217, 53, 138, 0.4);
             position: relative;
             top: 2px;
         }
@@ -155,10 +157,10 @@
         .btn1.show,
         .btn1:active,
         .btn1:hover {
-            color: rgba(255, 133, 11, 1);
+            color: rgba(217, 53, 138, 1);
             border-radius: 0px !important;
             --bs-btn1-border-color: none;
-            border-bottom: 2px solid rgba(255, 133, 11, 1) !important;
+            border-bottom: 2px solid rgba(217, 53, 138, 1) !important;
         }
         </style>
 
