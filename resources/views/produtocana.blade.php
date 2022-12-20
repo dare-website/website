@@ -9,7 +9,19 @@
 
     <div class="container" style="margin-top:5rem; margin-bottom:5rem;">
 
-
+        <div class="row">
+            <div class="col-lg-12 text-center my-2">
+                <div class="row">
+                    <div class="col-md-6" style="text-align: left;">
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(204, 40, 65,0.5);margin-left:2rem;">HOME /
+                            PRODUTOS / {{$tipoproduto->nome}}</h6>
+                    </div>
+                    <div class="col-md-6" style="text-align:right;">
+                        <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row" style="margin-left:2rem;margin-top:3rem;">
 
@@ -19,10 +31,10 @@
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"
                             style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');background-size:cover;">
-                          <!--  <label class="prev" for="image4"></label>
+                            <!--  <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>-->
                         </div>
-                       <!-- <input type="radio" name="gallery_group" id="image2" />
+                        <!-- <input type="radio" name="gallery_group" id="image2" />
                         <div class="image-2">
                             <label class="prev" for="image1"></label>
                             <label class="next" for="image3"></label>
@@ -58,7 +70,7 @@
                         <img src="{{ asset('img/icon/icon-glutencana.png') }}" style="height:1.5rem;" alt="">
                         @endif
                         {!! $tipoproduto->texto !!}
-                        
+
                     </p>
 
                     <div class="row" style="font-family:'Lato-Regular';margin-top:3rem;">

@@ -7,9 +7,21 @@
 <link href="{{ asset('css/style-produto.css') }}" rel="stylesheet">
 <section>
 
-    <div class="container" style="margin-top:5rem; margin-bottom:5rem;">
+    <div class="container" style="margin-top:5.5rem; margin-bottom:5rem;">
 
-
+        <div class="row">
+            <div class="col-lg-12 text-center my-2">
+                <div class="row">
+                    <div class="col-md-6" style="text-align: left;">
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;">HOME /
+                            PRODUTOS / {{$tipoproduto->nome}}</h6>
+                    </div>
+                    <div class="col-md-6" style="text-align:right;">
+                        <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row" style="margin-left:2rem;margin-top:3rem;">
 
@@ -61,7 +73,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                <img src="{{ asset('img/icon/icon-cheflolli.png') }}" style="height:1.5rem;" alt="">
+                                    <img src="{{ asset('img/icon/icon-cheflolli.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p style="padding-right:5rem;"> <span
@@ -75,7 +87,8 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-caixalolli.png') }}" style="height:1.5rem;" alt="">
+                                    <img src="{{ asset('img/icon/icon-caixalolli.png') }}" style="height:1.5rem;"
+                                        alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
@@ -91,7 +104,7 @@
 
         <div class="row" style="text-align: center;margin-top:5rem;">
 
-            <div class="portfolio-i row d-flex justify-content-center" >
+            <div class="portfolio-i row d-flex justify-content-center">
                 @foreach ($produto as $prod )
                 <div class="ite prod0 col-md-2" style="text-align:center;margin-left:2rem;">
                     <a style="text-decoration:none !important;">
@@ -108,14 +121,16 @@
         </div>
         <div class="row" style="text-align: center;margin-top:5rem;">
             <div class="portfolio-menu mt-2 mb-4 ">
-                <ul class="linha d-flex justify-content-center" style="border-bottom:2px solid rgba(255, 133, 11,0.4);padding-right: 4rem;">
+                <ul class="linha d-flex justify-content-center"
+                    style="border-bottom:2px solid rgba(255, 133, 11,0.4);padding-right: 4rem;">
                     <li class="btn1 active" data-filter=".prod1">PRODUTOS RELACIONADOS</li>
                 </ul>
             </div>
             <div class="portfolio-i row d-flex justify-content-center">
                 @foreach ($produtosR as $prodR)
                 <div class="ite prod0 col-md-3" style="text-align:center;">
-                    <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id_tipo) ; }?>" style="text-decoration:none !important;">
+                    <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id_tipo) ; }?>"
+                        style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                         <h6
@@ -165,7 +180,8 @@
 
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color: rgba(255, 133, 11, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto"
+    style="background-color: rgba(255, 133, 11, 1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
