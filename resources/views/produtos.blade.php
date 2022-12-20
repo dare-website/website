@@ -28,7 +28,7 @@
 </div>
 <div class="container"
     style="padding-right: calc(var(--bs-gutter-x) * 2);padding-left: calc(var(--bs-gutter-x) * 2); margin-bottom:10rem;">
-    <div class="row">
+    <div class="row" style="margin-top:3rem;">
         <div class="col-lg-12 text-center my-2">
             <div class="row">
                 <div class="col-md-6" style="text-align: left;">
