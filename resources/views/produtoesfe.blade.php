@@ -8,7 +8,18 @@
 <section>
 
     <div class="container" style="margin-top:5rem; margin-bottom:5rem;">
-
+        <div class="row">
+            <div class="col-lg-12 text-center my-2">
+                <div class="row">
+                    <div class="col-md-6" style="text-align: left;">
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(14, 162, 154,0.5)">HOME / PRODUTOS / {{$tipoproduto->nome}}</h6>
+                    </div>
+                    <div class="col-md-6" style="text-align:right;">
+                        <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div class="row" style="margin-left:2rem;margin-top:3rem;">
@@ -180,7 +191,6 @@
     </style>
 
     <script>
-   
     let $blocks = $('.block-card');
 
     $('.filter-btn').on('click', e => {
@@ -204,7 +214,8 @@
             <div class=" row d-flex justify-content-center">
                 @foreach ($produtosR as $prodR )
                 <div class="ite col-md-3" style="text-align:center;">
-                    <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id_tipo) ; }?>" style="text-decoration:none !important;">
+                    <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id_tipo) ; }?>"
+                        style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                         <h6
@@ -218,7 +229,8 @@
         </div>
     </div>
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:rgba(14, 162, 154, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto"
+    style="background-color:rgba(14, 162, 154, 1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
