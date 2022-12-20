@@ -78,7 +78,7 @@
         </div>
     </section>-->
 
-    <section style="margin-top: 5rem;" class="sobre-nos">
+    <section style="margin-top: 5rem;" id="sobre-nos">
 
         <div class="al row justify-content-center  d-flex align-items-center">
             <div class="col-md-8 col-lg-6 col-xl-6 justify-content-center ml-auto d-flex align-items-center"
@@ -308,7 +308,7 @@
     </div>
 </div>
 
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color: #52225F;">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color: #52225F;">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
