@@ -13,7 +13,10 @@ class Produto extends Model
         'nome',
         'id_tipo',
         'avatar',
-        'alcool'
+        'alcool',
+        'texto',
+        'preparacao',
+        'formato'
 
     ];
 }
