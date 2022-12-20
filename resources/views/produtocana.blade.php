@@ -18,9 +18,9 @@
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"
-                            style="background-image: url('https://images.unsplash.com/photo-1568051243847-b6319fad107c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
-                            <label class="prev" for="image4"></label>
-                            <label class="next" for="image2"></label>
+                            style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');">
+                          <!--  <label class="prev" for="image4"></label>
+                            <label class="next" for="image2"></label>-->
                         </div>
                        <!-- <input type="radio" name="gallery_group" id="image2" />
                         <div class="image-2">
