@@ -18,7 +18,7 @@
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"
-                            style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');">
+                            style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');background-size:cover;">
                           <!--  <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>-->
                         </div>
