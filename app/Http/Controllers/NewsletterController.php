@@ -41,7 +41,7 @@ class NewsletterController extends Controller
             return view('produtololli', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR]);
         }
         if ($id==3) {
-            $tipoproduto = TipoProduto::find($id);
+            $tipoproduto = Produto::where('id',$id)->first();
             $produto = Produto::where('id_tipo',$id)->get();
             return view('produtocana', ['produto' => $produto, 'tipoproduto'=>$tipoproduto]);
         }

@@ -64,7 +64,7 @@
     <div class="portfolio-i row">
         @foreach ($canapes as $cana )
         <div id="cana" class="ite cana block-card col-md-3" style="text-align:center;">
-            <a href="{{ route('produto', $cana->id_tipo) }}" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $cana->id) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$cana->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$cana->nome}}</h4>
             </a>
@@ -74,7 +74,7 @@
     <div class="portfolio-i row">
         @foreach ($semi as $sem )
         <div  id="semi" class="ite semi block-card col-md-3" style="text-align:center;">
-            <a href="{{ route('produto', $sem->id_tipo) }}" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $sem->id) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$sem->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
             </a>
