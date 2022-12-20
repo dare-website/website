@@ -30,7 +30,14 @@
     style="padding-right: calc(var(--bs-gutter-x) * 2);padding-left: calc(var(--bs-gutter-x) * 2); margin-bottom:10rem;">
     <div class="row">
         <div class="col-lg-12 text-center my-2">
-
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)">HOME / PRODUTOS</h6>
+                </div>
+                <div class="col-md-6" style="text-align:right;">
+                    <h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>
+                </div>
+            </div>
         </div>
     </div>
     <div class="portfolio-menu mt-2 mb-4">
@@ -53,7 +60,7 @@
     </div>
     <div class="portfolio-i row">
         @foreach ($lollipolis as $lolli )
-        <div  id="lolli" class="ite lolli block-card col-md-3" style="text-align:center;">
+        <div id="lolli" class="ite lolli block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $lolli->id_tipo) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$lolli->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$lolli->nome}}</h4>
@@ -73,7 +80,7 @@
     </div>
     <div class="portfolio-i row">
         @foreach ($semi as $sem )
-        <div  id="semi" class="ite semi block-card col-md-3" style="text-align:center;">
+        <div id="semi" class="ite semi block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $sem->id) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$sem->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
@@ -188,7 +195,8 @@ $('.filter-btn').on('click', e => {
 
  }*/
 </script>
-<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:rgba(77, 40, 93, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto"
+    style="background-color:rgba(77, 40, 93, 1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
