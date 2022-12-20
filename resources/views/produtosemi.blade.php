@@ -54,6 +54,8 @@
                 </div>
                 <div style="font-family:'Lato-LightItalic';">
                     <p>
+                        <img src="{{ asset('img/icon/icon-glutensemi.png') }}" style="height:1.5rem;" alt="">
+                        <br>
                         {!! $tipoproduto->texto !!}
                     </p>
 
@@ -91,7 +93,8 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
+                                    
+                                    <img src="{{ asset('img/icon/icon-balancasemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10 d-flex">
                                     <p> 
