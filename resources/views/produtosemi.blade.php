@@ -18,11 +18,11 @@
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"
-                            style="background-image: url('https://images.unsplash.com/photo-1568051243847-b6319fad107c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
-                            <label class="prev" for="image4"></label>
-                            <label class="next" for="image2"></label>
+                            style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');background-size:cover;">
+                            <!--  <label class="prev" for="image4"></label>
+                            <label class="next" for="image2"></label>-->
                         </div>
-                        <input type="radio" name="gallery_group" id="image2" />
+                        <!-- <input type="radio" name="gallery_group" id="image2" />
                         <div class="image-2">
                             <label class="prev" for="image1"></label>
                             <label class="next" for="image3"></label>
@@ -36,14 +36,14 @@
                         <div class="image-4">
                             <label class="prev" for="image3"></label>
                             <label class="next" for="image1"></label>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
-                        <label for="image1"
-                            style="background-image: url('https://images.unsplash.com/photo-1568051243847-b6319fad107c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');"></label>
+                        <!--<label for="image1"
+                            style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');"></label>
                         <label for="image2"></label>
                         <label for="image3"></label>
-                        <label for="image4"></label>
+                        <label for="image4"></label>-->
                     </div>
                 </div>
             </div>
@@ -88,16 +88,17 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                           
+
                         </div>
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    
-                                    <img src="{{ asset('img/icon/icon-balancasemi.png') }}" style="height:1.5rem;" alt="">
+
+                                    <img src="{{ asset('img/icon/icon-balancasemi.png') }}" style="height:1.5rem;"
+                                        alt="">
                                 </div>
                                 <div class="col-md-10 d-flex">
-                                    <p> 
+                                    <p>
                                         <span style="font-family:'Lato-Light';">
                                             {!! $tipoproduto->balanca !!}</span>
                                     </p>
@@ -136,7 +137,8 @@
                 <div class="portfolio-i row d-flex justify-content-center">
                     @foreach ($produtosR as $prodR)
                     <div class="ite prod0 col-md-3" style="text-align:center;">
-                        <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id_tipo) ; }?>" style="text-decoration:none !important;">
+                        <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id_tipo) ; }?>"
+                            style="text-decoration:none !important;">
                             <img class="img-fluid shadow" style="border-radius:15px;"
                                 src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                             <h6
