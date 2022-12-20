@@ -78,7 +78,7 @@
         </div>
     </section>-->
 
-    <section style="margin-top: 5rem;">
+    <section style="margin-top: 5rem;" class="sobre-nos">
 
         <div class="al row justify-content-center  d-flex align-items-center">
             <div class="col-md-8 col-lg-6 col-xl-6 justify-content-center ml-auto d-flex align-items-center"

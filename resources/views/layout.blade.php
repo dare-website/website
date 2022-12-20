@@ -57,10 +57,10 @@
                 <ul style="margin-right:0rem !important;" class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#">Sobre Nós</a>
+                        <a class="nav-link nav-link-ltr" href="/#sobre-nos">Sobre Nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="/produtos1">Produtos</a>
+                        <a class="nav-link nav-link-ltr" href="/produtos">Produtos</a>
                     </li>
                     <!--
                     <li class="nav-item dropdown">
@@ -77,7 +77,7 @@
                         </ul>
                     </li>-->
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="/contactos1">Contactos</a>
+                        <a class="nav-link nav-link-ltr" href="#footer-16371">Contactos</a>
                     </li>
                     <!---->
                 </ul>
