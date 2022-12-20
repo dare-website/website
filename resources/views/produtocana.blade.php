@@ -86,6 +86,27 @@
                                 </div>
                             </div>
                         </div>
+                        @if (!is_null($tipoproduto->balanca))
+
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-1">
+
+                                    <img src="{{ asset('img/icon/icon-balancacana.png') }}" style="height:1.5rem;"
+                                        alt="">
+                                </div>
+                                <div class="col-md-10 d-flex">
+                                    <p>
+                                        <span style="font-family:'Lato-Light';">
+                                            {!! $tipoproduto->balanca !!}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -118,7 +139,8 @@
                 <div class="portfolio-i row d-flex justify-content-center">
                     @foreach ($produtosR as $prodR)
                     <div class="ite prod0 col-md-3" style="text-align:center;">
-                        <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ route('produto', $prodR->id); }else{  route('produto', $prodR->id_tipo) ; }?>" style="text-decoration:none !important;">
+                        <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ route('produto', $prodR->id); }else{  route('produto', $prodR->id_tipo) ; }?>"
+                            style="text-decoration:none !important;">
                             <img class="img-fluid shadow" style="border-radius:15px;"
                                 src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                             <h6
