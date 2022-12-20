@@ -85,6 +85,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
+                                </div>
+                                <div class="col-md-10 d-flex">
+                                    <p> 
+                                        <span style="font-family:'Lato-Light';">
+                                            {!! $tipoproduto->balanca !!}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
