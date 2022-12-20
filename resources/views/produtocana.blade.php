@@ -54,7 +54,11 @@
                 </div>
                 <div style="font-family:'Lato-LightItalic';">
                     <p>
+                        @if (is_null($tipoproduto->texto))
+                        <img src="{{ asset('img/icon/icon-glutencana.png') }}" style="height:1.5rem;" alt="">
+                        @endif
                         {!! $tipoproduto->texto !!}
+                        
                     </p>
 
                     <div class="row" style="font-family:'Lato-Regular';margin-top:3rem;">
