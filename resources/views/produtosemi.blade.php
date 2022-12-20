@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;margin-top:3rem;">
+        <div class="row" style="text-align: center;margin-top:5rem;">
 
             <div class="portfolio-i row" style="margin-left:1rem;margin-right:1rem;">
                 @foreach ($produto as $prod )
