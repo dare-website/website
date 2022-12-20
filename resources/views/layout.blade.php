@@ -77,7 +77,7 @@
                         </ul>
                     </li>-->
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#footer-16371">Contactos</a>
+                        <a class="nav-link nav-link-ltr" href="#contacto">Contactos</a>
                     </li>
                     <!---->
                 </ul>
