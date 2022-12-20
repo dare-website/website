@@ -67,7 +67,7 @@
                                     <p style="padding-right:5rem;"> <span
                                             style="font-family:'Raleway-Regular';">PREPARAÇÃO</span><br>
 
-                                        <span style="font-family:'Lato-Light';"> {{$tipoproduto->preparacao}}</span>
+                                        <span style="font-family:'Lato-Light';"> {{!! $tipoproduto->preparacao !!}}</span>
                                     </p>
                                 </div>
                             </div>
@@ -80,8 +80,8 @@
                                 </div>
                                 <div class="col-md-10">
                                     <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
-                                        <span style="font-family:'Lato-Light';">FRASCOS <br>
-                                            {{$tipoproduto->formato}}</span>
+                                        <span style="font-family:'Lato-Light';">CAIXA <br>
+                                            {{!! $tipoproduto->formato !!}}</span>
                                     </p>
                                 </div>
                             </div>
