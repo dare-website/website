@@ -188,7 +188,7 @@ $('.filter-btn').on('click', e => {
 
  }*/
 </script>
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color:rgba(77, 40, 93, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:rgba(77, 40, 93, 1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
