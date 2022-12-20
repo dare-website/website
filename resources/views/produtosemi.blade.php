@@ -86,6 +86,9 @@
                             </div>
                         </div>
                         <div class="col-md-6">
+                           
+                        </div>
+                        <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
                                     <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
