@@ -104,7 +104,7 @@
             </div>
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color:  #d9358a;">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:  #d9358a;">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->

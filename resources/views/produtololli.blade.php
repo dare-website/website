@@ -165,7 +165,7 @@
 
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" style="background-color: rgba(255, 133, 11, 1);">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color: rgba(255, 133, 11, 1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
