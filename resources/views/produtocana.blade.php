@@ -22,7 +22,7 @@
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
-                        <input type="radio" name="gallery_group" id="image2" />
+                       <!-- <input type="radio" name="gallery_group" id="image2" />
                         <div class="image-2">
                             <label class="prev" for="image1"></label>
                             <label class="next" for="image3"></label>
@@ -36,14 +36,14 @@
                         <div class="image-4">
                             <label class="prev" for="image3"></label>
                             <label class="next" for="image1"></label>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
                         <label for="image1"
-                            style="background-image: url('https://images.unsplash.com/photo-1568051243847-b6319fad107c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');"></label>
-                        <label for="image2"></label>
+                            style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');"></label>
+                        <!--<label for="image2"></label>
                         <label for="image3"></label>
-                        <label for="image4"></label>
+                        <label for="image4"></label>-->
                     </div>
                 </div>
             </div>
