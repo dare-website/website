@@ -35,7 +35,7 @@
                     <h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)">HOME / PRODUTOS</h6>
                 </div>
                 <div class="col-md-6" style="text-align:right;">
-                    <h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>
+                    <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
                 </div>
             </div>
         </div>
