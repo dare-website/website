@@ -105,6 +105,7 @@
                 </div>
                 @endforeach
             </div>
+            
 
 </section>
 <footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:#cc2841;">

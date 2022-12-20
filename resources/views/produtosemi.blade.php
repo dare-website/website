@@ -61,7 +61,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                <img src="{{ asset('img/icon/icon-chefsemi.png') }}" style="height:1.5rem;" alt="">
+                                    <img src="{{ asset('img/icon/icon-chefsemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p style="padding-right:5rem;"> PREPARAÇÃO <br>
@@ -74,7 +74,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
+                                    <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p> FORMATO DE VENDAS <br>
@@ -102,6 +102,32 @@
                 </div>
                 @endforeach
             </div>
+        </div>
+
+        <div class="container">
+            <div class="row" style="text-align: center;margin-top:5rem;">
+                <div class="mt-2 mb-4 ">
+                    <ul class="linha d-flex justify-content-center"
+                        style="border-bottom:2px solid rgba(14, 162, 154, 0.4);padding-right: 4rem;">
+                        <li class="btn1 produtoli active">PRODUTOS RELACIONADOS</li>
+                    </ul>
+                </div>
+                <div class=" row d-flex justify-content-center">
+                    @foreach ($produtosR as $prodR )
+                    <div class="ite col-md-3" style="text-align:center;">
+                        <a href="{{ route('produto', $prodR->id_tipo) }}" style="text-decoration:none !important;">
+                            <img class="img-fluid shadow" style="border-radius:15px;"
+                                src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
+                            <h6
+                                style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154, 1);margin-top:1rem;margin-bottom:3rem;">
+                                {{$prodR->nome}}
+                            </h6>
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
 
 </section>
 <footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:  #d9358a;">
