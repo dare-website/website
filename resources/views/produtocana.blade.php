@@ -91,9 +91,9 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;margin-top:3rem;">
+        <div class="row" style="text-align: center;margin-top:5rem;">
 
-            <div class="portfolio-i row d-flex justify-content-center">
+            <div class="portfolio-i row" style="margin-left:3rem;margin-right:3rem;">
                 @foreach ($produto as $prod )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a style="text-decoration:none !important;">
