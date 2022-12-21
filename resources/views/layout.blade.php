@@ -45,9 +45,9 @@
                 });
         });
     </script>
-    <nav class="navbar navbar-expand-lg shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm" style="padding: 0px !important;">
         <div class="container-fluid">
-            <a style="margin-left:7rem;" class="navbar-brand" href="/"><img style="width:4rem;"
+            <a style="margin-left:7rem;" class="navbar-brand" href="/"><img style="width:5rem;"
                     src="{{ asset('img/dare-horizontal-logo.png') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

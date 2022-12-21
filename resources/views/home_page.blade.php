@@ -108,7 +108,7 @@
                 <br>
                 <br>
                 <h5 style="font-family: 'Lato-LightItalic';">Temos como objetivo agilizar e potenciar
-                    o trabalho dos nossos parceiros "criativos da cozinha" para que possam, desta forma, dar asas à
+                    o trabalho dos nossos complementos "criativos da cozinha" para que possam, desta forma, dar asas à
                     imaginação com os nossos completmentos "ready to serve".</h5>
                 <br>
             </div>
