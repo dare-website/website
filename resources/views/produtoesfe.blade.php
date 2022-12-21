@@ -98,7 +98,7 @@
             <div class="portfolio-i row d-flex ">
                 @foreach ($produto0 as $prod0 )
                 <div id="prod0" class="ite block-card prod0 col-md-3" style="text-align:center;">
-                    <a style="text-decoration:none !important;">
+                    <a href="route('produto', $prod0->id)"style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
                         <h6
@@ -112,7 +112,7 @@
             <div class="portfolio-i row d-flex">
                 @foreach ($produto1 as $prod1 )
                 <div id="prod1" class="ite block-card active prod1 col-md-3" style="text-align:center;">
-                    <a href="route('produto', $prod->id_tipo)" style="text-decoration:none !important;">
+                    <a href="route('produto', $prod1->id)" style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
                         <h6
