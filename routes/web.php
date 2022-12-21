@@ -41,9 +41,6 @@ Route::get('/produto', function () {
     return view('produtocana');
 });
 Route::get('/produto/{id}', [App\Http\Controllers\NewsletterController::class, 'produto'])->name('produto');
-Route::get('/contactos', function () {
-    return view('contactos');
-});
 
 Route::post('/news', [App\Http\Controllers\NewsletterController::class, 'newsletter'])->name('newsletter');
 Route::group(['prefix' => 'admin'], function () {

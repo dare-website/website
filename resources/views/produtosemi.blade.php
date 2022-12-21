@@ -215,7 +215,7 @@
                     <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
                         REDES SOCIAIS
                     </h4>
-                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="#"><i
+                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
                             class="fi-xnsuxl-facebook"></i></a>
                     <a style="font-size:1.35rem;color: #fff !important"
                         href="https://www.instagram.com/dare_portugal/"><i class="fi-xnsuxl-instagram"></i></a>
