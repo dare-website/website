@@ -127,7 +127,7 @@
             <div class="portfolio-i row" style="margin-left:1rem;margin-right:1rem;">
                 @foreach ($produto as $prod )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
-                    <a href="route('produto', $prod->id)" style="text-decoration:none !important;">
+                    <a href="{{route('produto', $prod->id)}}" style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
                         <h6 style=" color:#d9358a;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
