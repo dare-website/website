@@ -32,6 +32,10 @@
         height: 29vh !important;
         background-repeat: no-repeat;
     }
+    .text1 {
+        font-weight: bold;
+        font-size: 1rem !important;
+    }
 
     /*.al {margin-left:7rem;margin-right:7rem;}*/
 }
@@ -48,6 +52,12 @@
 
         /*.al {margin-left:7rem;margin-right:7rem;}*/
     }
+
+    .text1 {
+        font-weight: bold;
+        font-size: 1rem !important;
+    }
+}
 </style>
 <section class="">
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
