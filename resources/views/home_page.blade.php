@@ -33,6 +33,7 @@
 </style>
 <section class="">
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
+    <h2>SOMOS ESPECIALISTAS EM SURPREENDER</h2>
     </div>
 
     <div class="mx-auto">
