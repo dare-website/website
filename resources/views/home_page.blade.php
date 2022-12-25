@@ -78,9 +78,9 @@
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
         <div class="title111 navbar-nav mx-auto">
 
-            <h1 class="text1" style="font-weight: bold;font-size: 3rem !important;">SOMOS ESPECIALISTAS<br>EM
+            <p class="text1" style="font-weight: bold;font-size: 3rem;">SOMOS ESPECIALISTAS<br>EM
                 SURPREENDER
-            </h1>
+            </p>
         </div>
     </div>
 
