@@ -32,7 +32,7 @@
 }
 </style>
 <section class="">
-    <div class="landing-hero" style="background-image: url(img/headline-01.png);">
+    <div class="landing-hero" style="background-image: url(img/headline-02.png);">
     </div>
 
     <div class="mx-auto">
