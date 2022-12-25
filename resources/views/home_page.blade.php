@@ -9,6 +9,13 @@
     background-repeat: no-repeat;
 }
 
+.title111{
+    position: absolute;
+    font-family: 'Adam-Medium';
+    font-weight: bold;
+    top: 50%;
+    left: 5%;
+}
 .gradiente {
     height: auto;
     background-size: 100% 100vh;
@@ -33,9 +40,9 @@
 </style>
 <section class="">
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
-    <div style="margin-left:0rem !important;font-family: 'Adam-Light';font-weight:bold;" class="navbar-nav mx-auto">
+    <div  class="title111 navbar-nav mx-auto">
                   
-                    <h3 class="text1" style="margin-left:1rem;margin-top:-1.4rem;">SOMOS ESPECIALISTAS EM SURPREENDER
+                    <h3 class="text1">SOMOS ESPECIALISTAS<br>EM SURPREENDER
                     </h3>
                 </div>
     </div>
