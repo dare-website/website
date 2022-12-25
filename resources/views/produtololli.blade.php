@@ -30,32 +30,31 @@
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"
-                            style="background-image: url('https://images.unsplash.com/photo-1568051243847-b6319fad107c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+                            style="background-image: url('https://dare.pt/img/lollipolis/2.png');">
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
                         <input type="radio" name="gallery_group" id="image2" />
-                        <div class="image-2">
+                        <div class="image-2" style="background-image: url('https://dare.pt/img/lollipolis/1.png');">
                             <label class="prev" for="image1"></label>
                             <label class="next" for="image3"></label>
                         </div>
                         <input type="radio" name="gallery_group" id="image3" />
-                        <div class="image-3">
+                        <div class="image-3" style="background-image: url('https://dare.pt/img/lollipolis/3.png');">
                             <label class="prev" for="image2"></label>
                             <label class="next" for="image4"></label>
                         </div>
                         <input type="radio" name="gallery_group" id="image4" />
-                        <div class="image-4">
+                        <div class="image-4" style="background-image: url('https://dare.pt/img/lollipolis/4.png');">
                             <label class="prev" for="image3"></label>
                             <label class="next" for="image1"></label>
                         </div>
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
-                        <label for="image1"
-                            style="background-image: url('https://images.unsplash.com/photo-1568051243847-b6319fad107c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');"></label>
-                        <label for="image2"></label>
-                        <label for="image3"></label>
-                        <label for="image4"></label>
+                        <label for="image1" style="background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
+                        <label for="image2" style="background-image: url('https://dare.pt/img/lollipolis/1.png');"></label>
+                        <label for="image3" style="background-image: url('https://dare.pt/img/lollipolis/3.png');"></label>
+                        <label for="image4" style="background-image: url('https://dare.pt/img/lollipolis/4.png');"></label>
                     </div>
                 </div>
             </div>

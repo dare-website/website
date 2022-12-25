@@ -151,7 +151,7 @@
     <div class="container">
         <section>
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide" style="margin-right:7rem;" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-md-3">
