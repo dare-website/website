@@ -35,7 +35,7 @@
                             <label class="next" for="image2"></label>
                         </div>
                         <input type="radio" name="gallery_group" id="image2" />
-                        <div class="image-2" style="background-image: url('https://dare.pt/img/lollipolis/1.png');">
+                        <div class="image-2" style="background-image: url('https://dare.pt/img/lollipolis/1.jpg');">
                             <label class="prev" for="image1"></label>
                             <label class="next" for="image3"></label>
                         </div>
