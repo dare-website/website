@@ -14,6 +14,7 @@
     font-family: 'Adam-Medium';
     font-weight: bold;
     top: 50%;
+    font-size: 3rem;
     left: 5%;
 }
 .gradiente {
@@ -42,8 +43,8 @@
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
     <div  class="title111 navbar-nav mx-auto">
                   
-                    <h3 class="text1">SOMOS ESPECIALISTAS<br>EM SURPREENDER
-                    </h3>
+                    <h1 class="text1">SOMOS ESPECIALISTAS<br>EM SURPREENDER
+                    </h1>
                 </div>
     </div>
 
