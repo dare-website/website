@@ -52,7 +52,7 @@
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
                         <label for="image1" style="background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
-                        <label for="image2" style="background-image: url('https://dare.pt/img/lollipolis/1.jpg');"></label>
+                        <label for="image2" style="background-image: url('https://dare.pt/img/lollipolis/11.jpg');"></label>
                         <label for="image3" style="background-image: url('https://dare.pt/img/lollipolis/3.png');"></label>
                         <label for="image4" style="background-image: url('https://dare.pt/img/lollipolis/4.png');"></label>
                     </div>
