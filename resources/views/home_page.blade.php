@@ -33,7 +33,11 @@
 </style>
 <section class="">
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
-    <h2>SOMOS ESPECIALISTAS EM SURPREENDER</h2>
+    <div style="margin-left:0rem !important;font-family: 'Adam-Light';font-weight:bold;" class="navbar-nav mx-auto">
+                  
+                    <h3 class="text1" style="margin-left:1rem;margin-top:-1.4rem;">SOMOS ESPECIALISTAS EM SURPREENDER
+                    </h3>
+                </div>
     </div>
 
     <div class="mx-auto">
