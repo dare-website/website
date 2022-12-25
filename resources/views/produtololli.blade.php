@@ -13,8 +13,8 @@
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;">HOME /
-                            PRODUTOS / {{$tipoproduto->nome}}</h6>
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;"> <a href="/">HOME</a> /
+                        <a href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}</h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
                         <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
