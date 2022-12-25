@@ -9,12 +9,13 @@
     background-repeat: no-repeat;
 }
 
-.title111{
+.title111 {
     position: absolute;
     font-family: 'Adam-Medium';
     top: 50%;
     left: 12%;
 }
+
 .gradiente {
     height: auto;
     background-size: 100% 100vh;
@@ -26,6 +27,12 @@
         font-size: 1.5rem !important;
     }
 
+    .landing-hero {
+        background-size: 100% 29vh !important;
+        height: 29vh !important;
+        background-repeat: no-repeat;
+    }
+
     /*.al {margin-left:7rem;margin-right:7rem;}*/
 }
 
@@ -34,16 +41,22 @@
         font-size: 2rem !important;
     }
 
-    /*.al {margin-left:7rem;margin-right:7rem;}*/
-}
+    .landing-hero {
+        background-size: 100% 29vh !important;
+        height: 29vh !important;
+        background-repeat: no-repeat;
+
+        /*.al {margin-left:7rem;margin-right:7rem;}*/
+    }
 </style>
 <section class="">
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
-    <div  class="title111 navbar-nav mx-auto">
-                  
-                    <h1 class="text1" style="font-weight: bold;font-size: 3rem !important;">SOMOS ESPECIALISTAS<br>EM SURPREENDER
-                    </h1>
-                </div>
+        <div class="title111 navbar-nav mx-auto">
+
+            <h1 class="text1" style="font-weight: bold;font-size: 3rem !important;">SOMOS ESPECIALISTAS<br>EM
+                SURPREENDER
+            </h1>
+        </div>
     </div>
 
     <div class="mx-auto">
@@ -336,7 +349,8 @@
                     <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
                         REDES SOCIAIS
                     </h4>
-                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
+                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important"
+                        href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
                             class="fi-xnsuxl-facebook"></i></a>
                     <a style="font-size:1.35rem;color: #fff !important"
                         href="https://www.instagram.com/dare_portugal/"><i class="fi-xnsuxl-instagram"></i></a>
