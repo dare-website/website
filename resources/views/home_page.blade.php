@@ -13,8 +13,8 @@
     position: absolute;
     font-family: 'Adam-Medium';
     top: 50%;
-    font-size: 3.2rem;
-    left: 15%;
+    font-size: 3rem !important;
+    left: 12%;
 }
 .gradiente {
     height: auto;
