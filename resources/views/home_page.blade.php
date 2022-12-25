@@ -12,10 +12,9 @@
 .title111{
     position: absolute;
     font-family: 'Adam-Medium';
-    font-weight: bold;
     top: 50%;
-    font-size: 3rem;
-    left: 5%;
+    font-size: 3.2rem;
+    left: 15%;
 }
 .gradiente {
     height: auto;
@@ -43,7 +42,7 @@
     <div class="landing-hero" style="background-image: url(img/headline-02.png);">
     <div  class="title111 navbar-nav mx-auto">
                   
-                    <h1 class="text1">SOMOS ESPECIALISTAS<br>EM SURPREENDER
+                    <h1 class="text1" style="font-weight: bold;">SOMOS ESPECIALISTAS<br>EM SURPREENDER
                     </h1>
                 </div>
     </div>
