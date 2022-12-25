@@ -32,9 +32,17 @@
         height: 29vh !important;
         background-repeat: no-repeat;
     }
+
     .text1 {
         font-weight: bold;
         font-size: 1rem !important;
+    }
+
+    .title111 {
+        position: absolute;
+        font-family: 'Adam-Medium';
+        top: 20%;
+        left: 10%;
     }
 
     /*.al {margin-left:7rem;margin-right:7rem;}*/
@@ -51,6 +59,13 @@
         background-repeat: no-repeat;
 
         /*.al {margin-left:7rem;margin-right:7rem;}*/
+    }
+
+    .title111 {
+        position: absolute;
+        font-family: 'Adam-Medium';
+        top: 20%;
+        left: 10%;
     }
 
     .text1 {
