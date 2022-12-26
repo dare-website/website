@@ -13,10 +13,10 @@
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;"> <a
-                                style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(217, 53, 138,0.5);margin-left:2rem;"> <a
+                                style="text-decoration: none; color: rgba(217, 53, 138,0.5) !important;"
                                 href="/">HOME</a> /
-                            <a style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                            <a style="text-decoration: none; color: rgba(217, 53, 138,0.5) !important;"
                                 href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}
                         </h6>
                     </div>
