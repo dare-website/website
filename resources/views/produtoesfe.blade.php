@@ -12,8 +12,12 @@
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(14, 162, 154,0.5);margin-left:2rem;">HOME /
-                            PRODUTOS / {{$tipoproduto->nome}}</h6>
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;"> <a
+                                style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                                href="/">HOME</a> /
+                            <a style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                                href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}
+                        </h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
                         <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
@@ -29,8 +33,7 @@
                 <div class="image-gallery">
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
-                        <div class="image-1"
-                            style="background-image: url('https://dare.pt/img/esferificacao/1.png');">
+                        <div class="image-1" style="background-image: url('https://dare.pt/img/esferificacao/1.png');">
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
@@ -52,10 +55,13 @@
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
                         <label for="image1"
-                        style="background-image: url('https://dare.pt/img/esferificacao/1.png');"></label>
-                        <label for="image2" style="background-image: url('https://dare.pt/img/esferificacao/2.png');"></label>
-                        <label for="image3" style="background-image: url('https://dare.pt/img/esferificacao/3.png');"></label>
-                        <label for="image4" style="background-image: url('https://dare.pt/img/esferificacao/4.png');"></label>
+                            style="background-image: url('https://dare.pt/img/esferificacao/1.png');"></label>
+                        <label for="image2"
+                            style="background-image: url('https://dare.pt/img/esferificacao/2.png');"></label>
+                        <label for="image3"
+                            style="background-image: url('https://dare.pt/img/esferificacao/3.png');"></label>
+                        <label for="image4"
+                            style="background-image: url('https://dare.pt/img/esferificacao/4.png');"></label>
                     </div>
                 </div>
             </div>

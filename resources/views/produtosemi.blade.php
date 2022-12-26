@@ -13,8 +13,12 @@
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(217, 53, 138,0.5);margin-left:2rem;">HOME /
-                            PRODUTOS / {{$tipoproduto->nome}}</h6>
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;"> <a
+                                style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                                href="/">HOME</a> /
+                            <a style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                                href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}
+                        </h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
                         <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
@@ -215,7 +219,8 @@
                     <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
                         REDES SOCIAIS
                     </h4>
-                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
+                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important"
+                        href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
                             class="fi-xnsuxl-facebook"></i></a>
                     <a style="font-size:1.35rem;color: #fff !important"
                         href="https://www.instagram.com/dare_portugal/"><i class="fi-xnsuxl-instagram"></i></a>
