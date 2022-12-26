@@ -7,7 +7,7 @@
 <link href="{{ asset('css/style-produto.css') }}" rel="stylesheet">
 <section>
 
-    <div class="container" style="margin-top:2.5; margin-bottom:5rem;">
+    <div class="container" style="margin-top:2.5rem; margin-bottom:5rem;">
         <div class="row">
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
