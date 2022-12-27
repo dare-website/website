@@ -136,7 +136,7 @@
     <section style="margin-top: 5rem;" id="sobre-nos">
 
         <div class="al row justify-content-center  d-flex align-items-center">
-            <div class=" inicio col-md-8 col-lg-6 col-xl-6"
+            <div class=" inicio col-md-6 col-lg-6 col-xl-6"
                 style="width:27rem !important;height:18rem !important;margin-left:5rem !important;">
                 <div>
                     <div style="margin-bottom:2rem;">
@@ -156,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xl-4 ">
+            <div class="col-md-6 col-lg-6 col-xl-6 ">
                 <h5 style="font-family: 'Lato-LightItalic';">A nossa equipa é composta por
                     gastrónomos e criativos que se juntam para proporcionar uma
                     experiêcia inovadora que irá mexer com os seus sentidos.</h5>
