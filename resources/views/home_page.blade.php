@@ -87,7 +87,7 @@
     <div class="mx-auto">
         <nav class="navbar gradiente" style="background-image: url(img/gradiente-home.png);">
             <div class="navbar-nav mx-auto">
-                <h1 id="textgra" style="font-family: 'Adam-Medium'; color:white;font-size:3rem;margin-top:0.5rem;">DO
+                <h1 id="textgra" style="font-family: 'Adam-Medium'; color:white;font-size:4rem;margin-top:0.5rem;">DO
                     YOU DARE TO BE
                     AMAZED?</h1>
             </div>
@@ -130,8 +130,8 @@
     <section style="margin-top: 5rem;" id="sobre-nos">
 
         <div class="al row justify-content-center  d-flex align-items-center">
-            <div class="col-md-8 col-lg-6 col-xl-6 justify-content-center ml-auto d-flex align-items-center"
-                style="width:22rem !important;height:18rem !important;">
+            <div class="col-md-8 col-lg-6 col-xl-6"
+                style="width:27rem !important;height:18rem !important;margin-left:5rem !important;">
                 <div>
                     <div style="margin-bottom:2rem;">
                         <img src="img/icon3.svg"
@@ -150,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xl-4 ml-auto">
+            <div class="col-md-4 col-lg-4 col-xl-4 ">
                 <h5 style="font-family: 'Lato-LightItalic';">A nossa equipa é composta por
                     gastrónomos e criativos que se juntam para proporcionar uma
                     experiêcia inovadora que irá mexer com os seus sentidos.</h5>
