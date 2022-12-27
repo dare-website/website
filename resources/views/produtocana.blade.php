@@ -234,7 +234,6 @@
                 </div>
                 <!-- Grid column -->
 
-                <hr class="w-100 clearfix d-md-none" />
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -263,10 +262,6 @@
                 </div>
                 <!-- Grid column -->
 
-                <hr class="w-100 clearfix d-md-none" />
-
-                <!-- Grid column -->
-                <hr class="w-100 clearfix d-md-none" />
                 <style>
                 input[type="text"] {
                     background: rgba(0, 0, 0, 0);
