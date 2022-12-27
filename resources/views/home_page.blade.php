@@ -175,9 +175,9 @@
     </section>
     <section>
         <div>
-            <h3
+            <h2
                 style="font-family: 'Raleway-Regular';font-weight:bold; text-align:center;margin-bottom:3rem; margin-top:3rem;color:#4d285d ">
-                A NOSSA GAMA DE PRODUTOS <br> É DIRECIONADA PARA</h3>
+                A NOSSA GAMA DE PRODUTOS <br> É DIRECIONADA PARA</h2>
         </div>
 
         <div class="row" style="text-align: left;">
