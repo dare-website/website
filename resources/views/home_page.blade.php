@@ -13,7 +13,7 @@
     position: absolute;
     font-family: 'Adam-Medium';
     top: 50%;
-    left: 12%;
+    left: 6%;
 }
 
 .gradiente {
@@ -45,7 +45,7 @@
         position: absolute;
         font-family: 'Adam-Medium';
         top: 20%;
-        left: 10%;
+        left: 4%;
     }
 
     /*.al {margin-left:7rem;margin-right:7rem;}*/
@@ -71,7 +71,7 @@
         position: absolute;
         font-family: 'Adam-Medium';
         top: 20%;
-        left: 10%;
+        left: 4%;
     }
 
     .text1 {
@@ -81,7 +81,7 @@
 }
 </style>
 <section class="">
-    <div class="landing-hero" style="background-image: url(img/headline-02.png);">
+    <div class="landing-hero" style="background-image: url('img/dare-gif-versao pc.gif');">
         <div class="title111 navbar-nav mx-auto">
 
             <p class="text1" style="font-weight: bold;font-size: 3rem;">SOMOS ESPECIALISTAS<br>EM
