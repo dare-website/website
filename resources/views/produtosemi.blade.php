@@ -89,7 +89,7 @@
                                     <img src="{{ asset('img/icon/icon-chefsemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-11">
-                                    <p style="padding-right:1rem;"> <span
+                                    <p style="padding-right:0rem;"> <span
                                             style="font-family:'Raleway-Regular';">PREPARAÇÃO</span><br>
 
                                         <span style="font-family:'Lato-Light';"> {!! $tipoproduto->preparacao !!}</span>
