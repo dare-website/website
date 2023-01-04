@@ -39,7 +39,7 @@
 
     }
     .inicio {
-        margin-left: 1rem !important;
+        padding-left: 0rem !important;
     }
 
     #textgra {
@@ -81,7 +81,8 @@
         background-size:cover;
     }
     .inicio {
-        margin-left: 1rem !important;
+        
+        margin-left: 0rem !important;
     }
 
     #textgra {
