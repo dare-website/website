@@ -51,10 +51,10 @@
                         </div>
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
-                        <label for="image1" style="background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
-                        <label for="image2" style="background-image: url('https://dare.pt/img/lollipolis/11.jpg');"></label>
-                        <label for="image3" style="background-image: url('https://dare.pt/img/lollipolis/3.png');"></label>
-                        <label for="image4" style="background-image: url('https://dare.pt/img/lollipolis/4.png');"></label>
+                        <label for="image1" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
+                        <label for="image2" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/1.jpg');"></label>
+                        <label for="image3" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/3.png');"></label>
+                        <label for="image4" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/4.png');"></label>
                     </div>
                 </div>
             </div>
