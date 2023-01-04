@@ -294,11 +294,12 @@
     </section>
 
 </div>
+
 <div class="container-fluid" style="margin-top:5rem;background-color:#e5e5e5;padding:2rem;">
     <div class="container">
         <section>
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" style="margin-right:7rem;" data-bs-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide" data-interval="10000" style="margin-right:7rem;" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-md-3">
