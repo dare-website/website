@@ -232,17 +232,17 @@
                 style="width:27rem !important;height:18rem !important;padding-left:3rem;">
                 <div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon3.svg"
+                        <img src="img/icon/dream.png"
                             style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE DREAM </h1>
                     </div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon1.svg"
+                        <img src="img/icon/amaze.png"
                             style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE AMAZE</h1>
                     </div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon2.svg"
+                        <img src="img/icon/repeat.png"
                             style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size: 3.5rem;">WE REPEAT</h1>
                     </div>
@@ -256,7 +256,7 @@
                 <br>
                 <h4 style="font-family: 'Lato-LightItalic';">Temos como objetivo agilizar e potenciar
                     o trabalho dos nossos complementos "criativos da cozinha" para que possam, desta forma, dar asas à
-                    imaginação com os nossos completmentos "ready to serve".</h4>
+                    imaginação com os nossos complementos "ready to serve".</h4>
                 <br>
             </div>
 
@@ -304,7 +304,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel9.png" style="padding:1rem;" class="img-fluid">
+                                        <img src="/img/parceiros/hotel11.png"class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel6.png" class="img-fluid">
+                                        <img src="/img/parceiros/hotel12.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel7.png" style="padding:0.6rem;" class="img-fluid">
+                                        <img src="/img/parceiros/hotel13.png" class="img-fluid"> 
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +331,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel8.png" style="padding:1rem;" class="img-fluid">
+                                        <img src="/img/parceiros/hotel14.png"  class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +340,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel10.svg" class="img-fluid">
+                                        <img src="/img/parceiros/hotel20.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -358,7 +358,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel4.svg" class="img-fluid">
+                                        <img src="/img/parceiros/hotel9.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -367,7 +367,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel55.png" class="img-fluid">
+                                        <img src="/img/parceiros/hotel8.png" style="padding:0.6rem;" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
