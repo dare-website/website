@@ -39,7 +39,7 @@
                 <div class="image-gallery">
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
-                        <div class="image-1" style="background-image: url('https://dare.pt/img/lollipolis/2.png');">
+                        <div class="image-1" style="background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');">
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
                         <label for="image1"
-                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');"></label>
                         <label for="image2"
                             style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/11.jpg');"></label>
                         <label for="image3"
