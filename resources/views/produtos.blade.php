@@ -4,6 +4,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
 
 <style>
+@media(max-width: 449px) {
+    .linha {
+        display: inline-flex;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
+
 .parallax {
     /* The image used */
     background-color: #4d285c;
