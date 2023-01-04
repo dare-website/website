@@ -35,7 +35,7 @@
         background-size:cover;
     }
     .te{
-        margin-top: -20rem;
+        margin-top: -16rem;
 
     }
     .inicio {
