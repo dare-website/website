@@ -37,7 +37,7 @@ class NewsletterController extends Controller
         if ($id_tipo==2) {
             $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
             $tipoproduto =  TipoProduto::where('id',$id_tipo)->first();
-            $produto = Produto::where('id_tipo',$id)->get();
+            $produto = Produto::where('id_tipo',$id_tipo)->get();
             return view('produtololli', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR]);
         }
        
