@@ -31,6 +31,13 @@
 
             <div class="col-md-5">
                 <div class="image-gallery">
+                    <style>
+                    .image-container {
+                        width: 98%;
+                        height: 0;
+                        padding-bottom: 98%;
+                    }
+                    </style>
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1" style="background-image: url('https://dare.pt/img/esferificacao/1.png');">
@@ -261,7 +268,7 @@
                 </div>
                 <!-- Grid column -->
 
-             
+
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">

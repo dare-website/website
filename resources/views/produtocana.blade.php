@@ -31,6 +31,13 @@
 
             <div class="col-md-5">
                 <div class="image-gallery">
+                    <style>
+                    .image-container {
+                        width: 98%;
+                        height: 0;
+                        padding-bottom: 98%;
+                    }
+                    </style>
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"

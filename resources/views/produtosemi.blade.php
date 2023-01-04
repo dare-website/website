@@ -31,6 +31,13 @@
 
             <div class="col-md-5">
                 <div class="image-gallery">
+                    <style>
+                    .image-container {
+                        width: 98%;
+                        height: 0;
+                        padding-bottom: 98%;
+                    }
+                    </style>
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"
@@ -225,7 +232,7 @@
                     <a style="font-size:1.35rem;color: #fff !important"
                         href="https://www.instagram.com/dare_portugal/"><i class="fi-xnsuxl-instagram"></i></a>
                 </div>
-      
+
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
