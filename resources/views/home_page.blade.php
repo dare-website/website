@@ -229,7 +229,7 @@
 
         <div class="al row justify-content-center  d-flex align-items-center">
             <div class=" inicio col-md-6 col-lg-6 col-xl-6"
-                style="width:27rem !important;height:18rem !important;padding-left:3rem !important;">
+                style="width:27rem !important;height:18rem !important;padding-left:3rem;">
                 <div>
                     <div style="margin-bottom:2rem;">
                         <img src="img/icon3.svg"
