@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
 <style>
 .landing-hero {
@@ -24,6 +23,21 @@
 }
 
 @media(max-width: 449px) {
+    .oh{
+        font-size:2rem;
+    }
+    .versa1{
+        background-image: url('img/dare-gif-responsive.gif') !important;
+        background-size:cover;
+    }
+    .versa2{
+        background-image: url('img/dare-gif-responsive-01.gif') !important;
+        background-size:cover;
+    }
+    .te{
+        margin-top: -20rem;
+
+    }
     .inicio {
         margin-left: 1rem !important;
     }
@@ -54,6 +68,18 @@
 }
 
 @media(min-width:450px) and (max-width: 730px) {
+    .te{
+        margin-top: -20rem;
+
+    }
+    .versa1{
+        background-image: url('img/dare-gif-responsive.gif') !important;
+        background-size:cover;
+    }
+    .versa2{
+        background-image: url('img/dare-gif-responsive-01.gif') !important;
+        background-size:cover;
+    }
     .inicio {
         margin-left: 1rem !important;
     }
@@ -95,11 +121,11 @@
     <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2"
         data-loop="true" data-autoplay="8000" data-simulate-touch="true" data-nav="false" data-direction="horizontal">
         <div class="swiper-wrapper text-left">
-            <div class="swiper-slide context-dark"
+            <div class="versa1 swiper-slide context-dark"
                 style="background-image: url('img/dare-gif-versao pc.gif');background-size:cover;">
                 <div class="swiper-slide-caption section-md">
                     <div class="container">
-                        <div class="row">
+                        <div class="row te">
                             <div class="col-md-10" style="color:black">
 
                                 <h3 style="color:black;font-family: 'Adam-Medium';margin-left:2rem;font-size: 3rem;" class="oh font-weight-light" data-caption-animate="slideInUp"
@@ -112,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide context-dark"
+            <div class="versa2 swiper-slide context-dark"
                 style="background-image: url('video/dare-gif-versao pc-01.gif');background-size:cover;">
                 <div class="swiper-slide-caption section-md">
                     <div class="container">
@@ -202,7 +228,7 @@
 
         <div class="al row justify-content-center  d-flex align-items-center">
             <div class=" inicio col-md-6 col-lg-6 col-xl-6"
-                style="width:27rem !important;height:18rem !important;margin-left:5rem !important;">
+                style="width:27rem !important;height:18rem !important;padding-left:3rem !important;">
                 <div>
                     <div style="margin-bottom:2rem;">
                         <img src="img/icon3.svg"
