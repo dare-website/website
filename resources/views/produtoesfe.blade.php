@@ -62,13 +62,13 @@
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
                         <label for="image1"
-                            style="background-image: url('https://dare.pt/img/esferificacao/1.png');"></label>
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/1.png');"></label>
                         <label for="image2"
-                            style="background-image: url('https://dare.pt/img/esferificacao/2.png');"></label>
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/2.png');"></label>
                         <label for="image3"
-                            style="background-image: url('https://dare.pt/img/esferificacao/3.png');"></label>
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/3.png');"></label>
                         <label for="image4"
-                            style="background-image: url('https://dare.pt/img/esferificacao/4.png');"></label>
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/4.png');"></label>
                     </div>
                 </div>
             </div>
