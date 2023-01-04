@@ -92,7 +92,7 @@
                                 <div class="col-md-10">
                                     <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
                                     <span style="font-family:'Lato-Light';">CAIXA <br>
-                                        {! $tipoproduto->formato !}</span>
+                                        {!! $tipoproduto->formato !!}</span>
                                 </div>
                             </div>
                         </div>
