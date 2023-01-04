@@ -91,7 +91,7 @@
                                     <img src="{{ asset('img/icon/icon-chefcana.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <p style="padding-right:5rem;"> <span
+                                    <p style="padding-right:1rem;"> <span
                                             style="font-family:'Raleway-Regular';">PREPARAÇÃO</span><br>
 
                                         <span style="font-family:'Lato-Light';"> {!! $tipoproduto->preparacao !!}</span>
@@ -112,28 +112,31 @@
                                     </p>
                                 </div>
                             </div>
+                            @if (!is_null($tipoproduto->balanca))
+                                <div class="row">
+                                    <div class="col-md-1">
+
+                                        <img src="{{ asset('img/icon/icon-balancacana.png') }}" style="height:1.5rem;"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-10 d-flex">
+                                        <p>
+                                            <span style="font-family:'Lato-Light';">
+                                                {!! $tipoproduto->balanca !!}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            @endif
                         </div>
-                        @if (!is_null($tipoproduto->balanca))
+
 
                         <div class="col-md-6">
 
                         </div>
                         <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-1">
 
-                                    <img src="{{ asset('img/icon/icon-balancacana.png') }}" style="height:1.5rem;"
-                                        alt="">
-                                </div>
-                                <div class="col-md-10 d-flex">
-                                    <p>
-                                        <span style="font-family:'Lato-Light';">
-                                            {!! $tipoproduto->balanca !!}</span>
-                                    </p>
-                                </div>
-                            </div>
                         </div>
-                        @endif
+
                     </div>
                 </div>
             </div>
