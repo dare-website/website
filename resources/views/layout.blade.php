@@ -33,19 +33,24 @@
 </style>
 
 <body class="antialiased">
-  
-    <script>
-        $(document).ready(function() {
 
-            $('ul.navbar-nav > li')
-                .click(function(e) {
-                    $('ul.navbar-nav > li')
-                        .removeClass('active');
-                    $(this).addClass('active');
-                });
-        });
+    <script>
+    $(document).ready(function() {
+
+        $('ul.navbar-nav > li')
+            .click(function(e) {
+                $('ul.navbar-nav > li')
+                    .removeClass('active');
+                $(this).addClass('active');
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+    });
     </script>
-    <nav class="navbar navbar-expand-lg shadow-sm" style="padding: 0px !important;">
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="padding: 0px !important;">
         <div class="container-fluid">
             <a style="margin-left:7rem;" class="navbar-brand" href="/"><img style="width:6rem;"
                     src="{{ asset('img/dare-horizontal-logo.png') }}" alt=""></a>
