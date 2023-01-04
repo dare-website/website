@@ -6,7 +6,15 @@
 
 <link href="{{ asset('css/style-produto.css') }}" rel="stylesheet">
 <section>
-
+    <style>
+    @media(max-width: 449px) {
+        .linha {
+            display: inline-flex;
+            overflow-x: scroll;
+            width: 100%;
+        }
+    }
+    </style>
     <div class="container" style="margin-top:2.5rem; margin-bottom:5rem;">
         <div class="row">
             <div class="col-lg-12 text-center my-2">
