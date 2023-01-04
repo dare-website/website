@@ -1,7 +1,8 @@
 @extends('layout')
 
 @section('content')
-
+<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style2.css') }}">
 <style>
 .landing-hero {
     background-size: 100% 100vh;
@@ -23,9 +24,10 @@
 }
 
 @media(max-width: 449px) {
-    .inicio{
-        margin-left:1rem !important;
+    .inicio {
+        margin-left: 1rem !important;
     }
+
     #textgra {
         font-size: 1.5rem !important;
     }
@@ -52,9 +54,10 @@
 }
 
 @media(min-width:450px) and (max-width: 730px) {
-    .inicio{
-        margin-left:1rem !important;
+    .inicio {
+        margin-left: 1rem !important;
     }
+
     #textgra {
         font-size: 2rem !important;
     }
@@ -81,14 +84,76 @@
 }
 </style>
 <section class="">
-    <div class="landing-hero" style="background-image: url('img/dare-gif-versao pc.gif');">
+    <!--<div class="landing-hero" style="background-image: url('img/dare-gif-versao pc.gif');">
         <div class="title111 navbar-nav mx-auto">
 
             <p class="text1" style="font-weight: bold;font-size: 3rem;">SOMOS ESPECIALISTAS<br>EM
                 SURPREENDER
             </p>
         </div>
-    </div>
+    </div>-->
+    <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2"
+        data-loop="true" data-autoplay="8000" data-simulate-touch="true" data-nav="false" data-direction="horizontal">
+        <div class="swiper-wrapper text-left">
+            <div class="swiper-slide context-dark"
+                style="background-image: url('img/dare-gif-versao pc.gif');background-size:cover;">
+                <div class="swiper-slide-caption section-md">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10" style="color:black">
+
+                                <h3 style="color:black;font-family: 'Adam-Medium';margin-left:2rem;font-size: 3rem;" class="oh font-weight-light" data-caption-animate="slideInUp"
+                                    data-caption-delay="100">
+                                    <span>SOMOS ESPECIALISTAS<br>EM
+                                        SURPREENDER</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide context-dark"
+                style="background-image: url('video/dare-gif-versao pc-01.gif');background-size:cover;">
+                <div class="swiper-slide-caption section-md">
+                    <div class="container">
+                        <div class="row">
+                            <!--<div class="col-md-10" style="color:black">
+                                <h6 style="color:black" class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">A
+                                    team
+                                    of professional Travel Experts</h6>
+                                <h2 style="color:black" class="oh font-weight-light" data-caption-animate="slideInUp"
+                                    data-caption-delay="100">
+                                    <span>Trust</span><span class="font-weight-bold"> Our
+                                        Experience</span>
+                                </h2><a style="color:black" class="button button-default-outline button-ujarak" href="#"
+                                    data-caption-animate="fadeInLeft" data-caption-delay="0">Book now</a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="swiper-slide context-dark" data-slide-bg="img/dare-gif-versao pc.gif">
+                <div class="swiper-slide-caption section-md">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <h6 style="color:black" class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">
+                                    Build
+                                    your Next Holiday Trip with Us</h6>
+                                <h2 style="color:black" class="oh font-weight-light" data-caption-animate="slideInUp"
+                                    data-caption-delay="100">
+                                    <span>Create</span><span class="font-weight-bold"> Your
+                                        Tour</span>
+                                </h2><a style="color:black" class="button button-default-outline button-ujarak" href="#"
+                                    data-caption-animate="fadeInLeft" data-caption-delay="0">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <!-- Swiper Pagination-->
+    </section>
 
     <div class="mx-auto">
         <nav class="navbar gradiente" style="background-image: url(img/gradiente-home.png);">
@@ -416,7 +481,7 @@
                 </div>
                 <!-- Grid column -->
 
-           
+
                 <style>
                 input[type="text"] {
                     background: rgba(0, 0, 0, 0);
@@ -461,5 +526,6 @@
     <!-- Copyright -->
 </footer>
 <!-- Footer -->
-
+<script src="js/core.min.js"></script>
+<script src="js/script2.js"></script>
 @endsection
