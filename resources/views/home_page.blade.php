@@ -31,6 +31,9 @@
 .icon3{
     animation: scaled-up 1s infinite alternate;
 }
+.icon4{
+    animation: go-ro2  2s infinite alternate;
+}
 
 @keyframes scaled-up{
     0% {
@@ -40,7 +43,16 @@
         transform: scale(1.2);
     }
 }
+@keyframes go-ro2 {
+    from {
+        transform: translateX(-50px);
+        
+    }
 
+    to {
+        transform: translateX(0);
+    }
+}
 @keyframes go-ro {
     from {
         transform: translateX(-200px);
@@ -282,7 +294,7 @@
                 style="width:27rem !important;height:18rem !important;padding-left:3rem;">
                 <div>
                     <div style="margin-bottom:2rem;">
-                        <div class="icon3"><img class="icon" src="img/icon/dream.png"
+                        <div class="icon3"><img class="icon4" src="img/icon/dream.png"
                             style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE DREAM </h1>
                     </div>
