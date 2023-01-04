@@ -140,7 +140,7 @@
     }
 
     .btn1 {
-        margin-left: 5rem !important;
+        /*margin-left: 5rem !important;*/
         color: rgba(14, 162, 154, 0.4);
         position: relative;
         top: 2px;
