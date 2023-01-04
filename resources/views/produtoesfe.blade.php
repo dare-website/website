@@ -53,12 +53,12 @@
                             <label class="next" for="image2"></label>
                         </div>
                         <input type="radio" name="gallery_group" id="image2" />
-                        <div class="image-2" style="background-image:  url('https://dare.pt/img/esferificacao/1.png');">
+                        <div class="image-2" style="background-image:  url('https://dare.pt/img/esferificacao/2.png');">
                             <label class="prev" for="image1"></label>
                             <label class="next" for="image3"></label>
                         </div>
                         <input type="radio" name="gallery_group" id="image3" />
-                        <div class="image-3" style="background-image: url('https://dare.pt/img/esferificacao/3.png');">
+                        <div class="image-3" style="background-image: url('https://dare.pt/img/esferificacao/1.png');">
                             <label class="prev" for="image2"></label>
                             <label class="next" for="image4"></label>
                         </div>
@@ -74,7 +74,7 @@
                         <label for="image2"
                             style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/2.png');"></label>
                         <label for="image3"
-                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/3.png');"></label>
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/1.png');"></label>
                         <label for="image4"
                             style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/4.png');"></label>
                     </div>
