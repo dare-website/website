@@ -22,22 +22,68 @@
     background-repeat: no-repeat;
 }
 
+.icon1 {
+    animation: go-back 1s infinite alternate;
+}
+.icon2{
+    animation: go-ro 2s infinite alternate;
+}
+.icon3{
+    animation: scaled-up 1s infinite alternate;
+}
+
+@keyframes scaled-up{
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes go-ro {
+    from {
+        transform: translateX(-200px);
+        
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes go-back {
+
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media(max-width: 449px) {
-    .oh{
-        font-size:2rem !important;
+    .oh {
+        font-size: 2rem !important;
     }
-    .versa1{
+
+    .versa1 {
         background-image: url('img/dare-gif-responsive.gif') !important;
-        background-size:cover;
+        background-size: cover;
     }
-    .versa2{
+
+    .versa2 {
         background-image: url('img/dare-gif-responsive-01.gif') !important;
-        background-size:cover;
+        background-size: cover;
     }
-    .te{
+
+    .te {
         margin-top: -16rem;
 
     }
+
     .inicio {
         padding-left: 1.2rem !important;
     }
@@ -68,20 +114,23 @@
 }
 
 @media(min-width:450px) and (max-width: 730px) {
-    .te{
+    .te {
         margin-top: -20rem;
 
     }
-    .versa1{
+
+    .versa1 {
         background-image: url('img/dare-gif-responsive.gif') !important;
-        background-size:cover;
+        background-size: cover;
     }
-    .versa2{
+
+    .versa2 {
         background-image: url('img/dare-gif-responsive-01.gif') !important;
-        background-size:cover;
+        background-size: cover;
     }
+
     .inicio {
-        
+
         margin-left: 1.2rem !important;
     }
 
@@ -129,7 +178,8 @@
                         <div class="row te">
                             <div class="col-md-10" style="color:black">
 
-                                <h3 style="color:black;font-family: 'Adam-Medium';margin-left:2rem;font-size: 3rem;" class="oh font-weight-light" data-caption-animate="slideInUp"
+                                <h3 style="color:black;font-family: 'Adam-Medium';margin-left:2rem;font-size: 3rem;"
+                                    class="oh font-weight-light" data-caption-animate="slideInUp"
                                     data-caption-delay="100">
                                     <span>SOMOS ESPECIALISTAS<br>EM
                                         SURPREENDER</span>
@@ -232,17 +282,17 @@
                 style="width:27rem !important;height:18rem !important;padding-left:3rem;">
                 <div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon/dream.png"
-                            style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
+                        <div class="icon3"><img class="icon" src="img/icon/dream.png"
+                            style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE DREAM </h1>
                     </div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon/amaze.png"
-                            style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
+                        <div class="icon2"><img class="icon1" src="img/icon/amaze.png"
+                            style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE AMAZE</h1>
                     </div>
                     <div style="margin-bottom:2rem;">
-                        <img src="img/icon/repeat.png"
+                        <img class="icon1" src="img/icon/repeat.png"
                             style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size: 3.5rem;">WE REPEAT</h1>
                     </div>
@@ -299,13 +349,14 @@
     <div class="container">
         <section>
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-interval="10000" style="margin-right:7rem;" data-bs-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide" data-interval="10000" style="margin-right:7rem;"
+                    data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel11.png"class="img-fluid">
+                                        <img src="/img/parceiros/hotel11.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -323,7 +374,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel13.png" class="img-fluid"> 
+                                        <img src="/img/parceiros/hotel13.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -332,7 +383,7 @@
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="/img/parceiros/hotel14.png"  class="img-fluid">
+                                        <img src="/img/parceiros/hotel14.png" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
