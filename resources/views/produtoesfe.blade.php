@@ -48,12 +48,12 @@
                     </style>
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
-                        <div class="image-1" style="background-image: url('https://dare.pt/img/esferificacao/1.png');">
+                        <div class="image-1" style="background-image:url('https://dare.pt/storage/{{$tipoproduto->avatar}}');">
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
                         <input type="radio" name="gallery_group" id="image2" />
-                        <div class="image-2" style="background-image: url('https://dare.pt/img/esferificacao/2.png');">
+                        <div class="image-2" style="background-image:  url('https://dare.pt/img/esferificacao/1.png');">
                             <label class="prev" for="image1"></label>
                             <label class="next" for="image3"></label>
                         </div>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
                         <label for="image1"
-                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/1.png');"></label>
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$tipoproduto->avatar}}');"></label>
                         <label for="image2"
                             style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/esferificacao/2.png');"></label>
                         <label for="image3"
