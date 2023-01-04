@@ -13,8 +13,12 @@
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;"> <a style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;" href="/">HOME</a> /
-                        <a style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"  href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}</h6>
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(255, 133, 11,0.5);margin-left:2rem;"> <a
+                                style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                                href="/">HOME</a> /
+                            <a style="text-decoration: none; color: rgba(255, 133, 11,0.5) !important;"
+                                href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}
+                        </h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
                         <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
@@ -24,13 +28,18 @@
         </div>
 
         <div class="row" style="margin-left:2rem;margin-top:3rem;">
-
+            <style>
+            .image-container {
+                width: 98%;
+                height: 0;
+                padding-bottom: 98%;
+            }
+            </style>
             <div class="col-md-5">
                 <div class="image-gallery">
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
-                        <div class="image-1"
-                            style="background-image: url('https://dare.pt/img/lollipolis/2.png');">
+                        <div class="image-1" style="background-image: url('https://dare.pt/img/lollipolis/2.png');">
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
@@ -51,10 +60,14 @@
                         </div>
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
-                        <label for="image1" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
-                        <label for="image2" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/11.jpg');"></label>
-                        <label for="image3" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/3.png');"></label>
-                        <label for="image4" style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/4.png');"></label>
+                        <label for="image1"
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
+                        <label for="image2"
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/11.jpg');"></label>
+                        <label for="image3"
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/3.png');"></label>
+                        <label for="image4"
+                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/4.png');"></label>
                     </div>
                 </div>
             </div>
@@ -106,7 +119,7 @@
             <div class="portfolio-i row d-flex justify-content-center">
                 @foreach ($produto as $prod )
                 <div class="ite prod0 col-md-2" style="text-align:center;margin-left:2rem;">
-                    <a  href="{{route('produto', $prod->id_tipo)}}" style="text-decoration:none !important;">
+                    <a href="{{route('produto', $prod->id_tipo)}}" style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
                         <h6
@@ -197,7 +210,8 @@
                     <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
                         REDES SOCIAIS
                     </h4>
-                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important" href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
+                    <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important"
+                        href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
                             class="fi-xnsuxl-facebook"></i></a>
                     <a style="font-size:1.35rem;color: #fff !important"
                         href="https://www.instagram.com/dare_portugal/"><i class="fi-xnsuxl-instagram"></i></a>
