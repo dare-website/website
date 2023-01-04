@@ -18126,7 +18126,7 @@ html.rd-navbar-fixed-linked .page {
 
 @media (min-width: 992px) {
 	.swiper-slider-corporate.swiper-container-horizontal {
-		min-height: 800px;
+		min-height: 500px;
 	}
 	.swiper-slider-corporate.swiper-container-vertical .swiper-pagination {
 		right: 6%;
