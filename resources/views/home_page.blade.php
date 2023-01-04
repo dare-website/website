@@ -39,7 +39,7 @@
 
     }
     .inicio {
-        padding-left: 0rem !important;
+        padding-left: 1.2rem !important;
     }
 
     #textgra {
@@ -82,7 +82,7 @@
     }
     .inicio {
         
-        margin-left: 0rem !important;
+        margin-left: 1.2rem !important;
     }
 
     #textgra {
