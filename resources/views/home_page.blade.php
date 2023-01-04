@@ -25,38 +25,44 @@
 .icon1 {
     animation: go-back 1s infinite alternate;
 }
-.icon2{
+
+.icon2 {
     animation: go-ro 2s infinite alternate;
 }
-.icon3{
+
+.icon3 {
     animation: scaled-up 1s infinite alternate;
 }
-.icon4{
-    animation: go-ro2  2s infinite alternate;
+
+.icon4 {
+    animation: go-ro2 2s infinite alternate;
 }
 
-@keyframes scaled-up{
+@keyframes scaled-up {
     0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.2);
     }
 }
+
 @keyframes go-ro2 {
     from {
         transform: translateX(-50px);
-        
+
     }
 
     to {
         transform: translateX(0);
     }
 }
+
 @keyframes go-ro {
     from {
         transform: translateX(-200px);
-        
+
     }
 
     to {
@@ -243,13 +249,58 @@
         </div>
         <!-- Swiper Pagination-->
     </section>
+    <script>
+    var
+        words = ['DO YOU DARE TO BE AMAZED?'],
+        part,
+        i = 0,
+        offset = 0,
+        len = words.length,
+        forwards = true,
+        skip_count = 0,
+        skip_delay = 5,
+        speed = 100;
 
+    var wordflick = function() {
+        setInterval(function() {
+            if (forwards) {
+                if (offset >= words[i].length) {
+                    ++skip_count;
+                    if (skip_count == skip_delay) {
+                        forwards = false;
+                        skip_count = 0;
+                    }
+                }
+            } else {
+                if (offset == 0) {
+                    forwards = true;
+                    i++;
+                    offset = 0;
+                    if (i >= len) {
+                        i = 0;
+                    }
+                }
+            }
+            part = words[i].substr(0, offset);
+            if (skip_count == 0) {
+                if (forwards) {
+                    offset++;
+                } else {
+                    offset--;
+                }
+            }
+            $('.word').text(part);
+        }, speed);
+    };
+
+    $(document).ready(function() {
+        wordflick();
+    });
+    </script>
     <div class="mx-auto">
         <nav class="navbar gradiente" style="background-image: url(img/gradiente-home.png);">
             <div class="navbar-nav mx-auto">
-                <h1 id="textgra" style="font-family: 'Adam-Medium'; color:white;font-size:4rem;margin-top:0.5rem;">DO
-                    YOU DARE TO BE
-                    AMAZED?</h1>
+                <h1 class="word" id="textgra" style="font-family: 'Adam-Medium'; color:white;font-size:4rem;margin-top:0.5rem;"></h1>
             </div>
         </nav>
     </div>
@@ -295,12 +346,12 @@
                 <div>
                     <div style="margin-bottom:2rem;">
                         <div class="icon3"><img class="icon4" src="img/icon/dream.png"
-                            style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
+                                style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE DREAM </h1>
                     </div>
                     <div style="margin-bottom:2rem;">
                         <div class="icon2"><img class="icon1" src="img/icon/amaze.png"
-                            style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
+                                style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
                         <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE AMAZE</h1>
                     </div>
                     <div style="margin-bottom:2rem;">
@@ -327,6 +378,42 @@
 
 
     </section>
+
+    <script>
+    var root = document.documentElement;
+    root.className += ' js';
+
+    function boxTop(idBox) {
+        var boxOffset = $(idBox).offset().top;
+        return boxOffset;
+    }
+
+    $(document).ready(function() {
+        var $target = $('.anime'),
+            animationClass = 'anime-init',
+            windowHeight = $(window).height(),
+            offset = windowHeight - (windowHeight / 4);
+
+        function animeScroll() {
+            var documentTop = $(document).scrollTop();
+            $target.each(function() {
+                if (documentTop > boxTop(this) - offset) {
+                    $(this).addClass(animationClass);
+                } else {
+                    $(this).removeClass(animationClass);
+                }
+            });
+        }
+        animeScroll();
+
+        $(document).scroll(function() {
+            setTimeout(function() {
+                animeScroll()
+            }, 150);
+        });
+    });
+    </script>
+
     <section>
         <div>
             <h2
@@ -340,7 +427,7 @@
                     class="rounded-circle shadow" alt="">
                 <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">HOTELARIA</h3>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto anime" style="text-align: -webkit-center;">
                 <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
                 <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">EVENTOS E CATERING
