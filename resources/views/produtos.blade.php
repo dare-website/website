@@ -61,7 +61,7 @@
     <div class="portfolio-i row">
         @foreach ($esferificacoes as $esf )
         <div id="esf" class="ite esf block-card active col-md-3" style="text-align:center;">
-            <a href="{{ route('produto', $esf->id_tipo) }}" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $esf->id) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$esf->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
             </a>
@@ -71,7 +71,7 @@
     <div class="portfolio-i row">
         @foreach ($lollipolis as $lolli )
         <div id="lolli" class="ite lolli block-card col-md-3" style="text-align:center;">
-            <a href="{{ route('produto', $lolli->id_tipo) }}" style="text-decoration:none !important;">
+            <a href="{{ route('produto', $lolli->id) }}" style="text-decoration:none !important;">
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$lolli->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$lolli->nome}}</h4>
             </a>
