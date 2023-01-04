@@ -258,8 +258,8 @@
         len = words.length,
         forwards = true,
         skip_count = 0,
-        skip_delay = 5,
-        speed = 100;
+        skip_delay = 10,
+        speed = 350;
 
     var wordflick = function() {
         setInterval(function() {
@@ -272,15 +272,16 @@
                     }
                 }
             } else {
-                if (offset == 0) {
+                if (offset == 1) {
                     forwards = true;
                     i++;
-                    offset = 0;
+                    offset = 1;
                     if (i >= len) {
                         i = 0;
                     }
                 }
             }
+            console.log(offset);
             part = words[i].substr(0, offset);
             if (skip_count == 0) {
                 if (forwards) {
@@ -364,7 +365,7 @@
             <div class="col-md-6 col-lg-6 col-xl-6 ">
                 <h4 style="font-family: 'Lato-LightItalic';">A nossa equipa é composta por
                     gastrónomos e criativos que se juntam para proporcionar uma
-                    experiêcia inovadora que irá mexer com os seus sentidos.</h4>
+                    experiência inovadora que irá mexer com os seus sentidos.</h4>
                 <br>
                 <br>
                 <h4 style="font-family: 'Lato-LightItalic';">Temos como objetivo agilizar e potenciar
