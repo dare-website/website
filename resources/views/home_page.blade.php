@@ -24,7 +24,7 @@
 
 @media(max-width: 449px) {
     .oh{
-        font-size:2rem;
+        font-size:2rem !important;
     }
     .versa1{
         background-image: url('img/dare-gif-responsive.gif') !important;
