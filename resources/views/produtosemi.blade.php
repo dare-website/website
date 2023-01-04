@@ -88,8 +88,8 @@
                                 <div class="col-md-1">
                                     <img src="{{ asset('img/icon/icon-chefsemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
-                                <div class="col-md-10">
-                                    <p style="padding-right:5rem;"> <span
+                                <div class="col-md-11">
+                                    <p style="padding-right:1rem;"> <span
                                             style="font-family:'Raleway-Regular';">PREPARAÇÃO</span><br>
 
                                         <span style="font-family:'Lato-Light';"> {!! $tipoproduto->preparacao !!}</span>
@@ -102,18 +102,13 @@
                                 <div class="col-md-1">
                                     <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height:1.5rem;" alt="">
                                 </div>
-                                <div class="col-md-10">
+                                <div class="col-md-11">
                                     <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
                                         <span style="font-family:'Lato-Light';">CAIXA <br>
                                             {!! $tipoproduto->formato !!}</span>
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-
-                        </div>
-                        <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
 
@@ -127,6 +122,12 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6">
+
                         </div>
                     </div>
                 </div>
