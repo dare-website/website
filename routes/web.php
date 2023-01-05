@@ -32,6 +32,9 @@ Route::get('/produto', function () {
 Route::get('/produto', function () {   
     return view('produtoesfe');
 });
+Route::get('/politica-privacidade', function () {   
+    return view('politica');
+});
 Route::get('/produto', function () {
     
     return view('produtololli');
