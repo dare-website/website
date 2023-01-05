@@ -195,12 +195,12 @@
                     <div class="container">
                         <div class="row te">
                             <div class="col-md-10" style="color:black">
-
                                 <h3 style="color:black;font-family: 'Adam-Medium';margin-left:2rem;font-size: 3rem;"
                                     class="oh font-weight-light" data-caption-animate="slideInUp"
                                     data-caption-delay="100">
                                     <span>SOMOS ESPECIALISTAS<br>EM
-                                        SURPREENDER</span>
+                                        SURPREENDER
+                                    </span>
                                 </h3>
                             </div>
                         </div>
@@ -298,10 +298,11 @@
         wordflick();
     });
     </script>
-    <div class="mx-auto">
-        <nav class="navbar gradiente" style="background-image: url(img/gradiente-home.png);">
+    <div class="mx-auto"  id="sobre-nos">
+        <nav class="navbar gradiente"  style="background-image: url(img/gradiente-home.png);">
             <div class="navbar-nav mx-auto">
-                <h1 class="word" id="textgra" style="font-family: 'Adam-Medium'; color:white;font-size:4rem;margin-top:0.5rem;"></h1>
+                <h1 class="word" id="textgra"
+                    style="font-family: 'Adam-Medium'; color:white;font-size:4rem;margin-top:0.5rem;"></h1>
             </div>
         </nav>
     </div>
@@ -339,7 +340,7 @@
         </div>
     </section>-->
 
-    <section style="margin-top: 5rem;" id="sobre-nos">
+    <section style="margin-top: 5rem;">
 
         <div class="al row justify-content-center  d-flex align-items-center">
             <div class=" inicio col-md-6 col-lg-6 col-xl-6"
