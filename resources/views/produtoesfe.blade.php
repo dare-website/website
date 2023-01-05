@@ -224,11 +224,16 @@
         $blocks.removeClass('active').filter(selector).addClass('active');
     });
     </script>
-
+    <style>
+    @media(max-width: 449px) {
+        #carouselExampleControls{
+            width:100% !important;
+        }
+    }
+    </style>
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div id="carouselExampleControls" style="width:60%;" class="carousel slide"
-                data-bs-ride="carousel">
+            <div id="carouselExampleControls" style="width:60%;" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" style="border-radius:25px;">
                     <div class="carousel-item active">
                         <img src="https://dare.pt/img/ex/eve.jpg" class="d-block w-100" alt="...">
