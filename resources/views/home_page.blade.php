@@ -248,6 +248,7 @@
             </div>-->
         </div>
         <!-- Swiper Pagination-->
+        <div class="swiper-pagination"></div>
     </section>
     <script>
     var
@@ -298,8 +299,8 @@
         wordflick();
     });
     </script>
-    <div class="mx-auto"  id="sobre-nos">
-        <nav class="navbar gradiente"  style="background-image: url(img/gradiente-home.png);">
+    <div class="mx-auto" id="sobre-nos">
+        <nav class="navbar gradiente" style="background-image: url(img/gradiente-home.png);">
             <div class="navbar-nav mx-auto">
                 <h1 class="word" id="textgra"
                     style="font-family: 'Adam-Medium'; color:white;font-size:4rem;margin-top:0.5rem;"></h1>
