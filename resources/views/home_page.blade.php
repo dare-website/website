@@ -93,7 +93,7 @@
     }
 
     .versa2 {
-        background-image: url('img/dare responsive 2.gif') !important;
+        background-image: url('video/dare responsive 2.gif') !important;
         background-size: cover;
     }
 
