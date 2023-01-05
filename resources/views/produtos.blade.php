@@ -294,10 +294,14 @@ $('.filter-btn').on('click', e => {
         <!-- Section: Links -->
     </div>
     <!-- Grid container -->
-
+    <div class="font1 text-center text-white "
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(77, 40, 93, 1);">
+        <h6 style="font-size:0.6rem;"><a style="color:white" href="/politica-privacidade">Politica de Privacidade</a>
+        </h6>
+    </div>
     <!-- Copyright -->
     <div class="font1 text-center text-white "
-        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(77, 40, 93, 1)">
+        style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(77, 40, 93, 1)">
         <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->

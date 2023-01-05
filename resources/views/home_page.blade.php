@@ -370,7 +370,8 @@
                     experiência inovadora que irá mexer com os seus sentidos.</h4>
                 <br>
                 <br>
-                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">Temos como objetivo agilizar e potenciar
+                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">Temos como objetivo agilizar e
+                    potenciar
                     o trabalho dos nossos complementos "criativos da cozinha" para que possam, desta forma, dar asas à
                     imaginação com os nossos complementos "ready to serve".</h4>
                 <br>
@@ -698,10 +699,14 @@
         <!-- Section: Links -->
     </div>
     <!-- Grid container -->
-
-    <!-- Copyright -->
     <div class="font1 text-center text-white "
         style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: #52225F">
+        <h6 style="font-size:0.6rem;"><a style="color:white" href="/politica-privacidade">Politica de Privacidade</a>
+        </h6>
+    </div>
+    <!-- Copyright -->
+    <div class="font1 text-center text-white "
+        style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: #52225F">
         <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->

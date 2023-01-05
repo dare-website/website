@@ -39,7 +39,8 @@
                 <div class="image-gallery">
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
-                        <div class="image-1" style="background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');">
+                        <div class="image-1"
+                            style="background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');">
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
@@ -280,10 +281,14 @@
         <!-- Section: Links -->
     </div>
     <!-- Grid container -->
-
-    <!-- Copyright -->
     <div class="font1 text-center text-white "
         style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(255, 133, 11, 1)">
+        <h6 style="font-size:0.6rem;"><a style="color:white" href="/politica-privacidade">Politica de Privacidade</a>
+        </h6>
+    </div>
+    <!-- Copyright -->
+    <div class="font1 text-center text-white "
+        style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(255, 133, 11, 1)">
         <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->
