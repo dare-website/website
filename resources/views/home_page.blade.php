@@ -190,7 +190,7 @@
         data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="horizontal">
         <div class="swiper-wrapper text-left">
             <div class="versa1 swiper-slide context-dark"
-                style="background-image: url('img/dare-gif-versao pc.gif');background-size:cover;">
+                style="background-image: url('video/Web.mp4');background-size:cover;">
                 <div class="swiper-slide-caption section-md">
                     <div class="container">
                         <div class="row te">
