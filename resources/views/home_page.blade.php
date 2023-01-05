@@ -93,7 +93,7 @@
     }
 
     .versa2 {
-        background-image: url('img/dare-gif-responsive-01.gif') !important;
+        background-image: url('img/dare responsive 2.gif') !important;
         background-size: cover;
     }
 
@@ -208,7 +208,7 @@
                 </div>
             </div>
             <div class="versa2 swiper-slide context-dark"
-                style="background-image: url('video/dare-gif-versao pc-01.gif');background-size:cover;">
+                style="background-image: url('video/video 2.gif');background-size:cover;">
                 <div class="swiper-slide-caption section-md">
                     <div class="container">
                         <div class="row">
