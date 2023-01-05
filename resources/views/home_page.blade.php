@@ -425,18 +425,18 @@
         </div>
 
         <div class="row" style="text-align: left;">
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;margin-top:2rem;">
                 <img src="img/hotel.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
                 <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">HOTELARIA</h3>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto anime" style="text-align: -webkit-center;">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto anime" style="text-align: -webkit-center;margin-top:2rem;">
                 <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
                 <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">EVENTOS E CATERING
                 </h3>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;margin-top:2rem;">
                 <img src="img/restaurante.jpg"
                     style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
