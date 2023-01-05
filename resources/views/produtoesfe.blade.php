@@ -48,7 +48,8 @@
                     </style>
                     <div class="image-container shadow">
                         <input type="radio" name="gallery_group" id="image1" checked />
-                        <div class="image-1" style="background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');">
+                        <div class="image-1"
+                            style="background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');">
                             <label class="prev" for="image4"></label>
                             <label class="next" for="image2"></label>
                         </div>
@@ -225,6 +226,27 @@
     </script>
 
     <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/ex/eve.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/ex/hotel.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/ex/restaurante.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         <div class="row" style="text-align: center;margin-top:5rem;">
             <div class="mt-2 mb-4 ">
                 <ul class="linha d-flex justify-content-center"
