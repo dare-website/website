@@ -187,7 +187,7 @@
         </div>
     </div>-->
     <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2"
-        data-loop="true" data-autoplay="4500" data-simulate-touch="true" data-nav="false" data-direction="horizontal">
+        data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
         <div class="swiper-wrapper text-left">
             <div class="versa1 swiper-slide context-dark"
                 style="background-image: url('img/dare-gif-versao pc.gif');background-size:cover;">
