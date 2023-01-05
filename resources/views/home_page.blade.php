@@ -365,12 +365,12 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-6 ">
-                <h4 style="font-family: 'Lato-LightItalic';">A nossa equipa é composta por
+                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">A nossa equipa é composta por
                     gastrónomos e criativos que se juntam para proporcionar uma
                     experiência inovadora que irá mexer com os seus sentidos.</h4>
                 <br>
                 <br>
-                <h4 style="font-family: 'Lato-LightItalic';">Temos como objetivo agilizar e potenciar
+                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">Temos como objetivo agilizar e potenciar
                     o trabalho dos nossos complementos "criativos da cozinha" para que possam, desta forma, dar asas à
                     imaginação com os nossos complementos "ready to serve".</h4>
                 <br>
