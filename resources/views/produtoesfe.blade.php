@@ -84,7 +84,7 @@
 
             <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(14, 162, 154);">
                 <div style="text-align:left;">
-                    <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
+                    <h1 style="font-family:'Raleway-Light';">{{$produtoS->nome}}</h1>
                 </div>
                 <div style="font-family:'Lato-LightItalic';">
                     <p>

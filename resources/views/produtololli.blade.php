@@ -74,7 +74,7 @@
 
             <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(255, 133, 11);">
                 <div style="text-align:left;">
-                    <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
+                    <h1 style="font-family:'Raleway-Light';">{{$produtoS->nome}}</h1>
                 </div>
                 <div style="font-family:'Lato-LightItalic';">
                     <p>
@@ -104,7 +104,7 @@
                                 </div>
                                 <div class="col-md-10">
                                     <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
-                                    <span style="font-family:'Lato-Light';">CAIXA <br>
+                                    <span style="font-family:'Lato-Light';">CAIXAS <br>
                                         {!! $tipoproduto->formato !!}</span>
                                 </div>
                             </div>

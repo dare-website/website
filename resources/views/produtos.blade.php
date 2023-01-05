@@ -52,7 +52,7 @@
     </div>
     <div class="portfolio-menu mt-2 mb-4">
         <ul class="linha" style="border-bottom:2px solid rgba(77,40,93,0.4);padding-right: 4rem;">
-            <li class="btn1 filter-btn active" data-target="#esf" data-filter=".esf">ESFERIFICACAO</li>
+            <li class="btn1 filter-btn active" data-target="#esf" data-filter=".esf">ESFERIFICACÃO</li>
             <li class="btn1 filter-btn" data-target="#lolli" data-filter=".lolli">LOLLIPOPS</li>
             <li class="btn1 filter-btn" data-target="#cana" data-filter=".cana">CANAPES</li>
             <li class="btn1 filter-btn" data-target="#semi" data-filter=".semi">SEMI-ACABADOS</li>
