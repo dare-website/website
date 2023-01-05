@@ -228,8 +228,8 @@
     <div class="container">
 
         <div id="carouselExampleControls" style="width:60%;" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="border-radius:25px;">
+            <div class="carousel-inner" style="border-radius:25px;">
+                <div class="carousel-item active" >
                     <img src="https://dare.pt/img/ex/eve.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
