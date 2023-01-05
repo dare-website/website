@@ -67,6 +67,7 @@
                     <li class="nav-item">
                         <a class="nav-link nav-link-ltr" href="/produtos">Produtos</a>
                     </li>
+
                     <!--
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-link-ltr dropdown-toggle" href="/produtos" role="button"
@@ -84,11 +85,58 @@
                     <li class="nav-item">
                         <a class="nav-link nav-link-ltr" href="#contacto">Contactos</a>
                     </li>
+
+                    <div class="nav-item" style="display:flex;margin-left:auto;margin-right:auto;">
+                        <a href="javascript:trocarIdioma('pt')" style="padding-right:0 !important;"
+                            class="nav-link">PT</a>
+                        <a class="nav-link" style="padding-left:.08 !important;padding-right:.08 !important;">|
+                            &nbsp</a>
+                        <a href="javascript:trocarIdioma('en')" class="nav-link"
+                            style="padding-right:0 !important;padding-left:0 !important;margin-right:1.5rem;">EN &nbsp</a>
+
+                    </div>
                     <!---->
                 </ul>
             </div>
         </div>
+        <script type="text/javascript">
+        var comboGoogleTradutor = null; //Variavel global
 
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'en,pt',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+
+            comboGoogleTradutor = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+        }
+
+        function changeEvent(el) {
+            if (el.fireEvent) {
+                el.fireEvent('onchange');
+            } else {
+                var evObj = document.createEvent("HTMLEvents");
+
+                evObj.initEvent("change", false, true);
+                el.dispatchEvent(evObj);
+            }
+        }
+
+        function trocarIdioma(sigla) {
+            if (comboGoogleTradutor) {
+                comboGoogleTradutor.value = sigla;
+                changeEvent(comboGoogleTradutor);
+                if (sigla == "pt") {
+                    changeEvent(comboGoogleTradutor);
+                }
+                //Dispara a troca
+            }
+        }
+        </script>
+        <script type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
 
 
     </nav>
@@ -96,8 +144,14 @@
     <main>
         @yield('content')
     </main>
+    <style>
+    .goog-te-banner-frame {
 
-
+        visibility: hidden !important;
+        display: none !important;
+    }
+    </style>
+    <div id="google_translate_element" style="visibility:hidden;display:none !important;" class="boxTradutor"></div>
 
 </body>
 
