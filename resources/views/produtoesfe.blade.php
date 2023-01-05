@@ -239,10 +239,10 @@
                         <img src="https://dare.pt/img/ex/eve.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dare.pt/img/ex/hotel.jpg" class="d-block w-100" alt="...">
+                        <img src="https://dare.pt/img/ex/eve.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dare.pt/img/ex/eve.jpg" class="d-block w-100" alt="...">
+                        <img src="https://dare.pt/img/ex/eve.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
