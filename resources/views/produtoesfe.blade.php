@@ -226,27 +226,30 @@
     </script>
 
     <div class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/ex/eve.jpg" alt="First slide">
+                    <img src="img/ex/eve.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/ex/hotel.jpg" alt="Second slide">
+                    <img src="img/ex/hotel.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/ex/restaurante.jpg" alt="Third slide">
+                    <img src="img/ex/eve.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        
         <div class="row" style="text-align: center;margin-top:5rem;">
             <div class="mt-2 mb-4 ">
                 <ul class="linha d-flex justify-content-center"
