@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>DARE</title>
-    <link rel="icon" href="{{ asset('img/dare-horizontal-logo.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/dare-vertical-logo.png') }}" type="image/x-icon">
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script defer src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js'></script>
