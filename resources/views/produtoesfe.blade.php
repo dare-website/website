@@ -100,6 +100,9 @@
                                 <div class="col-md-10">
                                     <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
                                         <span style="font-family:'Lato-Light';">FRASCOS <br>
+                                            @if ($produtoS->id == 27 || $produtoS->id == 28)
+                                              6un | 20un | 25un* | 30un
+                                            @endif
                                             {{$tipoproduto->formato}}</span>
                                     </p>
                                 </div>
@@ -226,8 +229,8 @@
     </script>
     <style>
     @media(max-width: 449px) {
-        #carouselExampleControls{
-            width:100% !important;
+        #carouselExampleControls {
+            width: 100% !important;
         }
     }
     </style>
@@ -245,7 +248,7 @@
                         <img src="https://dare.pt/img/ex/eve.png" class="d-block w-100" alt="...">
                     </div>-->
                 </div>
-               <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
