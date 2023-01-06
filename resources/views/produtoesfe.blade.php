@@ -101,9 +101,11 @@
                                     <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
                                         <span style="font-family:'Lato-Light';">FRASCOS <br>
                                             @if ($produtoS->id == 27 || $produtoS->id == 28)
-                                              6un | 20un | 25un* | 30un
+                                            6un | 20un | 25un* | 30un
+                                            @else
+                                            {{$tipoproduto->formato}}
                                             @endif
-                                            {{$tipoproduto->formato}}</span>
+                                        </span>
                                     </p>
                                 </div>
                             </div>
