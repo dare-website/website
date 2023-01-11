@@ -38,37 +38,79 @@
             <div class="col-md-5">
                 <div class="image-gallery">
                     <div class="image-container shadow">
-                        <input type="radio" name="gallery_group" id="image1" checked />
-                        <div class="image-1"
-                            style="background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');">
-                            <label class="prev" for="image4"></label>
-                            <label class="next" for="image2"></label>
+                        @php
+                        $i=1;
+
+                        @endphp
+
+                        @foreach ($img_produto as $img)
+
+                        <input type="radio" name="gallery_group" id="image{{$i}}" checked />
+                        <div class="image-{{$i}}"
+                            style="background-image:url('https://dare.pt/storage/{{$img->avatar}}');">
+
                         </div>
-                        <input type="radio" name="gallery_group" id="image2" />
-                        <div class="image-2" style="background-image: url('https://dare.pt/img/lollipolis/2.png');">
-                            <label class="prev" for="image1"></label>
-                            <label class="next" for="image3"></label>
-                        </div>
-                        <input type="radio" name="gallery_group" id="image3" />
-                        <div class="image-3" style="background-image: url('https://dare.pt/img/lollipolis/3.png');">
-                            <label class="prev" for="image2"></label>
-                            <label class="next" for="image4"></label>
-                        </div>
-                        <input type="radio" name="gallery_group" id="image4" />
-                        <div class="image-4" style="background-image: url('https://dare.pt/img/lollipolis/4.png');">
-                            <label class="prev" for="image3"></label>
-                            <label class="next" for="image1"></label>
-                        </div>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
-                        <label for="image1"
-                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$produtoS->avatar}}');"></label>
-                        <label for="image2"
-                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/2.png');"></label>
-                        <label for="image3"
-                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/3.png');"></label>
-                        <label for="image4"
-                            style="border: solid 1.5px #a2a1a1;background-image: url('https://dare.pt/img/lollipolis/4.png');"></label>
+                        @php
+                        $i=1;
+                        $count_array= count($img_produto);
+                        @endphp
+                        @if ($count_array == 4)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        @endif
+
+                        @if ($count_array == 3)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        @endif
+                        @if ($count_array == 2)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        @endif
+
+                        @if ($count_array == 1)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+
+                        @endif
                     </div>
                 </div>
             </div>
