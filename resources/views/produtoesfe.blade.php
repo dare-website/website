@@ -67,7 +67,7 @@
                         $i++;
                         @endphp
                         @endforeach
-                    
+
 
 
                         <!--<input type="radio" name="gallery_group" id="image2" />
@@ -131,12 +131,12 @@
                         $i++;
                         @endphp
                         @endforeach
-                            <label for="image"
-                                style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
-                            <label for="image"
-                                style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
-                            <label for="image"
-                                style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
 
                         @endif
 
@@ -305,14 +305,15 @@
                     <div class="carousel-item active">
                         <img src="https://dare.pt/img/ex/esf.png" class="d-block w-100" alt="...">
                     </div>
-                    <!--<div class="carousel-item">
-                        <img src="https://dare.pt/img/ex/eve.png" class="d-block w-100" alt="...">
-                    </div>
                     <div class="carousel-item">
-                        <img src="https://dare.pt/img/ex/eve.png" class="d-block w-100" alt="...">
-                    </div>-->
+                        <img src="http://127.0.0.1:8000/video/site-banner-01.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="http://127.0.0.1:8000/video/DARE PROMO 2022.gif" class="d-block w-100" alt="...">
+
+                    </div>
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -321,9 +322,10 @@
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>-->
+                </button>
             </div>
         </div>
+
         <div class="row" style="text-align: center;margin-top:5rem;">
             <div class="mt-2 mb-4 ">
                 <ul class="linha d-flex justify-content-center"

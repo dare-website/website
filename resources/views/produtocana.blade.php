@@ -39,12 +39,32 @@
                     }
                     </style>
                     <div class="image-container shadow">
+                        @php
+                        $i=1;
+                        $count_array= count($img_produto);
+                        @endphp
+                        @if ($count_array == 0)
                         <input type="radio" name="gallery_group" id="image1" checked />
                         <div class="image-1"
                             style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');background-size:cover;">
-                            <!--  <label class="prev" for="image4"></label>
-                            <label class="next" for="image2"></label>-->
                         </div>
+                        @else
+
+
+                        @foreach ($img_produto as $img)
+
+
+                        <input type="radio" name="gallery_group" id="image{{$i}}" checked />
+                        <div class="image-{{$i}}"
+                            style="background-image:url('https://dare.pt/storage/{{$img->avatar}}');">
+
+                        </div>
+
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        @endif
                         <!-- <input type="radio" name="gallery_group" id="image2" />
                         <div class="image-2">
                             <label class="prev" for="image1"></label>
@@ -62,11 +82,73 @@
                         </div>-->
                     </div>
                     <div class="thumbnails" style="margin-top: 2rem;">
-                        <!--<label for="image1"
-                            style="background-image: url('https://dare.pt/storage/{{$tipoproduto->avatar}}');"></label>
-                        <label for="image2"></label>
-                        <label for="image3"></label>
-                        <label for="image4"></label>-->
+                        @php
+                        $i=1;
+                        $count_array= count($img_produto);
+                        @endphp
+                        @if ($count_array == 4)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        @endif
+
+                        @if ($count_array == 3)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        @endif
+                        @if ($count_array == 2)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        @endif
+
+                        @if ($count_array == 1)
+                        @foreach ($img_produto as $img)
+                        <label for="image{{$i}}"
+                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                        @php
+                        $i++;
+                        @endphp
+                        @endforeach
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+
+                        @endif
+                        @if ($count_array == 0)
+
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+                        <label for="image"
+                            style="border: solid 1.5px #a2a1a1;border:0px !important; background-image:url('https://dare.pt/storage/');"></label>
+
+                        @endif
                     </div>
                 </div>
             </div>
@@ -113,19 +195,19 @@
                                 </div>
                             </div>
                             @if (!is_null($tipoproduto->balanca))
-                                <div class="row">
-                                    <div class="col-md-1">
+                            <div class="row">
+                                <div class="col-md-1">
 
-                                        <img src="{{ asset('img/icon/icon-balancacana.png') }}" style="height:1.5rem;"
-                                            alt="">
-                                    </div>
-                                    <div class="col-md-10 d-flex">
-                                        <p>
-                                            <span style="font-family:'Lato-Light';">
-                                                {!! $tipoproduto->balanca !!}</span>
-                                        </p>
-                                    </div>
+                                    <img src="{{ asset('img/icon/icon-balancacana.png') }}" style="height:1.5rem;"
+                                        alt="">
                                 </div>
+                                <div class="col-md-10 d-flex">
+                                    <p>
+                                        <span style="font-family:'Lato-Light';">
+                                            {!! $tipoproduto->balanca !!}</span>
+                                    </p>
+                                </div>
+                            </div>
                             @endif
                         </div>
 
