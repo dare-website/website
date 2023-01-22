@@ -62,10 +62,10 @@
                 <ul style="margin-right:0rem !important;" class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="/#sobre-nos">Sobre Nós</a>
+                        <a class="nav-link nav-link-ltr" href="/#sobre-nos">{{__('messages.about')}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="/produtos">Produtos</a>
+                        <a class="nav-link nav-link-ltr" href="/produtos">{{__('messages.product')}}</a>
                     </li>
 
                     <!--
@@ -83,19 +83,21 @@
                         </ul>
                     </li>-->
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#contacto">Contactos</a>
+                        <a class="nav-link nav-link-ltr" href="#contacto">{{__('messages.cont')}}</a>
                     </li>
-
+                
                     <div class="nav-item" style="display:flex;margin-left:auto;margin-right:auto;">
-                        <a href="javascript:trocarIdioma('pt')" style="padding-right:0 !important;"
-                            class="nav-link">PT</a>
-                        <a class="nav-link" style="padding-left:.08 !important;padding-right:.08 !important;">|
-                            &nbsp</a>
-                        <a href="javascript:trocarIdioma('en')" class="nav-link"
-                            style="padding-right:0 !important;padding-left:0 !important;margin-right:1.5rem;">EN &nbsp</a>
+
+                        <a class="nav-link" style="padding-left:.08 !important;padding-right:.08 !important;"
+                            href="{{ route('lang.switch', 'pt') }}"> PT</a>
+                        <a class="nav-link" style="padding-left:.08 !important;padding-right:.08 !important;">|&nbsp</a>
+                        <a class="nav-link"
+                            style="padding-right:0 !important;padding-left:0 !important;margin-right:1.5rem;"
+                            href="{{ route('lang.switch', 'en') }}"> EN &nbsp</a>
+
 
                     </div>
-                    <!---->
+
                 </ul>
             </div>
         </div>

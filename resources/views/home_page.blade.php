@@ -198,8 +198,7 @@
                                 <h3 style="color:black;font-family: 'Adam-Medium';margin-left:2rem;font-size: 3rem;"
                                     class="oh font-weight-light" data-caption-animate="slideInUp"
                                     data-caption-delay="100">
-                                    <span>SOMOS ESPECIALISTAS<br>EM
-                                        SURPREENDER
+                                    <span>{{__('messages.text1')}}<br>{{__('messages.text11')}}
                                     </span>
                                 </h3>
                             </div>
@@ -365,15 +364,10 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-6 ">
-                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">A nossa equipa é composta por
-                    gastrónomos e criativos que se juntam para proporcionar uma
-                    experiência inovadora que irá mexer com os seus sentidos.</h4>
+                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">{{__('messages.team1')}}</h4>
                 <br>
                 <br>
-                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">Temos como objetivo agilizar e
-                    potenciar
-                    o trabalho dos nossos complementos "criativos da cozinha" para que possam, desta forma, dar asas à
-                    imaginação com os nossos complementos "ready to serve".</h4>
+                <h4 style="font-family: 'Lato-LightItalic';text-align: justify;">{{__('messages.team11')}}</h4>
                 <br>
             </div>
 
@@ -422,26 +416,28 @@
         <div>
             <h2
                 style="font-family: 'Raleway-Regular';font-weight:bold; text-align:center;margin-bottom:3rem; margin-top:3rem;color:#4d285d ">
-                A NOSSA GAMA DE PRODUTOS <br> É DIRECIONADA PARA</h2>
+                {{__('messages.gama1')}} <br> {{__('messages.gama11')}}</h2>
         </div>
 
         <div class="row" style="text-align: left;">
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;margin-top:2rem;">
                 <img src="img/hotel.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
-                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">HOTELARIA</h3>
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';">{{__('messages.hotel')}}</h3>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto anime" style="text-align: -webkit-center;margin-top:2rem;">
                 <img src="img/eve.jpg" style="width:15rem;height:15rem;margin-bottom:1rem;vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
-                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">EVENTOS E CATERING
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">
+                    {{__('messages.events')}}
                 </h3>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto" style="text-align: -webkit-center;margin-top:2rem;">
                 <img src="img/restaurante.jpg"
                     style="width:15rem;height:15rem;margin-bottom:1rem;    vertical-align: middle;"
                     class="rounded-circle shadow" alt="">
-                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">RESTAURAÇÃO</h3>
+                <h3 style="color:#4d285d;font-family: 'Raleway-Regular';    vertical-align: middle;">
+                    {{__('messages.resta')}}</h3>
             </div>
         </div>
     </section>
@@ -625,7 +621,7 @@
                     </h3>
 
                     <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
-                        REDES SOCIAIS
+                        {{__('messages.redef')}}
                     </h4>
                     <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important"
                         href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
@@ -681,13 +677,12 @@
                     <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
                         NEWSLETTER
                     </h3>
-                    <p class="text-white" style="font-family: 'Lato-Light';">Não perca nada. <br> Subscreva para
-                        receber o nosso catálogo, promoções exclusivas e acesso antecipado a vendas flash!</p>
+                    <p class="text-white" style="font-family: 'Lato-Light';"> {{__('messages.newsl')}}</p>
                     <div style="">
                         <form action="/news" method="post">
                             @csrf
                             <input type="email" placeholder="Email*" name="email">
-                            <input type="submit" value="Subscrever">
+                            <input type="submit" value="{{__('messages.sub')}}">
                         </form>
                     </div>
 

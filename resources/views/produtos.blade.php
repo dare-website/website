@@ -42,7 +42,7 @@
                 <div class="col-md-6" style="text-align: left;">
                     <h6 style="font-family: 'Raleway-Medium';color: rgba(77,40,93,0.5);margin-left:2rem;"> <a
                             style="text-decoration: none; color: rgba(77,40,93,0.5) !important;" href="/">HOME</a>
-                        /PRODUTOS </h6>
+                        /{{__('messages.product')}} </h6>
                 </div>
                 <div class="col-md-6" style="text-align:right;">
                     <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
@@ -52,10 +52,10 @@
     </div>
     <div class="portfolio-menu mt-2 mb-4">
         <ul class="linha" style="border-bottom:2px solid rgba(77,40,93,0.4);padding-right: 4rem;">
-            <li class="btn1 filter-btn active" data-target="#esf" data-filter=".esf">ESFERIFICACÃO</li>
+            <li class="btn1 filter-btn active" data-target="#esf" data-filter=".esf">{{__('messages.esfe')}}</li>
             <li class="btn1 filter-btn" data-target="#lolli" data-filter=".lolli">LOLLIPOPS</li>
             <li class="btn1 filter-btn" data-target="#cana" data-filter=".cana">CANAPÉS</li>
-            <li class="btn1 filter-btn" data-target="#semi" data-filter=".semi">SEMI-ACABADOS</li>
+            <li class="btn1 filter-btn" data-target="#semi" data-filter=".semi">{{__('messages.semi')}}</li>
         </ul>
     </div>
     <div class="portfolio-i row">
@@ -92,8 +92,10 @@
         @foreach ($semi as $sem )
         <div id="semi" class="ite semi block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $sem->id) }}" style="text-decoration:none !important;">
+            
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$sem->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
+                
             </a>
         </div>
         @endforeach
