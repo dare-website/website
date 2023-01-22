@@ -28,7 +28,7 @@
                                 style="text-decoration: none; color: rgba(14, 162, 154,0.5) !important;"
                                 href="/">HOME</a> /
                             <a style="text-decoration: none; color: rgba(14, 162, 154,0.5) !important;"
-                                href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}
+                                href="/produtos">{{__('messages.product')}}</a> / {{$tipoproduto->nome}}
                         </h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
@@ -160,7 +160,7 @@
                                     <img src="{{ asset('img/icon/icon-caixaesf.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
+                                    <p> <span style="font-family:'Raleway-Regular';">{{__('messages.form')}}</span><br>
                                         <span style="font-family:'Lato-Light';">FRASCOS <br>
                                             @if ($produtoS->id == 27 || $produtoS->id == 28)
                                             6un | 20un | 25un* | 30un

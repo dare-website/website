@@ -17,7 +17,7 @@
                                 style="text-decoration: none; color: rgba(204, 40, 65,0.5) !important;"
                                 href="/">HOME</a> /
                             <a style="text-decoration: none; color: rgba(204, 40, 65,0.5) !important;"
-                                href="/produtos">PRODUTOS</a> / {{$tipoproduto->nome}}
+                                href="/produtos">{{__('messages.product')}}</a> / {{$tipoproduto->nome}}
                         </h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
@@ -174,7 +174,7 @@
                                 </div>
                                 <div class="col-md-10">
                                     <p style="padding-right:0rem;"> <span
-                                            style="font-family:'Raleway-Regular';">PREPARAÇÃO</span><br>
+                                            style="font-family:'Raleway-Regular';">{{__('messages.prep')}}</span><br>
 
                                         <span style="font-family:'Lato-Light';"> {!! $tipoproduto->preparacao !!}</span>
                                     </p>
@@ -188,8 +188,8 @@
                                         alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <p> <span style="font-family:'Raleway-Regular';">FORMATO DE VENDAS</span><br>
-                                        <span style="font-family:'Lato-Light';">CAIXA <br>
+                                    <p> <span style="font-family:'Raleway-Regular';">{{__('messages.form')}}</span><br>
+                                        <span style="font-family:'Lato-Light';">{{__('messages.caixa')}} <br>
                                             {!! $tipoproduto->formato !!}</span>
                                     </p>
                                 </div>
