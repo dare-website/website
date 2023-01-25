@@ -162,7 +162,7 @@
                         @if (is_null($tipoproduto->texto))
                         <img src="{{ asset('img/icon/icon-glutencana.png') }}" style="height:1.5rem;" alt="">
                         @endif
-                        {!! $tipoproduto->texto !!}
+                        {!! $tipoproduto->texto!!}
 
                     </p>
 

@@ -20,20 +20,19 @@ Route::get('/', function () {
 });
 
 Route::get('/produtos', function () {
-    if(strcmp(session()->get('applocale'),"pt")==0){
+        if(strcmp(session()->get('applocale'),"pt")==0){
         $produto_esferificacao= Produto::where('id_tipo',1)->get();
         $produto_lollipolis= Produto::where('id_tipo',2)->get();
         $produto_canapes= Produto::where('id_tipo',3)->get();
         $produto_semi= Produto::where('id_tipo',4)->get();
         return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi]);
+        }else{
+        $produto_esferificacao= ProdutoEn::where('id_tipo',1)->get();
+        $produto_lollipolis= ProdutoEn::where('id_tipo',2)->get();
+        $produto_canapes= ProdutoEn::where('id_tipo',3)->get();
+        $produto_semi= ProdutoEn::where('id_tipo',4)->get();
+        return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi]);
         }
-    if(strcmp(session()->get('applocale'),"en")==0){
-    $produto_esferificacao= ProdutoEn::where('id_tipo',1)->get();
-    $produto_lollipolis= ProdutoEn::where('id_tipo',2)->get();
-    $produto_canapes= ProdutoEn::where('id_tipo',3)->get();
-    $produto_semi= ProdutoEn::where('id_tipo',4)->get();
-    return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi]);
-    }
 });
 Route::get('/produto', function () {
     
