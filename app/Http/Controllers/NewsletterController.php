@@ -25,11 +25,7 @@ class NewsletterController extends Controller
             return redirect('/')->with('failed',"Registo Falhado :(");
         }
     }
-    public function produto($id)
-    {
-        
-
-
+    public function produto($id){
         if(strcmp(session()->get('applocale'),"en")==0){
             $id_tipo= ProdutoEn::where('id',$id)->first()->id_tipo;
             $img_produto = Imagem::where('id_tipo',$id)->get();
