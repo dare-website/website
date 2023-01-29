@@ -155,7 +155,7 @@
                 <div class="portfolio-menu mt-2 mb-4 ">
                     <ul class="linha d-flex justify-content-center"
                         style="border-bottom:2px solid rgba(217, 53, 138,0.4);padding-right: 4rem;">
-                        <li class="btn1 active" data-filter=".prod1">PRODUTOS RELACIONADOS</li>
+                        <li class="btn1 active" data-filter=".prod1">{{__('messages.produtosrela')}}</li>
                     </ul>
                 </div>
                 <div class="portfolio-i row d-flex justify-content-center">

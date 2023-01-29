@@ -330,7 +330,7 @@
             <div class="mt-2 mb-4 ">
                 <ul class="linha d-flex justify-content-center"
                     style="border-bottom:2px solid rgba(14, 162, 154, 0.4);padding-right: 4rem;">
-                    <li class="btn1 produtoli active">PRODUTOS RELACIONADOS</li>
+                    <li class="btn1 produtoli active">{{__('messages.produtosrela')}}</li>
                 </ul>
             </div>
             <div class=" row d-flex justify-content-center">
