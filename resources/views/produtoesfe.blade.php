@@ -180,8 +180,8 @@
         <div class="row" style="text-align: center;margin-top:5rem;">
             <div class="portfolio-menu mt-2 mb-4">
                 <ul class="linha" style="border-bottom:2px solid rgba(14, 162, 154,0.4);padding-right: 4rem;">
-                    <li class="btn1 filter-btn active" data-target="#prod1" data-filter=".prod1">COM ALCOOL</li>
-                    <li class="btn1 filter-btn " data-target="#prod0" data-filter=".prod0">SEM ALCOOL</li>
+                    <li class="btn1 filter-btn active" data-target="#prod1" data-filter=".prod1">{{__('messages.comalcool')}}</li>
+                    <li class="btn1 filter-btn " data-target="#prod0" data-filter=".prod0">{{__('messages.semalcool')}}</li>
                 </ul>
             </div>
             <div class="portfolio-i row d-flex ">
