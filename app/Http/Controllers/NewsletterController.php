@@ -29,7 +29,7 @@ class NewsletterController extends Controller
         if(strcmp(session()->get('applocale'),"en")==0){
             $id_tipo= ProdutoEn::where('id',$id)->first()->id_tipo;
             $img_produto = Imagem::where('id_tipo',$id)->get();
-            if ($id_tipo==1) {
+            if ($id_tipo==5) {
                 $tipoproduto = TipoProduto::find($id_tipo);
                 $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $produto0 = ProdutoEn::where('alcool',0)->get();
@@ -37,7 +37,7 @@ class NewsletterController extends Controller
                 $produtoS = ProdutoEn::where('id',$id)->first();
                 return view('produtoesfe', ['produto0' => $produto0,'produto1' => $produto1, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR, 'produtoS'=>$produtoS, 'img_produto'=>$img_produto]);
             }
-            if ($id_tipo==2) {
+            if ($id_tipo==6) {
                 $produtoS = ProdutoEn::where('id',$id)->first();
                 $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $tipoproduto =  TipoProduto::where('id',$id_tipo)->first();
@@ -45,13 +45,13 @@ class NewsletterController extends Controller
                 return view('produtololli', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR, 'produtoS'=>$produtoS,'img_produto'=>$img_produto]);
             }
         
-            if ($id_tipo==3) {
+            if ($id_tipo==7) {
                 $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $tipoproduto = ProdutoEn::where('id',$id)->first();
                 $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
                 return view('produtocana', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
             }
-            if ($id_tipo==4) {
+            if ($id_tipo==8) {
                 $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $tipoproduto = ProdutoEn::where('id',$id)->first();
                 $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
