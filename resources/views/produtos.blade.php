@@ -32,7 +32,7 @@
 </style>
 
 <div class="parallax justify-content-center  d-flex align-items-center">
-    <h1 style="color:white;text-shadow: 0 0 3px #4e4e4e;font-family: 'Adam-Medium';font-weight:bold;">PRODUTOS</h1>
+    <h1 style="color:white;text-shadow: 0 0 3px #4e4e4e;font-family: 'Adam-Medium';font-weight:bold;">{{__('messages.product')}}</h1>
 </div>
 <div class="container"
     style="padding-right: calc(var(--bs-gutter-x) * 2);padding-left: calc(var(--bs-gutter-x) * 2); margin-bottom:10rem;margin-top:2rem;">
