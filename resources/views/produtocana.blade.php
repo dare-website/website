@@ -316,7 +316,7 @@
                     </h3>
 
                     <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
-                        REDES SOCIAIS
+                    {{__('messages.redef')}}
                     </h4>
                     <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important"
                         href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
@@ -330,7 +330,7 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
-                        CONTACTOS
+                    {{__('messages.cont')}}
                     </h3>
                     <h6 style="margin-bottom:1rem;">
                         <a style="text-decoration:none;font-family:'Lato-Light' " href="mailto:info@dare.pt"
@@ -371,13 +371,12 @@
                     <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
                         NEWSLETTER
                     </h3>
-                    <p class="text-white" style="font-family: 'Lato-Light';">Não perca nada. <br> Subscreva para
-                        receber o nosso catálogo, promoções exclusivas e acesso antecipado a vendas flash!</p>
+                    <p class="text-white" style="font-family: 'Lato-Light';">{{__('messages.newsl')}}</p>
                     <div style="">
                         <form action="/news" method="post">
                             @csrf
                             <input type="email" placeholder="Email*" name="email">
-                            <input style="background:#cc2841;" type="submit" value="Subscrever">
+                            <input style="background:#cc2841;" type="submit" value="{{__('messages.sub')}}">
                         </form>
                     </div>
 
