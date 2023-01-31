@@ -422,7 +422,7 @@
                     <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
                         NEWSLETTER
                     </h3>
-                    <p class="text-white" style="font-family: 'Lato-Light';">{!__('messages.newsl')!}</p>
+                    <p class="text-white" style="font-family: 'Lato-Light';">{{__('messages.newsl')}}</p>
                     <div style="">
                         <form action="/news" method="post">
                             @csrf
