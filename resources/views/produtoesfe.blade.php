@@ -306,10 +306,10 @@
                         <img src="https://dare.pt/img/ex/esf.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="http://127.0.0.1:8000/video/site-banner-01.png" class="d-block w-100" alt="...">
+                        <img src="https://dare.pt/video/site-banner-01.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item ">
-                        <img src="http://127.0.0.1:8000/video/DARE PROMO 2022.gif" class="d-block w-100" alt="...">
+                        <img src="https://dare.pt/video/DARE PROMO 2022.gif" class="d-block w-100" alt="...">
 
                     </div>
                 </div>
