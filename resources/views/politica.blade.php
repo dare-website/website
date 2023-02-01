@@ -10,7 +10,7 @@
                     <div class="col-md-6" style="text-align: left;">
                         <h6 style="font-family: 'Raleway-Medium';color: rgba(0, 0, 0,0.8);margin-left:2rem;"> <a
                                 style="text-decoration: none; color: rgba(0, 0, 0,0.8) !important;" href="/">HOME</a> /
-                            Politica de Privacidade
+                                {!!__('messages.politica')!!}
                         </h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
@@ -21,7 +21,7 @@
         </div>
         <div class="row">
             <div style="text-align:center;">
-                <h1 style="font-family:'Raleway-Light';font-weight:bold">Politica de Privacidade</h1>
+                <h1 style="font-family:'Raleway-Light';font-weight:bold">{!!__('messages.politica')!!}</h1>
             </div>
             <div style="font-family:'Lato-LightItalic';text-align:justify;">
                 <br>
