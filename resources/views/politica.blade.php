@@ -27,79 +27,26 @@
                 <br>
                 <br>
                 <h5>
-                    O cumprimento da legislação sobre a proteção de dados pessoais e o respeito pelos direitos dos
-                    titulares de dados pessoais que interagem com a Dare & Innovative Cuisine é uma prioridade.
-                    Clientes, Colaboradores, Fornecedores e quem interaja ocasionalmente com a Dare & Innovative Cuisine
-                    (desde logo, os visitantes do sítio de internet) podem esperar da Dare & Innovative Cuisine um
-                    elevado nível de proteção e respeito pelos seus direitos, tendo para esse fim adotado um conjunto
-                    diversificado de medidas técnicas e organizativas
+                {{__('messages.pp1')}}
                 </h5>
                 <br>
                 <h5>
-                    <b>Dados Pessoais</b> são qualquer informação relativa a uma pessoa singular, identificada ou
-                    identificável
-                    (o “titular dos dados”) – é considerada identificável uma pessoa singular que possa ser
-                    identificada, direta ou indiretamente, em especial por referência a um identificador (um nome, um
-                    número de identificação, dados de localização, identificadores por via eletrónica) ou a um ou mais
-                    elementos específicos da identidade física, fisiológica, genética, mental, económica, cultural ou
-                    social dessa pessoa singular.
+                {!!__('messages.pp2')!!}
                 </h5>
                 <h5>
-                    Esta página tem por finalidade prestar informação sobre o modo como a Dare & Innovative Cuisine
-                    procede ao tratamento dos dados pessoais (qualquer operação sobre dados pessoais, incluindo o seu
-                    acesso, recolha, conservação, organização e utilização até ao seu desaparecimento) no respeito pelo
-                    Regulamento Geral de Proteção de Dados, disponível em:
+                {!!__('messages.pp3')!!}
                     <a style="color:black"
                         href="https://eur-lex.europa.eu/legal-content/PT/ALL/?uri=celex%3A32016R0679">https://eur-lex.europa.eu/legal-content/PT/ALL/?uri=celex%3A32016R0679</a>
                 </h5>
                 <br>
 
                 <h3 style="font-weight:bold;">
-                    1. Que dados pessoais dos Clientes são recolhidos pela Dare & Innovative Cuisine e de onde são
-                    recolhidos?
+                {!!__('messages.pp4')!!}
                 </h3>
                 <br>
 
                 <h5>
-                    Dare & Innovative Cuisine não procede à recolha, registo, conservação, utilização, comunicação, por
-                    meios automatizados e/ou não automatizados — incluindo a elaboração de uma base de dados pessoais ou
-                    definição de um perfil — dos dados pessoais dos seus Clientes.
-                    <br>
-                    As informações e dados pessoais em nosso poder são para único e exclusivo efeito da prestação dos
-                    nossos serviços, devidamente contratualizados e detalhados nos contratos de prestação de serviços
-                    assinados com os nossos clientes. Estes dados são mantidos, no mínimo, por todo o tempo em que
-                    perdurar uma relação contratual entre a Dare & Innovative Cuisine e um seu Cliente ou em prazo
-                    superior, caso seja imposto por lei ou por interesses legítimos da Dare & Innovative Cuisine ou de
-                    terceiros. A Dare & Innovative Cuisine pode recolher e utilizar também dados pessoais de titulares
-                    que não são Clientes, como se explica com maior detalhe seguidamente.
-                    <br>
-                    A Dare & Innovative Cuisine classifica os dados pessoais dos seus Clientes nas seguintes categorias:
-                    <br>
-                    <b>Dados de identificação:</b> podem estar incluídos o nome completo ou abreviado; género; data de
-                    nascimento/idade; estado civil; número do cartão de cidadão; número de segurança social; número de
-                    passaporte; outro número emitido por uma autoridade competente (número fiscal; carta de condução,
-                    utente do SNS, etc.); nacionalidade; títulos académicos; imagens de cartão de cidadão, de
-                    passaportes, de cartas de condução e assinaturas; fotografias. <br>
-                    <b>Dados familiares:</b> podem estar incluídos, o nome e detalhes de contacto de familiares,
-                    dependentes ou
-                    informação relativa à composição do agregado familiar. <br>
-                    <b>Dados de contacto:</b> podem estar incluídos morada, número de telefone, endereço de correio
-                    eletrónico. <br>
-                    <b>Dados de emprego:</b> podem estar incluídos setor e área de atividade; posição hierárquica; nome
-                    do
-                    atual empregador e de empregadores passados; morada profissional; número de telefone do local de
-                    trabalho, endereço de correio eletrónico profissional. <br>
-                    <b>Dados sobre qualificações:</b> podem estar incluídos dados sobre a formação profissional e
-                    académica.
-                    Dados financeiros: podem estar incluídos morada de residência; número de conta bancária. <br>
-                    A Dare & Innovative Cuisine tratará os dados pessoais do Cliente como estritamente confidenciais nos
-                    termos das regras legais e regulamentares aplicáveis, tendo adotado medidas técnicas e organizativas
-                    de maneira a não permitir — dentro das suas possibilidades e responsabilidades — que terceiros deles
-                    façam uma utilização indevida e condicionando a cessão ou transmissão, quando legalmente possível, à
-                    expressa aceitação, pelo cessionário, da obrigação de confidencialidade anteriormente referida.
-                    Os dados pessoais a que a Dare & Innovative Cuisine tem acesso resultam maioritariamente por terem
-                    sido fornecidos pelo Cliente no contexto da relação comercial que é estabelecida com a Dare &
-                    Innovative Cuisine.
+                {!!__('messages.pp5')!!}
                 </h5>
                 <br>
                 <h3 style="font-weight:bold;">
