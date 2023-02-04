@@ -300,7 +300,7 @@
     </style>
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div id="carouselExampleControls" style="width:75%;" class="carousel" data-bs-ride="carousel">
+            <div id="carouselExampleControls" style="width:75%;" class="carousel slide" data-interval="false data-bs-ride="carousel">
                 <div class="carousel-inner" style="border-radius:25px;">
                     <div class="carousel-item active">
                         <img src="https://dare.pt/img/ex/esf.png" class="d-block w-100" alt="...">
