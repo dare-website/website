@@ -88,8 +88,8 @@
                 
                     <div class="nav-item" style="display:flex;margin-left:auto;margin-right:auto;">
 
-                        <a class="nav-link" style="padding-left:.08 !important;padding-right:.08 !important;"
-                            href="{{ route('lang.switch', 'pt') }}"> PT</a>
+                        <a class="nav-link" style="<?php if(strcmp(session()->get('applocale'),"pt")==0){ ?> color:black;<?php } ?> padding-left:.08 !important;padding-right:.08 !important;"
+                            href="{{ route('lang.switch', 'pt') }}"> PT</a> 
                         <a class="nav-link" style="padding-left:.08 !important;padding-right:.08 !important;">|&nbsp</a>
                         <a class="nav-link"
                             style="padding-right:0 !important;padding-left:0 !important;margin-right:1.5rem;"
