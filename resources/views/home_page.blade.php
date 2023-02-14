@@ -349,17 +349,17 @@
                     <div style="margin-bottom:2rem;">
                         <div class="icon3"><img class="icon4" src="img/icon/dream.png"
                                 style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
-                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE DREAM </h1>
+                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">&nbsp;DREAM </h1>
                     </div>
                     <div style="margin-bottom:2rem;">
                         <div class="icon2"><img class="icon1" src="img/icon/amaze.png"
                                 style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt=""></div>
-                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">WE AMAZE</h1>
+                        <h1 style="color:black;font-family: 'Adam-Medium';font-size:3.5rem;">&nbsp;AMAZE</h1>
                     </div>
                     <div style="margin-bottom:2rem;">
                         <img class="icon1" src="img/icon/repeat.png"
                             style="width:4rem;position:absolute;margin-left:17rem;margin-top:-1.8rem" alt="">
-                        <h1 style="color:black;font-family: 'Adam-Medium';font-size: 3.5rem;">WE REPEAT</h1>
+                        <h1 style="color:black;font-family: 'Adam-Medium';font-size: 3.5rem;">&nbsp;REPEAT</h1>
                     </div>
                 </div>
             </div>
