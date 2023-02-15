@@ -103,6 +103,10 @@
 </div>
 </div>
 
+<script>
+ var locale = '{{ config('app.locale') }}';
+ console.log(locale);
+</script>
 
 <style>
 .portfolio-menu {
