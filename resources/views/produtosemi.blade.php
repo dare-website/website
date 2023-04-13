@@ -249,7 +249,7 @@
                         <a style="text-decoration:none;font-family:'Lato-Light' " href="tel:+351913497009"
                             class="text-white">+351 913
                             497
-                            009</a>
+                            009 (Chamada para rede fixa nacional)</a>
                     </h6>
 
                     <h6 style="font-family:'Lato-Light' ">
