@@ -25,14 +25,26 @@ Route::get('/produtos', function () {
             $produto_lollipolis= ProdutoEn::where('id_tipo',6)->get();
             $produto_canapes= ProdutoEn::where('id_tipo',7)->get();
             $produto_semi= ProdutoEn::where('id_tipo',8)->get();
-            return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi]);
+
+            $produto_vini= ProdutoEn::where('id_tipo',14)->get();
+            $produto_alhon= ProdutoEn::where('id_tipo',15)->get();
+            $produto_perola= ProdutoEn::where('id_tipo',16)->get();
+            $produto_vegan= ProdutoEn::where('id_tipo',17)->get();
+            $produto_trufa= ProdutoEn::where('id_tipo',18)->get();
+            return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi, 'vini'=>$produto_vini, 'alhon'=>$produto_alhon, 'perola'=>$produto_perola, 'vegan'=>$produto_vegan,'trufa'=>$produto_trufa]);
       
         }else{
             $produto_esferificacao= Produto::where('id_tipo',1)->get();
             $produto_lollipolis= Produto::where('id_tipo',2)->get();
             $produto_canapes= Produto::where('id_tipo',3)->get();
             $produto_semi= Produto::where('id_tipo',4)->get();
-            return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi]);
+
+            $produto_vini= Produto::where('id_tipo',9)->get();
+            $produto_alhon= Produto::where('id_tipo',10)->get();
+            $produto_perola= Produto::where('id_tipo',11)->get();
+            $produto_vegan= Produto::where('id_tipo',12)->get();
+            $produto_trufa= Produto::where('id_tipo',13)->get();
+            return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi,'vini'=>$produto_vini, 'alhon'=>$produto_alhon, 'perola'=>$produto_perola, 'vegan'=>$produto_vegan,'trufa'=>$produto_trufa]);
         }
 });
 Route::get('/produto', function () {
