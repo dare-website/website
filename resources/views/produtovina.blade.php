@@ -1,1 +1,2 @@
 vinagres
+{{$produto}}
