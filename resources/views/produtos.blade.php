@@ -32,7 +32,8 @@
 </style>
 
 <div class="parallax justify-content-center  d-flex align-items-center">
-    <h1 style="color:white;text-shadow: 0 0 3px #4e4e4e;font-family: 'Adam-Medium';font-weight:bold;">{{__('messages.product')}}</h1>
+    <h1 style="color:white;text-shadow: 0 0 3px #4e4e4e;font-family: 'Adam-Medium';font-weight:bold;">
+        {{__('messages.product')}}</h1>
 </div>
 <div class="container"
     style="padding-right: calc(var(--bs-gutter-x) * 2);padding-left: calc(var(--bs-gutter-x) * 2); margin-bottom:10rem;margin-top:2rem;">
@@ -97,10 +98,10 @@
         @foreach ($semi as $sem )
         <div id="semi" class="ite semi block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $sem->id) }}" style="text-decoration:none !important;">
-            
+
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$sem->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
-                
+
             </a>
         </div>
         @endforeach
@@ -109,10 +110,61 @@
         @foreach ($vini as $vin )
         <div id="vini" class="ite vini block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $vin->id) }}" style="text-decoration:none !important;">
-            
+
                 <img class="img-fluid shadow" src="https://dare.pt/storage/{{$vin->avatar}}" alt="">
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$vin->nome}}</h4>
-                
+
+            </a>
+        </div>
+        @endforeach
+    </div>
+
+    <div class="portfolio-i row">
+        @foreach ($alhon as $alho )
+        <div id="alhon" class="ite alhon block-card col-md-3" style="text-align:center;">
+            <a href="{{ route('produto', $alho->id) }}" style="text-decoration:none !important;">
+
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$alho->avatar}}" alt="">
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$alho->nome}}</h4>
+
+            </a>
+        </div>
+        @endforeach
+    </div>
+    <div class="portfolio-i row">
+        @foreach ($perola as $perol )
+        <div id="perola" class="ite perola block-card col-md-3" style="text-align:center;">
+            <a href="{{ route('produto', $perol->id) }}" style="text-decoration:none !important;">
+
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$perol->avatar}}" alt="">
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$perol->nome}}</h4>
+
+            </a>
+        </div>
+        @endforeach
+    </div>
+
+    <div class="portfolio-i row">
+        @foreach ($vegan as $vega )
+        <div id="vegan" class="ite vegan block-card col-md-3" style="text-align:center;">
+            <a href="{{ route('produto', $vega->id) }}" style="text-decoration:none !important;">
+
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$vega->avatar}}" alt="">
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$vega->nome}}</h4>
+
+            </a>
+        </div>
+        @endforeach
+    </div>
+
+    <div class="portfolio-i row">
+        @foreach ($trufa as $truf )
+        <div id="trufa" class="ite trufa block-card col-md-3" style="text-align:center;">
+            <a href="{{ route('produto', $truf->id) }}" style="text-decoration:none !important;">
+
+                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$truf->avatar}}" alt="">
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$truf->nome}}</h4>
+
             </a>
         </div>
         @endforeach
@@ -121,8 +173,9 @@
 </div>
 
 <script>
- var locale = '{{ config('app.locale') }}';
- console.log(locale);
+var locale = '{{ config('
+app.locale ') }}';
+console.log(locale);
 </script>
 
 <style>
@@ -244,7 +297,7 @@ $('.filter-btn').on('click', e => {
                     </h3>
 
                     <h4 style="font-family: 'Adam-Medium';padding-top:1.5rem;" class="text-white">
-                    {{__('messages.redef')}}
+                        {{__('messages.redef')}}
                     </h4>
                     <a style="font-size:1.5rem;margin-right:1rem;color: #fff !important"
                         href="https://www.facebook.com/people/DARE-Innovative-Cuisine/100084415685710/"><i
@@ -258,7 +311,7 @@ $('.filter-btn').on('click', e => {
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h3 style="font-family: 'Adam-Medium';padding-top:3rem;" class="text-white">
-                    {{__('messages.cont')}}
+                        {{__('messages.cont')}}
                     </h3>
                     <h6 style="margin-bottom:1rem;">
                         <a style="text-decoration:none;font-family:'Lato-Light' " href="mailto:info@dare.pt"
