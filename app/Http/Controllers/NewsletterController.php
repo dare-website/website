@@ -90,9 +90,36 @@ class NewsletterController extends Controller
                 $produto = Produto::where('id_tipo',$id_tipo)->get();
                 return view('produtosemi', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
             }
-            
+            if ($id_tipo==9) {
+                $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = Produto::where('id',$id)->first();
+                $produto = Produto::where('id_tipo',$id_tipo)->get();
+                return view('produtovina', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            }
+            if ($id_tipo==10) {
+                $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = Produto::where('id',$id)->first();
+                $produto = Produto::where('id_tipo',$id_tipo)->get();
+                return view('produtoalhosn', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            }
+            if ($id_tipo==11) {
+                $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = Produto::where('id',$id)->first();
+                $produto = Produto::where('id_tipo',$id_tipo)->get();
+                return view('produtoperola', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            }
+            if ($id_tipo==12) {
+                $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = Produto::where('id',$id)->first();
+                $produto = Produto::where('id_tipo',$id_tipo)->get();
+                return view('produtovegan', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            }
+            if ($id_tipo==13) {
+                $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = Produto::where('id',$id)->first();
+                $produto = Produto::where('id_tipo',$id_tipo)->get();
+                return view('produtotrufa', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            } 
         }
-        
     }
-
 }
