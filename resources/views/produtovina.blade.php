@@ -13,10 +13,10 @@
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(204, 40, 65,0.5);margin-left:2rem;"> <a
-                                style="text-decoration: none; color: rgba(204, 40, 65,0.5) !important;"
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(58,170,53,0.5);margin-left:2rem;"> <a
+                                style="text-decoration: none; color: rgba(58,170,53,0.5) !important;"
                                 href="/">HOME</a> /
-                            <a style="text-decoration: none; color: rgba(204, 40, 65,0.5) !important;"
+                            <a style="text-decoration: none; color: rgba(58,170,53,0.5) !important;"
                                 href="/produtos">{{__('messages.product')}}</a> / {{$tipoproduto->nome}}
                         </h6>
                     </div>
@@ -89,7 +89,7 @@
                         @if ($count_array == 4)
                         @foreach ($img_produto as $img)
                         <label for="image{{$i}}"
-                            style="border: solid 1.5px #a2a1a1;background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
+                            style="border: solid 1.5px rgb(58,170,53);background-image:url('https://dare.pt/storage/{{$img->avatar}}');"></label>
                         @php
                         $i++;
                         @endphp
@@ -153,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: #cc2841;">
+            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgba(58,170,53,1);">
                 <div style="text-align:left;">
                     <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
                 </div>
@@ -232,7 +232,7 @@
                     <a href="{{route('produto', $prod->id)}}" style="text-decoration:none !important;">
                         <img class="img-fluid shadow" style="border-radius:15px;"
                             src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
-                        <h6 style=" color:#cc2841;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
+                        <h6 style=" color:rgba(58,170,53,1);margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
                         </h6>
                     </a>
                 </div>
@@ -256,7 +256,7 @@
                             <img class="img-fluid shadow" style="border-radius:15px;"
                                 src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
                             <h6
-                                style="font-family: 'Raleway-Medium';color:rgba(204, 40, 65,1);margin-top:1rem;margin-bottom:3rem;">
+                                style="font-family: 'Raleway-Medium';color:rgba(58,170,53,1);margin-top:1rem;margin-bottom:3rem;">
                                 {{$prodR->nome}}
                             </h6>
                         </a>
@@ -281,7 +281,7 @@
 
         .btn1 {
             margin-left: 5rem !important;
-            color: rgba(204, 40, 65, 0.4);
+            color: rgba(58,170,53,0.4);
             position: relative;
             top: 2px;
         }
@@ -292,16 +292,16 @@
         .btn1.show,
         .btn1:active,
         .btn1:hover {
-            color: rgba(204, 40, 65, 1);
+            color:rgba(58,170,53,1);
             border-radius: 0px !important;
             --bs-btn1-border-color: none;
-            border-bottom: 2px solid rgba(204, 40, 65, 1) !important;
+            border-bottom: 2px solid rgba(58,170,53,1) !important;
         }
         </style>
 
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:#cc2841;">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:rgba(58,170,53,1);">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
@@ -389,13 +389,13 @@
     </div>
     <!-- Grid container -->
     <div class="font1 text-center text-white "
-        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: #cc2841">
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(58,170,53,1)">
         <h6 style="font-size:0.6rem;"><a style="color:white" href="/politica-privacidade">Politica de Privacidade</a>
         </h6>
     </div>
     <!-- Copyright -->
     <div class="font1 text-center text-white "
-        style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: #cc2841">
+        style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(58,170,53,1)">
         <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->

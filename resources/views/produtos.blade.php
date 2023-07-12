@@ -4,13 +4,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
 
 <style>
-@media(max-width: 449px) {
+
     .linha {
         display: inline-flex;
         overflow-x: scroll;
         width: 100%;
     }
-}
+
 
 .parallax {
     /* The image used */
@@ -60,8 +60,8 @@
             <li class="btn1 filter-btn" data-target="#vini" data-filter=".vini">VINAGRES</li>
             <li class="btn1 filter-btn" data-target="#alhon" data-filter=".alhon">ALHO NEGRO</li>
             <li class="btn1 filter-btn" data-target="#perola" data-filter=".perola">PEROLAS</li>
-            <li class="btn1 filter-btn" data-target="#vegan" data-filter=".vegan">VEGAN</li>
             <li class="btn1 filter-btn" data-target="#trufa" data-filter=".trufa">TRUFA</li>
+            <li class="btn1 filter-btn" data-target="#vegan" data-filter=".vegan">VEGAN</li>
         </ul>
     </div>
     <div class="portfolio-i row">
