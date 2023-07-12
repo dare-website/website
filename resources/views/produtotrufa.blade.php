@@ -170,7 +170,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-chefcana.png') }}" style="height:1.5rem;" alt="">
+                                    <img src="{{ asset('img/icon/icon-cheflolli.png') }}" style="height:1.5rem;" alt="">
                                 </div>
                                 <div class="col-md-10">
                                     <p style="padding-right:0rem;"> <span
@@ -184,7 +184,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-caixacanapng.png') }}" style="height:1.5rem;"
+                                    <img src="{{ asset('img/icon/icon-caixalolli.png') }}" style="height:1.5rem;"
                                         alt="">
                                 </div>
                                 <div class="col-md-10">

@@ -184,7 +184,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-caixacanapng.png') }}" style="height:1.5rem;"
+                                    <img src="{{ asset('img/icon/icon-caixaesf.png') }}" style="height:1.5rem;"
                                         alt="">
                                 </div>
                                 <div class="col-md-10">
@@ -376,7 +376,7 @@
                         <form action="/news" method="post">
                             @csrf
                             <input type="email" placeholder="Email*" name="email">
-                            <input style="background:#cc2841;" type="submit" value="{{__('messages.sub')}}">
+                            <input style="background:rgba(14, 162, 154,1);" type="submit" value="{{__('messages.sub')}}">
                         </form>
                     </div>
 
