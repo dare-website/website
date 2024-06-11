@@ -8,11 +8,11 @@
 <section>
     <style>
     @media(max-width: 449px) {
-        .linha {
+        /* .linha {
             display: inline-flex;
-            overflow-x: scroll;
+            overflow-x: hidden;
             width: 100%;
-        }
+        } */
 
         .thumbnails label {
             height: 60px !important;
@@ -145,41 +145,51 @@
             </div>
 
             <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: rgb(14, 162, 154);">
+           
                 <div style="text-align:left;">
+                    @if(!is_null($tipoproduto->referencia))
+                        <p style="font-family: 'Raleway-Light'; font-size: 0.6rem;margin:0;">{{$tipoproduto->referencia}}</p>
+                    @endif
                     <h1 style="font-family:'Raleway-Light';">{{$produtoS->nome}}</h1>
                 </div>
                 <div style="font-family:'Lato-LightItalic';">
                     <p>
                         {!! $tipoproduto->texto !!}
                     </p>
-
-                    <div class="row" style="margin-top:3rem;">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-caixaesf.png') }}" style="height:1.5rem;" alt="">
-                                </div>
-                                <div class="col-md-10">
-                                    <p> <span style="font-family:'Raleway-Regular';">{{__('messages.form')}}</span><br>
-                                        <span style="font-family:'Lato-Light';">FRASCOS <br>
-                                            @if ($produtoS->id == 27 || $produtoS->id == 28)
-                                            6un | 20un | 25un* | 30un
-                                            @else
-                                            {{$tipoproduto->formato}}
-                                            @endif
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="row" style="font-family: 'Lato-Regular'; margin-top: 3rem;">
+                        <div class="col-md-6" style="display:flex">
+                            <img src="{{ asset('img/icon/icon-caixaesf.png') }}" style="height: 1.5rem;margin-top:2px" alt="Box Icon">
+                            <p style="padding-left:10px">
+                                <span style="font-family: 'Raleway-Regular';">{{__('messages.form')}}</span><br>
+                                <span style="font-family: 'Lato-Light';">{{__('messages.caixa')}} <br>
+                                    @if ($produtoS->id == 27 || $produtoS->id == 28)
+                                    6un | 20un | 25un* | 30un
+                                    @else
+                                    {{$tipoproduto->formato}}
+                                    @endif
+                                </span>
+                            </p>
                         </div>
+                           
+                        @if (!is_null($tipoproduto->balanca))
+                        <div class="col-md-6 offset-md-6" style="display:flex">
+                            <img src="{{ asset('img/icon/icon-balancacana.png') }}" style="height: 1.5rem;margin-top:2px" alt="Box Icon">
+                            <p style="padding-left:10px">
+                                <span style="font-family: 'Lato-Light';">{!! $tipoproduto->balanca !!}</span>
+                            </p>
+                        </div>
+                       
+                        @endif
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>
 
-        <div class="row" style="text-align: center;margin-top:5rem;">
+        <div class="row justify-content-center" style="text-align: center;margin-top:5rem;">
             <div class="portfolio-menu mt-2 mb-4">
-                <ul class="linha" style="border-bottom:2px solid rgba(14, 162, 154,0.4);padding-right: 4rem;">
+                <ul class="linha d-flex justify-content-center" style="border-bottom:2px solid rgba(14, 162, 154,0.4);padding-right: 2rem;">
                     <li class="btn1 filter-btn active" data-target="#prod1" data-filter=".prod1">{{__('messages.comalcool')}}</li>
                     <li class="btn1 filter-btn " data-target="#prod0" data-filter=".prod0">{{__('messages.semalcool')}}</li>
                 </ul>
@@ -188,8 +198,9 @@
                 @foreach ($produto0 as $prod0 )
                 <div id="prod0" class="ite block-card prod0 col-md-3" style="text-align:center;">
                     <a href="{{route('produto', $prod0->id)}}" style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;"
-                            src="https://dare.pt/storage/{{$prod0->avatar}}" alt="">
+                        <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                            <img class="" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">           
+                        </div>
                         <h6
                             style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">
                             {{$prod0->nome}}
@@ -202,8 +213,9 @@
                 @foreach ($produto1 as $prod1 )
                 <div id="prod1" class="ite block-card active prod1 col-md-3" style="text-align:center;">
                     <a href="{{route('produto', $prod1->id)}}" style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;"
-                            src="https://dare.pt/storage/{{$prod1->avatar}}" alt="">
+                        <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                            <img class="" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                        </div>
                         <h6
                             style=" font-family: 'Raleway-Medium';color:rgba(14, 162, 154,1);margin-top:1rem;margin-bottom:3rem;">
                             {{$prod1->nome}}
@@ -326,10 +338,10 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;margin-top:5rem;">
+        <div class="row justify-content-center" style="text-align: center;margin-top:5rem;">
             <div class="mt-2 mb-4 ">
                 <ul class="linha d-flex justify-content-center"
-                    style="border-bottom:2px solid rgba(14, 162, 154, 0.4);padding-right: 4rem;">
+                    style="border-bottom:2px solid rgba(14, 162, 154, 0.4);padding-right: 2rem;">
                     <li class="btn1 produtoli active">{{__('messages.produtosrela')}}</li>
                 </ul>
             </div>
@@ -338,8 +350,12 @@
                 <div class="ite col-md-3" style="text-align:center;">
                     <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id) ; }?>"
                         style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;"
-                            src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
+                        <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                            <img class="" src="https://dare.pt/storage/{{$prodR->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                            <!-- <img class="img-fluid shadow" style="border-radius:15px;"
+                                src="https://dare.pt/storage/{{$prodR->avatar}}" alt=""> -->
+                        </div>
+                        
                         <h6
                             style="font-family: 'Raleway-Medium';color:rgba(14, 162, 154, 1);margin-top:1rem;margin-bottom:3rem;">
                             {{$prodR->nome}}
@@ -405,16 +421,16 @@
                 <!-- Grid column -->
 
                 <style>
-                input[type="text"] {
-                    background: rgba(0, 0, 0, 0);
-                    border: none;
-                    outline: none;
-                }
+                    input[type="text"] {
+                        background: rgba(0, 0, 0, 0);
+                        border: none;
+                        outline: none;
+                    }
 
-                ::placeholder {
-                    /* Chrome, Firefox, Opera, Safari 10.1+ */
-                    color: white;
-                }
+                    ::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: white;
+                    }
                 </style>
                 <!-- Grid column -->
                 <div class="col-md-5 col-lg-5 col-xl-5 mt-3 text-black footer-newsletter">
@@ -446,7 +462,7 @@
     <!-- Copyright -->
     <div class="font1 text-center text-white "
         style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(14, 162, 154, 1)">
-        <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
+        <h6 style="font-size:0.6rem;">© {{ date('Y') }}  DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->
 </footer>

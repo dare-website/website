@@ -21,4 +21,9 @@ class ProdutoEn extends Model
         'balanca'
 
     ];
+
+    public function tipoProduto()
+    {
+        return $this->belongsTo(TipoProduto::class, 'id_tipo');
+    }
 }

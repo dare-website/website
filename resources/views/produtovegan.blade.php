@@ -13,11 +13,11 @@
             <div class="col-lg-12 text-center my-2">
                 <div class="row">
                     <div class="col-md-6" style="text-align: left;">
-                        <h6 style="font-family: 'Raleway-Medium';color: rgba(204, 40, 65,0.5);margin-left:2rem;"> <a
-                                style="text-decoration: none; color: rgba(204, 40, 65,0.5) !important;"
+                        <h6 style="font-family: 'Raleway-Medium';color: rgba(100, 181, 1,0.5);margin-left:2rem;"> <a
+                                style="text-decoration: none; color: rgba(100, 181, 1,0.5) !important;"
                                 href="/">HOME</a> /
-                            <a style="text-decoration: none; color: rgba(204, 40, 65,0.5) !important;"
-                                href="/produtos">{{__('messages.product')}}</a> / {{$tipoproduto->nome}}
+                            <a style="text-decoration: none; color: rgba(100, 181, 1,0.5) !important;"
+                                href="/produtos">{{__('messages.product')}}</a> / {{$produtoS->nome}}
                         </h6>
                     </div>
                     <div class="col-md-6" style="text-align:right;">
@@ -153,98 +153,108 @@
                 </div>
             </div>
 
-            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: #cc2841;">
+            <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: #64b501;">
                 <div style="text-align:left;">
-                    <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
+                    @if(!is_null($produtoS->referencia))
+                        <p style="font-family: 'Raleway-Light'; font-size: 0.6rem;margin:0;">{{$produtoS->referencia}}</p>
+                    @endif
+                    <h1 style="font-family:'Raleway-Light';">{{$produtoS->nome}}</h1>
                 </div>
                 <div style="font-family:'Lato-LightItalic';">
                     <p>
-                        @if (is_null($tipoproduto->texto))
-                        <img src="{{ asset('img/icon/icon-glutencana.png') }}" style="height:1.5rem;" alt="">
+                        @if (is_null($produtoS->texto))
+                        <img src="{{ asset('img/icon/icon-glutenvegan.png') }}" style="height:1.5rem;" alt="">
                         @endif
-                        {!! $tipoproduto->texto!!}
+                        {!! $produtoS->texto!!}
 
                     </p>
-
-                    <div class="row" style="font-family:'Lato-Regular';margin-top:3rem;">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-chefcana.png') }}" style="height:1.5rem;" alt="">
-                                </div>
-                                <div class="col-md-10">
-                                    <p style="padding-right:0rem;"> <span
-                                            style="font-family:'Raleway-Regular';">{{__('messages.prep')}}</span><br>
-
-                                        <span style="font-family:'Lato-Light';"> {!! $tipoproduto->preparacao !!}</span>
-                                    </p>
-                                </div>
+                    
+                    <div class="row" style="font-family: 'Lato-Regular'; margin-top: 3rem;">
+                        <div class="col-md-12" style="display:flex">
+                                <img src="{{ asset('img/icon/icon-chefvegan.png') }}" style="height: 1.5rem;margin-top:2px" alt="Chef Icon">
+                                <p style="padding-left:10px">
+                                    <span style="font-family: 'Raleway-Regular';">{{__('messages.prep')}}</span>
+                                    <br>
+                                    <span style="font-family: 'Lato-Light';">{!! $produtoS->preparacao !!}</span>
+                                </p>
+                          
+                        </div>
+                        <div class="col-md-6" style="display:flex">
+                            <img src="{{ asset('img/icon/icon-caixavegan.png') }}" style="height: 1.5rem;margin-top:2px" alt="Box Icon">
+                            <p style="padding-left:10px">
+                                <span style="font-family: 'Raleway-Regular';">{{__('messages.form')}}</span><br>
+                                <span style="font-family: 'Lato-Light';">{{__('messages.caixa')}} <br>{!! $produtoS->formato !!}</span>
+                            </p>
+                        </div>
+                          
+                        @if (!is_null($produtoS->balanca))
+                            <div class="col-md-6" style="display:flex">
+                                <img src="{{ asset('img/icon/icon-balancavegan.png') }}" style="height: 1.5rem;margin-top:2px" alt="Box Icon">
+                                <p style="padding-left:10px">
+                                    <span style="font-family: 'Lato-Light';">{!! $produtoS->balanca !!}</span>
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <img src="{{ asset('img/icon/icon-caixacanapng.png') }}" style="height:1.5rem;"
-                                        alt="">
-                                </div>
-                                <div class="col-md-10">
-                                    <p> <span style="font-family:'Raleway-Regular';">{{__('messages.form')}}</span><br>
-                                        <span style="font-family:'Lato-Light';">{{__('messages.caixa')}} <br>
-                                            {!! $tipoproduto->formato !!}</span>
-                                    </p>
-                                </div>
-                            </div>
-                            @if (!is_null($tipoproduto->balanca))
-                            <div class="row">
-                                <div class="col-md-1">
-
-                                    <img src="{{ asset('img/icon/icon-balancacana.png') }}" style="height:1.5rem;"
-                                        alt="">
-                                </div>
-                                <div class="col-md-10 d-flex">
-                                    <p>
-                                        <span style="font-family:'Lato-Light';">
-                                            {!! $tipoproduto->balanca !!}</span>
-                                    </p>
-                                </div>
-                            </div>
-                            @endif
-                        </div>
-
-
-                        <div class="col-md-6">
-
-                        </div>
-                        <div class="col-md-6">
-
-                        </div>
-
+                        
+                        @endif
+                        
                     </div>
+
+                    
                 </div>
             </div>
         </div>
 
-        <div class="row" style="text-align: center;margin-top:5rem;">
 
-            <div class="portfolio-i row" style="margin-left:1rem;margin-right:1rem;">
-                @foreach ($produto as $prod )
-                <div class="ite prod0 col-md-2" style="text-align:center;">
-                    <a href="{{route('produto', $prod->id)}}" style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;"
-                            src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
-                        <h6 style=" color:#cc2841;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
+
+        <div class="row justify-content-center" style="text-align: center;margin-top:5rem;">
+            <div class="portfolio-menu mt-2 mb-4">
+                <ul class="linha" style="border-bottom:2px solid rgba(100, 181, 1,0.4);padding-right: 2rem;">
+                    <li class="btn1 filter-btn active" data-target="#prod1" data-filter=".prod1">DEMI-GLACE</li>
+                    <li class="btn1 filter-btn " data-target="#prod0" data-filter=".prod0"></li>
+                </ul>
+            </div>
+            <div class="portfolio-i row d-flex ">
+                @foreach ($produto0 as $prod0 )
+                <div id="prod0" class="ite block-card prod0 col-md-3" style="text-align:center;">
+                    <a href="{{route('produto', $prod0->id)}}" style="text-decoration:none !important;">
+                        <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                            <img class="" src="https://dare.pt/storage/{{$prod0->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                        </div>
+                        <h6
+                            style="font-family: 'Raleway-Medium';color:rgba(100, 181, 1,1);margin-top:1rem;margin-bottom:3rem;">
+                            {{$prod0->nome}}
                         </h6>
                     </a>
                 </div>
                 @endforeach
             </div>
+            
+            <div class="portfolio-i row d-flex">
+                @foreach ($produto1 as $prod1 )
+                <div id="prod1" class="ite block-card active prod1 col-md-3" style="text-align:center;">
+                    <a href="{{route('produto', $prod1->id)}}" style="text-decoration:none !important;">
+                        <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                            <img class="" src="https://dare.pt/storage/{{$prod1->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+
+                        </div>
+                        <h6
+                            style=" font-family: 'Raleway-Medium';color:rgba(100, 181, 1,1);margin-top:1rem;margin-bottom:3rem;">
+                            {{$prod1->nome}}
+                        </h6>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+
         </div>
 
+        
+
         <div class="container">
-            <div class="row" style="text-align: center;margin-top:5rem;">
+            <div class="row justify-content-center" style="text-align: center;margin-top:5rem;">
                 <div class="portfolio-menu mt-2 mb-4 ">
                     <ul class="linha d-flex justify-content-center"
-                        style="border-bottom:2px solid rgba(204, 40, 65,0.4);padding-right: 4rem;">
+                        style="border-bottom:2px solid rgba(100, 181, 1,0.4);padding-right: 2rem;">
                         <li class="btn1 active" data-filter=".prod1">{{__('messages.produtosrela')}}</li>
                     </ul>
                 </div>
@@ -253,10 +263,11 @@
                     <div class="ite prod0 col-md-3" style="text-align:center;">
                         <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ echo route('produto', $prodR->id); }else{  echo route('produto', $prodR->id) ; }?>"
                             style="text-decoration:none !important;">
-                            <img class="img-fluid shadow" style="border-radius:15px;"
-                                src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
+                            <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                                <img class="" src="https://dare.pt/storage/{{$prodR->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                            </div>
                             <h6
-                                style="font-family: 'Raleway-Medium';color:rgba(204, 40, 65,1);margin-top:1rem;margin-bottom:3rem;">
+                                style="font-family: 'Raleway-Medium';color:rgba(100, 181, 1,1);margin-top:1rem;margin-bottom:3rem;">
                                 {{$prodR->nome}}
                             </h6>
                         </a>
@@ -280,8 +291,8 @@
         }
 
         .btn1 {
-            margin-left: 5rem !important;
-            color: rgba(204, 40, 65, 0.4);
+            /*margin-left: 5rem !important;*/
+            color: rgba(100, 181, 1, 0.4);
             position: relative;
             top: 2px;
         }
@@ -292,16 +303,16 @@
         .btn1.show,
         .btn1:active,
         .btn1:hover {
-            color: rgba(204, 40, 65, 1);
+            color: rgba(100, 181, 1, 1);
             border-radius: 0px !important;
             --bs-btn1-border-color: none;
-            border-bottom: 2px solid rgba(204, 40, 65, 1) !important;
+            border-bottom: 2px solid rgba(100, 181, 1, 1) !important;
         }
         </style>
 
 
 </section>
-<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:#cc2841;">
+<footer class="text-center text-lg-start text-white footer-16371" id="contacto" style="background-color:#64b501;">
     <!-- Grid container -->
     <div class="container pb-0">
         <!-- Section: Links -->
@@ -376,7 +387,7 @@
                         <form action="/news" method="post">
                             @csrf
                             <input type="email" placeholder="Email*" name="email">
-                            <input style="background:#cc2841;" type="submit" value="{{__('messages.sub')}}">
+                            <input style="background:#64b501;" type="submit" value="{{__('messages.sub')}}">
                         </form>
                     </div>
 
@@ -389,14 +400,14 @@
     </div>
     <!-- Grid container -->
     <div class="font1 text-center text-white "
-        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: #cc2841">
+        style="margin-top:2rem;padding-bottom:0.5rem;padding-top:0.5rem; background-color: #64b501">
         <h6 style="font-size:0.6rem;"><a style="color:white" href="/politica-privacidade">Politica de Privacidade</a>
         </h6>
     </div>
     <!-- Copyright -->
     <div class="font1 text-center text-white "
-        style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: #cc2841">
-        <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
+        style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: #64b501">
+        <h6 style="font-size:0.6rem;">© {{ date('Y') }}  DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->
 </footer>

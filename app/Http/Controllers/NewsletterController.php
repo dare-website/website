@@ -32,6 +32,7 @@ class NewsletterController extends Controller
             $img_produto = Imagem::where('id_tipo',$id)->get();
             if ($id_tipo==5) {
                 $tipoproduto = TipoProduto::find($id_tipo);
+
                 $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $produto0 = ProdutoEn::where('alcool',0)->get();
                 $produto1 = ProdutoEn::where('alcool',1)->get();
@@ -50,14 +51,48 @@ class NewsletterController extends Controller
                 $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $tipoproduto = ProdutoEn::where('id',$id)->first();
                 $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
-                return view('produtocana', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+                $produtoS = ProdutoEn::where('id',$id)->first();
+
+                return view('produtocana', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'produtoS'=>$produtoS,'img_produto'=>$img_produto]);
             }
             if ($id_tipo==8) {
                 $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $tipoproduto = ProdutoEn::where('id',$id)->first();
                 $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
-                return view('produtosemi', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+                return
+                 view('produtosemi', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            }if ($id_tipo==14) {
+                $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = ProdutoEn::where('id',$id)->first();
+                $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
+                return view('produtovina', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
             }
+            if ($id_tipo==15) {
+                $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = ProdutoEn::where('id',$id)->first();
+                $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
+                return view('produtoalhosn', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            }
+            if ($id_tipo==16) {
+                $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = ProdutoEn::where('id',$id)->first();
+                $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
+                return view('produtoperola', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            }if ($id_tipo==17) {
+                $tipoproduto = TipoProduto::find($id_tipo);
+
+                $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $produto0 = ProdutoEn::where('demi_glace',0)->get();
+                $produto1 = ProdutoEn::where('demi_glace',1)->get();
+                $produtoS = ProdutoEn::where('id',$id)->first();
+                return view('produtovegan', ['produto0' => $produto0,'produto1' => $produto1, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR, 'produtoS'=>$produtoS, 'img_produto'=>$img_produto]);
+            }if ($id_tipo==18) {
+                $produtosR= ProdutoEn::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
+                $tipoproduto = ProdutoEn::where('id',$id)->first();
+                $produto = ProdutoEn::where('id_tipo',$id_tipo)->get();
+                return view('produtotrufa', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+            } 
+            
             
         }else{
             $id_tipo= Produto::where('id',$id)->first()->id_tipo;
@@ -82,6 +117,7 @@ class NewsletterController extends Controller
                 $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
                 $tipoproduto = Produto::where('id',$id)->first();
                 $produto = Produto::where('id_tipo',$id_tipo)->get();
+
                 return view('produtocana', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
             }
             if ($id_tipo==4) {
@@ -109,10 +145,12 @@ class NewsletterController extends Controller
                 return view('produtoperola', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
             }
             if ($id_tipo==12) {
+                $tipoproduto = TipoProduto::find($id_tipo);
                 $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();
-                $tipoproduto = Produto::where('id',$id)->first();
-                $produto = Produto::where('id_tipo',$id_tipo)->get();
-                return view('produtovegan', ['produto' => $produto, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR,'img_produto'=>$img_produto]);
+                $produto0 = Produto::where('demi_glace',0)->get();
+                $produto1 = Produto::where('demi_glace',1)->get();
+                $produtoS = Produto::where('id',$id)->first();
+                return view('produtovegan', ['produto0' => $produto0,'produto1' => $produto1, 'tipoproduto'=>$tipoproduto,'produtosR'=>$produtosR, 'produtoS'=>$produtoS, 'img_produto'=>$img_produto]);
             }
             if ($id_tipo==13) {
                 $produtosR= Produto::whereNot('id_tipo',$id_tipo)->inRandomOrder()->limit(3)->get();

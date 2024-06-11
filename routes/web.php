@@ -21,29 +21,29 @@ Route::get('/', function () {
 
 Route::get('/produtos', function () {
         if(strcmp(session()->get('applocale'),"en")==0){
-            $produto_esferificacao= ProdutoEn::where('id_tipo',5)->get();
-            $produto_lollipolis= ProdutoEn::where('id_tipo',6)->get();
-            $produto_canapes= ProdutoEn::where('id_tipo',7)->get();
-            $produto_semi= ProdutoEn::where('id_tipo',8)->get();
+            $produto_esferificacao= ProdutoEn::with('tipoProduto')->where('id_tipo',5)->get();
+            $produto_lollipolis= ProdutoEn::with('tipoProduto')->where('id_tipo',6)->get();
+            $produto_canapes= ProdutoEn::with('tipoProduto')->where('id_tipo',7)->get();
+            $produto_semi= ProdutoEn::with('tipoProduto')->where('id_tipo',8)->get();
 
-            $produto_vini= ProdutoEn::where('id_tipo',14)->get();
-            $produto_alhon= ProdutoEn::where('id_tipo',15)->get();
-            $produto_perola= ProdutoEn::where('id_tipo',16)->get();
-            $produto_vegan= ProdutoEn::where('id_tipo',17)->get();
-            $produto_trufa= ProdutoEn::where('id_tipo',18)->get();
+            $produto_vini= ProdutoEn::with('tipoProduto')->where('id_tipo',14)->get();
+            $produto_alhon= ProdutoEn::with('tipoProduto')->where('id_tipo',15)->get();
+            $produto_perola= ProdutoEn::with('tipoProduto')->where('id_tipo',16)->get();
+            $produto_vegan= ProdutoEn::with('tipoProduto')->where('id_tipo',17)->get();
+            $produto_trufa= ProdutoEn::with('tipoProduto')->where('id_tipo',18)->get();
             return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi, 'vini'=>$produto_vini, 'alhon'=>$produto_alhon, 'perola'=>$produto_perola, 'vegan'=>$produto_vegan,'trufa'=>$produto_trufa]);
       
         }else{
-            $produto_esferificacao= Produto::where('id_tipo',1)->get();
-            $produto_lollipolis= Produto::where('id_tipo',2)->get();
-            $produto_canapes= Produto::where('id_tipo',3)->get();
-            $produto_semi= Produto::where('id_tipo',4)->get();
+            $produto_esferificacao= Produto::with('tipoProduto')->where('id_tipo',1)->get();
+            $produto_lollipolis= Produto::with('tipoProduto')->where('id_tipo',2)->get();
+            $produto_canapes= Produto::with('tipoProduto')->where('id_tipo',3)->get();
+            $produto_semi= Produto::with('tipoProduto')->where('id_tipo',4)->get();
 
-            $produto_vini= Produto::where('id_tipo',9)->get();
-            $produto_alhon= Produto::where('id_tipo',10)->get();
-            $produto_perola= Produto::where('id_tipo',11)->get();
-            $produto_vegan= Produto::where('id_tipo',12)->get();
-            $produto_trufa= Produto::where('id_tipo',13)->get();
+            $produto_vini= Produto::with('tipoProduto')->where('id_tipo',9)->get();
+            $produto_alhon= Produto::with('tipoProduto')->where('id_tipo',10)->get();
+            $produto_perola= Produto::with('tipoProduto')->where('id_tipo',11)->get();
+            $produto_vegan= Produto::with('tipoProduto')->where('id_tipo',12)->get();
+            $produto_trufa= Produto::with('tipoProduto')->where('id_tipo',13)->get();
             return view('produtos')->with(['esferificacoes'=> $produto_esferificacao, 'lollipolis'=> $produto_lollipolis, 'canapes'=>$produto_canapes, 'semi'=>$produto_semi,'vini'=>$produto_vini, 'alhon'=>$produto_alhon, 'perola'=>$produto_perola, 'vegan'=>$produto_vegan,'trufa'=>$produto_trufa]);
         }
 });
@@ -68,6 +68,7 @@ Route::get('/produto', function () {
 Route::get('/produto/{id}', [App\Http\Controllers\NewsletterController::class, 'produto'])->name('produto');
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 Route::post('/news', [App\Http\Controllers\NewsletterController::class, 'newsletter'])->name('newsletter');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

@@ -73,6 +73,9 @@
 
             <div class="col-md-7" style="padding-left:1rem;padding-right:5rem; color: #d9358a;">
                 <div style="text-align:left;">
+                    @if(!is_null($tipoproduto->referencia))
+                        <p style="font-family: 'Raleway-Light'; font-size: 0.6rem;margin:0;">{{$tipoproduto->referencia}}</p>
+                    @endif
                     <h1 style="font-family:'Raleway-Light';">{{$tipoproduto->nome}}</h1>
                 </div>
                 <div style="font-family:'Lato-LightItalic';">
@@ -81,8 +84,36 @@
                         <br>
                         {!! $tipoproduto->texto !!}
                     </p>
-
-                    <div class="row" style="font-family:'Lato-Regular';margin-top:3rem;">
+                    <div class="row" style="font-family: 'Lato-Regular'; margin-top: 3rem;">
+                        <div class="col-md-6" style="display:flex">
+                                <img src="{{ asset('img/icon/icon-chefsemi.png') }}" style="height: 1.5rem;margin-top:2px" alt="Chef Icon">
+                                <p style="padding-left:10px">
+                                    <span style="font-family: 'Raleway-Regular';">{{__('messages.prep')}}</span>
+                                    <br>
+                                    <span style="font-family: 'Lato-Light';">{!! $tipoproduto->preparacao !!}</span>
+                                </p>
+                           
+                        </div>
+                        <div class="col-md-6" style="display:flex">
+                            <img src="{{ asset('img/icon/icon-caixasemi.png') }}" style="height: 1.5rem;margin-top:2px" alt="Box Icon">
+                            <p style="padding-left:10px">
+                                <span style="font-family: 'Raleway-Regular';">{{__('messages.form')}}</span><br>
+                                <span style="font-family: 'Lato-Light';">{{__('messages.caixa')}} <br>{!! $tipoproduto->formato !!}</span>
+                            </p>
+                        </div>
+                           
+                        @if (!is_null($tipoproduto->balanca))
+                            <div class="col-md-6 offset-md-6" style="display:flex">
+                                <img src="{{ asset('img/icon/icon-balancasemi.png') }}" style="height: 1.5rem;margin-top:2px" alt="Box Icon">
+                                <p style="padding-left:10px">
+                                    <span style="font-family: 'Lato-Light';">{!! $tipoproduto->balanca !!}</span>
+                                </p>
+                            </div>
+                        
+                        @endif
+                        
+                    </div>
+                    <!-- <div class="row" style="font-family:'Lato-Regular';margin-top:3rem;">
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1">
@@ -129,7 +160,7 @@
                         <div class="col-md-6">
 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -140,8 +171,11 @@
                 @foreach ($produto as $prod )
                 <div class="ite prod0 col-md-2" style="text-align:center;">
                     <a href="{{route('produto', $prod->id)}}" style="text-decoration:none !important;">
-                        <img class="img-fluid shadow" style="border-radius:15px;"
-                            src="https://dare.pt/storage/{{$prod->avatar}}" alt="">
+                        <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                            <img class="" src="https://dare.pt/storage/{{$prod->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                            <!-- <img class="img-fluid shadow" style="border-radius:15px;"
+                                src="https://dare.pt/storage/{{$prod->avatar}}" alt=""> -->
+                        </div>
                         <h6 style=" color:#d9358a;margin-top:1rem;margin-bottom:3rem;">{{$prod->nome}}
                         </h6>
                     </a>
@@ -154,7 +188,7 @@
             <div class="row" style="text-align: center;margin-top:5rem;">
                 <div class="portfolio-menu mt-2 mb-4 ">
                     <ul class="linha d-flex justify-content-center"
-                        style="border-bottom:2px solid rgba(217, 53, 138,0.4);padding-right: 4rem;">
+                        style="border-bottom:2px solid rgba(217, 53, 138,0.4);padding-right: 2rem;">
                         <li class="btn1 active" data-filter=".prod1">{{__('messages.produtosrela')}}</li>
                     </ul>
                 </div>
@@ -163,8 +197,11 @@
                     <div class="ite prod0 col-md-3" style="text-align:center;">
                         <a href="<?php if($prodR->id_tipo == 3 || $prodR->id_tipo == 4){ echo route('produto', $prodR->id); }else{ echo route('produto', $prodR->id) ; }?>"
                             style="text-decoration:none !important;">
-                            <img class="img-fluid shadow" style="border-radius:15px;"
-                                src="https://dare.pt/storage/{{$prodR->avatar}}" alt="">
+                            <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                                <img class="" src="https://dare.pt/storage/{{$prodR->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                                <!-- <img class="img-fluid shadow" style="border-radius:15px;"
+                                    src="https://dare.pt/storage/{{$prodR->avatar}}" alt=""> -->
+                            </div>
                             <h6
                                 style="font-family: 'Raleway-Medium';color:rgba(217, 53, 138,1);margin-top:1rem;margin-bottom:3rem;">
                                 {{$prodR->nome}}
@@ -304,7 +341,7 @@
     <!-- Copyright -->
     <div class="font1 text-center text-white "
         style="padding-bottom:0.5rem;padding-top:0.5rem; background-color:  #d9358a">
-        <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
+        <h6 style="font-size:0.6rem;">© {{ date('Y') }}  DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->
 </footer>

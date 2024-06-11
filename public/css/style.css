@@ -52,10 +52,10 @@ nav{
 
 .nav-link {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: #031D44;
+    color: #000000;
     padding: 20px 0px;
     display: inline-block;
     position: relative;

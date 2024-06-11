@@ -5,11 +5,60 @@
 
 <style>
 
-    .linha {
-        display: inline-flex;
-        overflow-x: scroll;
-        width: 100%;
-    }
+.linha-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.linha {
+    display: inline-flex;
+    width: max-content; /* Adjust width as needed */
+    cursor: grab;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid rgba(77, 40, 93, 0.4);
+}
+
+
+
+.linha li {
+    padding: 0 10px;
+    border-bottom: 2px solid transparent; /* Set initial border color */
+}
+
+.linha li:hover {
+    border-bottom-color: rgba(77, 40, 93, 1); /* Change border color on hover */
+}
+
+.linha-wrapper::-webkit-scrollbar {
+    display:none;
+    height: 200px; /* Adjust scrollbar height as needed */
+    background-color: transparent; /* Set scrollbar background color */
+}
+
+
+
+.linha:active {
+    cursor: grabbing;
+}
+/*
+.linha {
+    display: inline-flex;
+    
+    width: 100%;
+    cursor:grab;
+    overflow: auto;   
+    scrollbar-width: none;  Hide scrollbar for Firefox 
+    -ms-overflow-style: none; Hide scrollbar for IE and Edge 
+}
+
+
+.linha::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+/*}*/
+
+/* .linha:active {
+    cursor: grabbing;
+}  */
 
 
 .parallax {
@@ -29,6 +78,17 @@
 .img-fluid {
     border-radius: 15px;
 }
+
+
+.image-wrapper:hover img {
+    transform: scale(1.1) /*rotate(-10deg)*/; /* Zoom in by 10% and rotate 90 degrees on hover */
+}
+
+h4 {
+    font-size: 1.2rem !important;
+}
+
+
 </style>
 
 <div class="parallax justify-content-center  d-flex align-items-center">
@@ -41,9 +101,9 @@
         <div class="col-lg-12 text-center my-2">
             <div class="row">
                 <div class="col-md-6" style="text-align: left;">
-                    <h6 style="font-family: 'Raleway-Medium';color: rgba(77,40,93,0.5);margin-left:2rem;"> <a
-                            style="text-decoration: none; color: rgba(77,40,93,0.5) !important;" href="/">HOME</a>
-                        /{{__('messages.product')}} </h6>
+                    <h6 style="font-family: 'Raleway-Medium';color: rgba(0,0,0,0.5);margin-left:2rem;"> <a
+                            style="text-decoration: none; color: rgba(0,0,0,0.5) !important;" href="/">HOME</a>
+                        / {{__('messages.product')}} </h6>
                 </div>
                 <div class="col-md-6" style="text-align:right;">
                     <!--<h6 style="font-family: 'Raleway-Medium';color:rgba(77,40,93,0.5)"> 08 PRODUTOS</h6>-->
@@ -51,55 +111,72 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-menu mt-2 mb-4">
-        <ul class="linha" style="border-bottom:2px solid rgba(77,40,93,0.4);padding-right: 4rem;">
-            <li class="btn1 filter-btn active" data-target="#esf" data-filter=".esf">{{__('messages.esfe')}}</li>
-            <li class="btn1 filter-btn" data-target="#lolli" data-filter=".lolli">LOLLIPOPS</li>
-            <li class="btn1 filter-btn" data-target="#cana" data-filter=".cana">CANAPÉS</li>
-            <li class="btn1 filter-btn" data-target="#semi" data-filter=".semi">{{__('messages.semi')}}</li>
-            <li class="btn1 filter-btn" data-target="#vini" data-filter=".vini">VINAGRES</li>
-            <li class="btn1 filter-btn" data-target="#alhon" data-filter=".alhon">ALHO NEGRO</li>
-            <li class="btn1 filter-btn" data-target="#perola" data-filter=".perola">PEROLAS</li>
-            <li class="btn1 filter-btn" data-target="#trufa" data-filter=".trufa">TRUFA</li>
-            <li class="btn1 filter-btn" data-target="#vegan" data-filter=".vegan">VEGAN</li>
-        </ul>
+    <div class="portfolio-menu mt-2" style="margin-bottom:2.5rem;">
+        <div class="linha-wrapper">
+            <ul class="linha" style="border-bottom:2px solid rgba(0,0,0,0.2); font-size:1.1rem/*padding-right: 4rem;*/">
+                <li id="esf-menu"class="btn1 filter-btn active" data-target="#esf" data-filter=".esf">{{__('messages.esfe')}}</li>
+                <li id="lolli-menu"class="btn1 filter-btn" data-target="#lolli" data-filter=".lolli">LOLLIPOPS</li>
+                <li id="cana-menu" class="btn1 filter-btn" data-target="#cana" data-filter=".cana">CANAPÉS</li>
+                <li id="semi-menu" class="btn1 filter-btn" data-target="#semi" data-filter=".semi">{{__('messages.semi')}}</li>
+                <li id="vini-menu" class="btn1 filter-btn" data-target="#vini" data-filter=".vini">{{__('messages.vina')}}</li>
+                <li id="alhon-menu" class="btn1 filter-btn" data-target="#alhon" data-filter=".alhon">{{__('messages.alhosn')}}</li>
+                <li id="perola-menu" class="btn1 filter-btn" data-target="#perola" data-filter=".perola">{{__('messages.perola')}}</li>
+                <li id="trufa-menu" class="btn1 filter-btn" data-target="#trufa" data-filter=".trufa">{{__('messages.trufa')}}</li>
+                <li id="vegan-menu" class="btn1 filter-btn" data-target="#vegan" data-filter=".vegan">VEGAN</li>
+            </ul>
+        </div>
     </div>
     <div class="portfolio-i row">
         @foreach ($esferificacoes as $esf )
-        <div id="esf" class="ite esf block-card active col-md-3" style="text-align:center;">
+        <div id="esf"  class="ite esf block-card active col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $esf->id) }}" style="text-decoration:none !important;">
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$esf->avatar}}" alt="">
-                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$esf->nome}}</h4>
+
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                    <img  src="https://dare.pt/storage/{{$esf->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.5s;">
+                </div>
+                <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem; ">{{$esf->nome}}</h4>
             </a>
         </div>
         @endforeach
-    </div>
+    </div>     
     <div class="portfolio-i row">
         @foreach ($lollipolis as $lolli )
         <div id="lolli" class="ite lolli block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $lolli->id) }}" style="text-decoration:none !important;">
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$lolli->avatar}}" alt="">
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                    <img class="" src="https://dare.pt/storage/{{$lolli->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$lolli->nome}}</h4>
             </a>
         </div>
         @endforeach
+
+         
+                
     </div>
     <div class="portfolio-i row">
+        
         @foreach ($canapes as $cana )
         <div id="cana" class="ite cana block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $cana->id) }}" style="text-decoration:none !important;">
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$cana->avatar}}" alt="">
+
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                    <img  src="https://dare.pt/storage/{{$cana->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$cana->nome}}</h4>
             </a>
         </div>
         @endforeach
     </div>
+    
     <div class="portfolio-i row">
         @foreach ($semi as $sem )
         <div id="semi" class="ite semi block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $sem->id) }}" style="text-decoration:none !important;">
 
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$sem->avatar}}" alt="">
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                    <img  src="https://dare.pt/storage/{{$sem->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$sem->nome}}</h4>
 
             </a>
@@ -111,7 +188,10 @@
         <div id="vini" class="ite vini block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $vin->id) }}" style="text-decoration:none !important;">
 
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$vin->avatar}}" alt="">
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                
+                    <img src="https://dare.pt/storage/{{$vin->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$vin->nome}}</h4>
 
             </a>
@@ -123,8 +203,11 @@
         @foreach ($alhon as $alho )
         <div id="alhon" class="ite alhon block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $alho->id) }}" style="text-decoration:none !important;">
-
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$alho->avatar}}" alt="">
+                
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                
+                    <img  src="https://dare.pt/storage/{{$alho->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$alho->nome}}</h4>
 
             </a>
@@ -136,7 +219,9 @@
         <div id="perola" class="ite perola block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $perol->id) }}" style="text-decoration:none !important;">
 
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$perol->avatar}}" alt="">
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                    <img src="https://dare.pt/storage/{{$perol->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$perol->nome}}</h4>
 
             </a>
@@ -149,7 +234,9 @@
         <div id="vegan" class="ite vegan block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $vega->id) }}" style="text-decoration:none !important;">
 
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$vega->avatar}}" alt="">
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                    <img src="https://dare.pt/storage/{{$vega->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$vega->nome}}</h4>
 
             </a>
@@ -162,7 +249,9 @@
         <div id="trufa" class="ite trufa block-card col-md-3" style="text-align:center;">
             <a href="{{ route('produto', $truf->id) }}" style="text-decoration:none !important;">
 
-                <img class="img-fluid shadow" src="https://dare.pt/storage/{{$truf->avatar}}" alt="">
+                <div class="image-wrapper img-fluid  shadow" style="position:relative; overflow:hidden;">
+                    <img  src="https://dare.pt/storage/{{$truf->avatar}}" alt="" style="width:100%; height:auto; transition: transform 0.3s;">
+                </div>
                 <h4 style=" color:rgba(77,40,93,1);margin-top:1rem;margin-bottom:3rem;">{{$truf->nome}}</h4>
 
             </a>
@@ -196,11 +285,95 @@ console.log(locale);
 .btn1.show,
 .btn1:active,
 .btn1:hover {
-    color: rgba(77, 40, 93, 1);
     border-radius: 0px !important;
     --bs-btn1-border-color: none;
-    border-bottom: 2px solid rgba(77, 40, 93, 1) !important;
 }
+
+#esf-menu-check:active + .esf-menu,
+#esf-menu-check:checked + .esf-menu,
+#esf-menu.active,
+#esf-menu.show,
+#esf-menu:active,
+#esf-menu:hover {
+    color: rgba(14,162,154, 1);
+    
+    border-bottom: 2px solid rgba(14,162,154, 1) !important;
+}
+#lolli-menu-check:active + .lolli-menu,
+#lolli-menu-check:checked + .lolli-menu,
+#lolli-menu.active,
+#lolli-menu.show,
+#lolli-menu:active,
+#lolli-menu:hover {
+    color: #ff850b; /* Red color */
+    border-bottom: 2px solid #ff850b !important; /* Red color */
+}
+
+#cana-menu-check:active + .cana-menu,
+#cana-menu-check:checked + .cana-menu,
+#cana-menu.active,
+#cana-menu.show,
+#cana-menu:active,
+#cana-menu:hover {
+    color: #cc2841; /* Color: #cc2841 */
+    border-bottom: 2px solid #cc2841 !important; /* Color: #cc2841 */
+}
+#semi-menu-check:active + .semi-menu,
+#semi-menu-check:checked + .semi-menu,
+#semi-menu.active,
+#semi-menu.show,
+#semi-menu:active,
+#semi-menu:hover {
+    color: #d9358a; /* Color: #d9358a */
+    border-bottom: 2px solid #d9358a !important; /* Color: #d9358a */
+}
+#vini-menu-check:active + .vini-menu,
+#vini-menu-check:checked + .vini-menu,
+#vini-menu.active,
+#vini-menu.show,
+#vini-menu:active,
+#vini-menu:hover {
+    color: #4c3085; /* Color: #4c3085 */
+    border-bottom: 2px solid #4c3085 !important; /* Color: #4c3085 */
+}
+#alhon-menu-check:active + .alhon-menu,
+#alhon-menu-check:checked + .alhon-menu,
+#alhon-menu.active,
+#alhon-menu.show,
+#alhon-menu:active,
+#alhon-menu:hover {
+    color: #cf324b; /* Color: #cf324b */
+    border-bottom: 2px solid #cf324b !important; /* Color: #cf324b */
+}
+#perola-menu-check:active + .perola-menu,
+#perola-menu-check:checked + .perola-menu,
+#perola-menu.active,
+#perola-menu.show,
+#perola-menu:active,
+#perola-menu:hover {
+    color: #19af9e; /* Color: #19af9e */
+    border-bottom: 2px solid #19af9e !important; /* Color: #19af9e */
+}
+#vegan-menu-check:active + .vegan-menu,
+#vegan-menu-check:checked + .vegan-menu,
+#vegan-menu.active,
+#vegan-menu.show,
+#vegan-menu:active,
+#vegan-menu:hover {
+    color: #46b501; /* Color: #46b501 */
+    border-bottom: 2px solid #46b501 !important; /* Color: #46b501 */
+}
+#trufa-menu-check:active + .trufa-menu,
+#trufa-menu-check:checked + .trufa-menu,
+#trufa-menu.active,
+#trufa-menu.show,
+#trufa-menu:active,
+#trufa-menu:hover {
+    color: #712323; /* Color: #712323 */
+    border-bottom: 2px solid #712323 !important; /* Color: #712323 */
+}
+
+
 
 :focus-visible {
     outline: -webkit-focus-ring-color auto 0px !important;
@@ -377,7 +550,7 @@ $('.filter-btn').on('click', e => {
     <!-- Copyright -->
     <div class="font1 text-center text-white "
         style="padding-bottom:0.5rem;padding-top:0.5rem; background-color: rgba(77, 40, 93, 1)">
-        <h6 style="font-size:0.6rem;">© 2022 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
+        <h6 style="font-size:0.6rem;">© 2024 DARE - INNOVATE CUISINE. Todos os direitos reservados.</h6>
     </div>
     <!-- Copyright -->
 </footer>
